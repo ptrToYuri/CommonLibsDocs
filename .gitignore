@@ -1,0 +1,8 @@
+# Script files
+*.bat
+
+# Latex and pdf documentation
+latex/
+
+# Generator settings
+DoxygenProperties/
