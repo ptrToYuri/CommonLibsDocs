@@ -1,0 +1,28 @@
+\hypertarget{_assert_8h}{}\doxysection{Common\+Utils/\+Assert.h File Reference}
+\label{_assert_8h}\index{CommonUtils/Assert.h@{CommonUtils/Assert.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_assert_8h_a3fa101ffffc654cc16fd9b6429c45ec8}{A\+S\+S\+E\+RT}}(Condition,  Message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_assert_8h_a3fa101ffffc654cc16fd9b6429c45ec8}\label{_assert_8h_a3fa101ffffc654cc16fd9b6429c45ec8}} 
+\index{Assert.h@{Assert.h}!ASSERT@{ASSERT}}
+\index{ASSERT@{ASSERT}!Assert.h@{Assert.h}}
+\doxysubsubsection{\texorpdfstring{ASSERT}{ASSERT}}
+{\footnotesize\ttfamily \#define A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{Condition,  }\item[{}]{Message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        if (!(Condition)) \{ \(\backslash\)}
+\DoxyCodeLine{            std::cerr << \textcolor{stringliteral}{"{}ASSERTION ("{}} \#Condition \textcolor{stringliteral}{"{}) FAILED in "{}} << \_\_FILE\_\_ \(\backslash\)}
+\DoxyCodeLine{                << \textcolor{stringliteral}{"{}, line "{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}} << (Message) << std::endl; \(\backslash\)}
+\DoxyCodeLine{            std::abort(); \(\backslash\)}
+\DoxyCodeLine{         \} \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (\textcolor{keyword}{false})}
+
+\end{DoxyCode}

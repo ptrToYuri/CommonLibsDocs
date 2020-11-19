@@ -1,0 +1,182 @@
+\hypertarget{namespace_common}{}\doxysection{Common Namespace Reference}
+\label{namespace_common}\index{Common@{Common}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_common_1_1_c_does_not_exist}{C\+Does\+Not\+Exist}}
+\begin{DoxyCompactList}\small\item\em Represents \char`\"{}\+Element does not exist\char`\"{} error. Stores message. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_c_exception}{C\+Exception}}
+\begin{DoxyCompactList}\small\item\em Basic exception class. C-\/style message is required. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_c_out_of_range}{C\+Out\+Of\+Range}}
+\begin{DoxyCompactList}\small\item\em Represents \char`\"{}\+Out of Range\char`\"{} error. Can hold message, requested and expected indices. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}
+\begin{DoxyCompactList}\small\item\em Represents object that may not exist. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}
+\begin{DoxyCompactList}\small\item\em Represents a pair of objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}
+\begin{DoxyCompactList}\small\item\em Container representing array that can change its size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\size\+\_\+t \mbox{\hyperlink{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}{Get\+Iterator\+Distance}} (Iterator\+Type Begin, Iterator\+Type End)
+\begin{DoxyCompactList}\small\item\em Counts elements between two iterators. Range\+: \mbox{[}Begin\+: End) \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{namespace_common_addfb3a9701818cc518916763508c72db}{Get\+Raw\+String\+Length}} (const char $\ast$const Null\+Term\+String)
+\begin{DoxyCompactList}\small\item\em Calculates length of the C-\/string. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{namespace_common_a7426e26ef8a3023a9e595764ee2c55c6}{Get\+Raw\+String\+Length}} (const char $\ast$const Null\+Term\+String, size\+\_\+t Max\+Length)
+\begin{DoxyCompactList}\small\item\em Calculates length of the C-\/string. Stops when null character is reached or Max\+Length elements have been counted. Useful with malformatted input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_common_a44378309dbe31f188f59bcdad13667e7}{Copy\+Raw\+String}} (const char $\ast$const Null\+Term\+String\+From, char $\ast$const Raw\+String\+To)
+\begin{DoxyCompactList}\small\item\em Does the copy of C-\/style string (ended with \textquotesingle{}\textbackslash{}0\textquotesingle{}). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespace_common_ac9e4ee92fe73357b11dcc0341b43dff3}{Copy\+Raw\+String}} (const char $\ast$const Null\+Term\+String\+From, char $\ast$const Raw\+String\+To, size\+\_\+t Max\+Length)
+\begin{DoxyCompactList}\small\item\em Does the copy of C-\/style string. Stops when null character is reached or Max\+Length elements have been copied. Useful when string should be cut. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_common_abd1554dc1a8e0e5c419a1c7750f75e7d}{Are\+Raw\+Strings\+Equal}} (const char $\ast$const Null\+Term\+String1, const char $\ast$const Null\+Term\+String2)
+\begin{DoxyCompactList}\small\item\em Checks whether two C-\/style strings are equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespace_common_ada4a51bc0ee26f0d92566667c0694412}{Are\+Raw\+Strings\+Equal}} (const char $\ast$const Null\+Term\+String1, const char $\ast$const Null\+Term\+String2, size\+\_\+t Max\+Compare\+Length)
+\begin{DoxyCompactList}\small\item\em Checks whether two C-\/style strings are equal. Use this to compare N first elements, even if strings are not null-\/terminated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_common_abd1554dc1a8e0e5c419a1c7750f75e7d}\label{namespace_common_abd1554dc1a8e0e5c419a1c7750f75e7d}} 
+\index{Common@{Common}!AreRawStringsEqual@{AreRawStringsEqual}}
+\index{AreRawStringsEqual@{AreRawStringsEqual}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{AreRawStringsEqual()}{AreRawStringsEqual()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Common\+::\+Are\+Raw\+Strings\+Equal (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String1,  }\item[{const char $\ast$const}]{Null\+Term\+String2 }\end{DoxyParamCaption})}
+
+
+
+Checks whether two C-\/style strings are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String1} & First null-\/terminated string \\
+\hline
+{\em Null\+Term\+String2} & Second null-\/terminated string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if characters before \textquotesingle{}\textbackslash{}0\textquotesingle{} are the same false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_common_ada4a51bc0ee26f0d92566667c0694412}\label{namespace_common_ada4a51bc0ee26f0d92566667c0694412}} 
+\index{Common@{Common}!AreRawStringsEqual@{AreRawStringsEqual}}
+\index{AreRawStringsEqual@{AreRawStringsEqual}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{AreRawStringsEqual()}{AreRawStringsEqual()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Common\+::\+Are\+Raw\+Strings\+Equal (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String1,  }\item[{const char $\ast$const}]{Null\+Term\+String2,  }\item[{size\+\_\+t}]{Max\+Compare\+Length }\end{DoxyParamCaption})}
+
+
+
+Checks whether two C-\/style strings are equal. Use this to compare N first elements, even if strings are not null-\/terminated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String1} & First string (whether null-\/ terminated or limited with Max\+Compare\+Length) \\
+\hline
+{\em Null\+Term\+String2} & Second string (whether null-\/ terminated or limited with Max\+Compare\+Length) \\
+\hline
+{\em Max\+Compared\+Length} & Max amount of characters to compare; does not include trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if characters before \textquotesingle{}\textbackslash{}0\textquotesingle{} are the same false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_common_a44378309dbe31f188f59bcdad13667e7}\label{namespace_common_a44378309dbe31f188f59bcdad13667e7}} 
+\index{Common@{Common}!CopyRawString@{CopyRawString}}
+\index{CopyRawString@{CopyRawString}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String\+From,  }\item[{char $\ast$const}]{Raw\+String\+To }\end{DoxyParamCaption})}
+
+
+
+Does the copy of C-\/style string (ended with \textquotesingle{}\textbackslash{}0\textquotesingle{}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_common_ac9e4ee92fe73357b11dcc0341b43dff3}\label{namespace_common_ac9e4ee92fe73357b11dcc0341b43dff3}} 
+\index{Common@{Common}!CopyRawString@{CopyRawString}}
+\index{CopyRawString@{CopyRawString}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String\+From,  }\item[{char $\ast$const}]{Raw\+String\+To,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
+
+
+
+Does the copy of C-\/style string. Stops when null character is reached or Max\+Length elements have been copied. Useful when string should be cut. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
+\hline
+{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{}. After copying it gets \textquotesingle{}\textbackslash{}0\textquotesingle{} anyway \\
+\hline
+{\em Max\+Length} & Max amount of characters to copy; does not include trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}\label{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}} 
+\index{Common@{Common}!GetIteratorDistance@{GetIteratorDistance}}
+\index{GetIteratorDistance@{GetIteratorDistance}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetIteratorDistance()}{GetIteratorDistance()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
+size\+\_\+t Common\+::\+Get\+Iterator\+Distance (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Counts elements between two iterators. Range\+: \mbox{[}Begin\+: End) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between iterators 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Begin must not be greater than end (negative results are not supported) 
+\end{DoxyNote}
+\mbox{\Hypertarget{namespace_common_addfb3a9701818cc518916763508c72db}\label{namespace_common_addfb3a9701818cc518916763508c72db}} 
+\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
+\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String }\end{DoxyParamCaption})}
+
+
+
+Calculates length of the C-\/string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_common_a7426e26ef8a3023a9e595764ee2c55c6}\label{namespace_common_a7426e26ef8a3023a9e595764ee2c55c6}} 
+\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
+\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Null\+Term\+String,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
+
+
+
+Calculates length of the C-\/string. Stops when null character is reached or Max\+Length elements have been counted. Useful with malformatted input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
+\hline
+{\em Max\+Length} & Max amount of characters to count; does not include the trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
+\end{DoxyReturn}

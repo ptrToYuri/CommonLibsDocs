@@ -1,0 +1,1581 @@
+\hypertarget{class_common_1_1_t_vector}{}\doxysection{Common\+::T\+Vector$<$ T $>$ Class Template Reference}
+\label{class_common_1_1_t_vector}\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+
+
+Container representing array that can change its size.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Common\+Types/\+Vector.\+h\char`\"{}}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9ac1e19c09f700938f0ff7f1fd4722a3ac}{E\+Reserved\+Capacity\+Rule\+::\+Exponential}}, 
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a32a843da6ea40ab3b17a3421ccdf671b}{E\+Reserved\+Capacity\+Rule\+::\+Linear}}, 
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a661a50974112b2afaa5fc055d89a27de}{E\+Reserved\+Capacity\+Rule\+::\+Never\+Reserve}}
+ \}
+\begin{DoxyCompactList}\small\item\em Used to define how methods deal with Capacity. \end{DoxyCompactList}\item 
+typedef T\+Iterator$<$ T $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Iterator. Implemented op-\/s\+: ++, +=, +, --, -\/=, -\/, ==, !=, =. \end{DoxyCompactList}\item 
+typedef T\+Iterator$<$ const T $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of C\+Iterator for const values. \end{DoxyCompactList}\item 
+typedef T\+Reverse\+Iterator$<$ T $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Reverse iterator. Increment is actually decrement, etc. \end{DoxyCompactList}\item 
+typedef T\+Reverse\+Iterator$<$ const T $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of T\+Reverse\+Iterator for const values. \end{DoxyCompactList}\item 
+typedef T\+Safe\+Iterator$<$ T $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Iterator that does bounds checking and throws Out\+Of\+Range(). \end{DoxyCompactList}\item 
+typedef T\+Safe\+Iterator$<$ const T $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of T\+Safe\+Iterator for const values. \end{DoxyCompactList}\item 
+typedef T\+Safe\+Reverse\+Iterator$<$ T $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Reverse iterator that can throw Out\+Of\+Range(). \end{DoxyCompactList}\item 
+typedef T\+Safe\+Reverse\+Iterator$<$ const T $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of T\+Safe\+Reverse\+Iterator for const values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a06f65afe586f1ad373215a4a6023f3d9}{T\+Vector}} ()=default
+\begin{DoxyCompactList}\small\item\em Empty vector with no heap allocation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a292d1b33a2c92e092e88704a12180ace}{T\+Vector}} (\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} Capacity\+Rule) noexcept
+\begin{DoxyCompactList}\small\item\em Creates empty vector with Capacity preset predefined. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a32fe4c53e91761c2e74d1c60a129e19e}{T\+Vector}} (size\+\_\+t Size, const T \&Default\+Value=\{\})
+\begin{DoxyCompactList}\small\item\em Vector with pre-\/allocated elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a0a52533465aeda64aca70875ad397acd}{T\+Vector}} (size\+\_\+t Size, const T $\ast$const Array)
+\begin{DoxyCompactList}\small\item\em Vector constructed from raw dynamic array (copy). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a06352a0489692cda3c97da5e448962c5}{T\+Vector}} (const std\+::initializer\+\_\+list$<$ T $>$ \&Values\+List)
+\begin{DoxyCompactList}\small\item\em Modern C++ initialization syntax\+: name = \{...\}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{class_common_1_1_t_vector_a8f0b03d7b5296c85fc170e9e1d91f9aa}{T\+Vector}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End}}, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$=0)
+\begin{DoxyCompactList}\small\item\em Constructor to get values from another container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_afc1503385b6e91ef3c0b11d9f29ca417}{T\+Vector}} (const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae80c6e32c6bd2baadc07f46fc7a4fa44}{T\+Vector}} (\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&\&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a41dbc556f69d28bc8c370afa5a4d6f35}{$\sim$\+T\+Vector}} ()
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_vector_a35241b84a165059df5fb32fc6a4f4aa1}{Assign}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End}}, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Allows to copy values from another container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_vector_ae3630a743579413731bc45f6f8a05725}{operator=}} (const std\+::initializer\+\_\+list$<$ T $>$ \&Values\+List)
+\begin{DoxyCompactList}\small\item\em Allows assignment with = \{...\} style. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_vector_a5fad32a50ab9a0c26b41e154d3208485}{operator=}} (const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Assingment operator makes a copy of another vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_vector_a3f809bf06b1b274497beb336b23ecc90}{operator=}} (\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&\&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a72d27069bd4c75b8d8c400f50f3f8c1d}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t Index)
+\begin{DoxyCompactList}\small\item\em Index operator that prodives access to the element. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_a998e017cc2ebf5ec5da75ecada4f1768}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t Index) const
+\begin{DoxyCompactList}\small\item\em Index operator for const vectors. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a56dc9af2d256198d8df92154adbda4ea}{Safe\+At}} (size\+\_\+t Index)
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} with range check. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_a0a1784efec9a7c23eee1c024c3b73f18}{Safe\+At}} (size\+\_\+t Index) const
+\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a8e772bfe52d4776ad89cd2e10a032534}{Auto\+At}} (size\+\_\+t Index, const T \&Default\+Value=\{\})
+\begin{DoxyCompactList}\small\item\em If element does not exist, this will resize vector and fill newly created elements with provided value. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{class_common_1_1_t_vector_aefa7ae2e67ba665cbb09f3f100d0a8f2}{Raw\+Data}} () noexcept
+\begin{DoxyCompactList}\small\item\em Provides access to the internal buffer. \end{DoxyCompactList}\item 
+const T $\ast$ \mbox{\hyperlink{class_common_1_1_t_vector_a27b784a5b7c673dcb72593df1efa0564}{Raw\+Data}} () const noexcept
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_aefa7ae2e67ba665cbb09f3f100d0a8f2}{Raw\+Data()}} for const vectors. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_vector_a948e7a6fcb269ec2fee9ea6f2476ef83}{operator==}} (const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Other) const noexcept
+\begin{DoxyCompactList}\small\item\em Checks if two vectors contain the same values by calling equality operator recursively. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_vector_a551eae84407bf7dc0330518e5058978d}{operator!=}} (const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Other) const noexcept
+\begin{DoxyCompactList}\small\item\em Opposite to operator ==. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_ab7f2d52c3264a6351839beee7d9041dc}{Push}} (const T \&Value)
+\begin{DoxyCompactList}\small\item\em Adds one element to the end of vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_vector_a024b2f76d062f2ead120fd60c55d7d86}{Push}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End}})
+\begin{DoxyCompactList}\small\item\em Adds elements to the end, uses iterators. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_ac35a22dbbb3f0c012756936f197e46f0}{Insert}} (size\+\_\+t Position, const T \&Value=T\{\}, const T \&Fill\+On\+Resize\+With=T\{\})
+\begin{DoxyCompactList}\small\item\em Inserts one elements to the specified position. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_vector_a127c071eb5ab242598cfbf4752327718}{Insert}} (size\+\_\+t Position, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End}}, const T \&Fill\+On\+Resize\+With=T\{\}, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$=0)
+\begin{DoxyCompactList}\small\item\em Inserts range of elements, starting at Position. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_common_1_1_t_vector_a07d3006c13efa25dc0abf1d1f55d1092}{Pop}} (bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes one element from the end of vector. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_common_1_1_t_vector_a8930b8690ca6ac278b78f44df731cdc6}{Safe\+Pop}} (bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a07d3006c13efa25dc0abf1d1f55d1092}{Pop()}} with range check. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_a80d2a825549568315b2f2f8c00bd5a29}{Pop\+Multiple}} (size\+\_\+t Elements\+Count, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes N elements from the end of vector. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_common_1_1_t_vector_a6bebae24de311966508f2e60e744987c}{Shift}} (bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes one element from the beginning of vector. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{class_common_1_1_t_vector_aba9bb87bd0d8367d341904b90915425c}{Safe\+Shift}} (bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a6bebae24de311966508f2e60e744987c}{Shift()}} with range check. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_a5ccce21ef8696b9729eca027b2455a0f}{Shift\+Multiple}} (size\+\_\+t Elements\+Count, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes N elements from the beginning of vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_a2726e32a3100881be46a26f33f0a77f0}{Erase}} (size\+\_\+t Position, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes element with specified position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}{Erase\+Multiple}} (size\+\_\+t Position\+From, size\+\_\+t Position\+To, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Removes range of elements from vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_aa4ce7e570833e9f5b6ed8a87529e7acb}{Reserve}} (size\+\_\+t New\+Capacity)
+\begin{DoxyCompactList}\small\item\em Allocates elements internally for the future use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_a60f6c69c7451b622aca89e24cf81ec61}{Resize}} (size\+\_\+t New\+Size, const T \&Default\+Value=\{\}, bool b\+Allow\+Auto\+Shrink=false)
+\begin{DoxyCompactList}\small\item\em Changes size of vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}{Shrink\+To\+Fit}} ()
+\begin{DoxyCompactList}\small\item\em Clears memory that was reserved for future use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Removes all elements from the vector. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_vector_ab369d828bdc8322133940541b4f9c9f8}{Get\+Size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Size is number of elements that you can use. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_vector_a9d93c3a7bd6c62d556020e93fc0e0fae}{Get\+Capacity}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Capacity is Size + reserved space for the future use. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_vector_ae50f2b9986d95285fb1827e60c0a039b}{Is\+Empty}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Simple check if size of this vector equals 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_vector_a49e1cd83803d7579f8e3febbaff17f2b}{Set\+Capacity\+Rule}} (\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} Capacity\+Rule) noexcept
+\begin{DoxyCompactList}\small\item\em Set enum value that will describe how re-\/allocation works when elements are added / removed from vertor. Reallocation on removal happens only if bool b\+Allow\+Auto\+Shrink was passed with supported operation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} \mbox{\hyperlink{class_common_1_1_t_vector_afde279a09ddc6246c2455f7e1c8df7fd}{Get\+Capacity\+Rule}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns Capacity rule that is currently applied. It affects how elements are allocated \& destructed. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}{Front}} ()
+\begin{DoxyCompactList}\small\item\em Provides access to the first element. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_a5a17a4d52a156ba905fa6c03e413e245}{Front}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}{Front()}} for const vectors. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a038ce8266736da3ea9999be8c7d388ca}{Safe\+Front}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}{Front()}} with range check. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_a9edc2a3851d07627f333c4ff1d5f9aa7}{Safe\+Front}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a038ce8266736da3ea9999be8c7d388ca}{Safe\+Front()}} for const vectors. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}{Back}} ()
+\begin{DoxyCompactList}\small\item\em Provides access to the last element. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_a093d18082c8ed965ad337cc8638981c8}{Back}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}{Back()}} for const vectors. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_vector_adcde95defa55d50bbd2aa889fc0632ad}{Safe\+Back}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}{Back()}} with range check. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_vector_acf25672d9a2be8530f3d59536a8cc55a}{Safe\+Back}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_adcde95defa55d50bbd2aa889fc0632ad}{Safe\+Back()}} for const vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}{Const\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_aeb2b0f6f89ddf9207afdc82b9e016fd3}{Reverse\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}{Const\+Reverse\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_ac99e39a82ba80e52d5d32000b679ef3d}{Safe\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_ab0376e0a629ec7afa97bcbcb274db1e0}{Safe\+Const\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a7cbc34f370a123b70406dce5c9e4f7f0}{Safe\+Reverse\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a7867f17103c8ad7c97c1a02d1e91ae93}{Safe\+Const\+Reverse\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End}} ()
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End}} () const
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a235eac07ed0051f720efdaac7b7a6f9f}{Reverse\+End}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}{Const\+Reverse\+End}} () const
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_acb4f534420bd80b50faeba5dfc7b4195}{Safe\+End}} ()
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a6eca58c21a6dcf351198541e9d062785}{Safe\+Const\+End}} () const
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a1e75dd85282a98d1001961adece43616}{Safe\+Reverse\+End}} ()
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_adb49407670de6b064203103198c25fb1}{Safe\+Const\+Reverse\+End}} () const
+\begin{DoxyCompactList}\small\item\em Safe reverse it. pointing to elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a311c8d0d5bde17cb4aaa9fdd1f5c541f}{begin}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_aaab3b25c6522737e84823dd07841b08b}{begin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}{Const\+Begin()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a9b9a93a0a3f873b4171382afa10bf804}{cbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}{Const\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a099e402047ded53305319675e93f442c}{rbegin}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_aeb2b0f6f89ddf9207afdc82b9e016fd3}{Reverse\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a78b186c7438610a815abf110f3eb0bde}{rbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}{Const\+Reverse\+Begin()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_addfd624b66342be573447b93a3e139f7}{crbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}{Const\+Reverse\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a1a008d5b2b5d7bbc4e4a5ccea077bc71}{end}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_abd5e2129f351d6102bf4987ec1e2971e}{end}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a8c52709393f927cda247027dc60e0b9e}{cend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a93ce41ca7234c18d7fcaf583cd2e0a36}{rend}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_a235eac07ed0051f720efdaac7b7a6f9f}{Reverse\+End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_ac831612b2da9aefedeac345112b603ac}{rend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}{Const\+Reverse\+End()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector_a0de015e10f1db89a438084121c75e33f}{crend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}{Const\+Reverse\+End()}} alias (for compatibity) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_common_1_1_t_vector_a1237537b0f430dc5b82043a527185dc3}{Swap}} (\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Vector1, \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&Vector2) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps two vectors internally without deep copy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Common\+::\+T\+Vector$<$ T $>$}
+
+Container representing array that can change its size. 
+
+Fast in accessing elements as offsets are used, but not very effective in terms of adding and removing elements. To minimize those drawbacks, there are memory reserving rules that you can manage.
+
+\begin{DoxyNote}{Note}
+If the logical result of operation may not be determined, there are two methods\+: one that throws an exception (\char`\"{}\+Safe\char`\"{} prefix) and another one that does assertion in debug mode. Custom exception is \mbox{\hyperlink{class_common_1_1_c_out_of_range}{C\+Out\+Of\+Range}}, derived from \mbox{\hyperlink{class_common_1_1_c_exception}{C\+Exception}}
+
+May throw std\+::bad\+\_\+alloc if allocation fails. Allocation failure in assignment operations will cause the vector to be cleared (as you intended to remove old elements anyway). If allocation fails in insertions, resize, push/pop, etc. -\/ vector will stay in the previous state. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}\label{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CConstIterator@{CConstIterator}}
+\index{CConstIterator@{CConstIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CConstIterator}{CConstIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Iterator$<$const T$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}}}
+
+
+
+Version of C\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}\label{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CConstReverseIterator@{CConstReverseIterator}}
+\index{CConstReverseIterator@{CConstReverseIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CConstReverseIterator}{CConstReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Reverse\+Iterator$<$const T$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}}}
+
+
+
+Version of T\+Reverse\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}\label{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CIterator@{CIterator}}
+\index{CIterator@{CIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CIterator}{CIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Iterator$<$T$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}}}
+
+
+
+Iterator. Implemented op-\/s\+: ++, +=, +, --, -\/=, -\/, ==, !=, =. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}\label{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CReverseIterator@{CReverseIterator}}
+\index{CReverseIterator@{CReverseIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CReverseIterator}{CReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Reverse\+Iterator$<$T$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}}}
+
+
+
+Reverse iterator. Increment is actually decrement, etc. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}\label{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CSafeConstIterator@{CSafeConstIterator}}
+\index{CSafeConstIterator@{CSafeConstIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeConstIterator}{CSafeConstIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Safe\+Iterator$<$const T$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}}}
+
+
+
+Version of T\+Safe\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}\label{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CSafeConstReverseIterator@{CSafeConstReverseIterator}}
+\index{CSafeConstReverseIterator@{CSafeConstReverseIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeConstReverseIterator}{CSafeConstReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Safe\+Reverse\+Iterator$<$const T$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}}}
+
+
+
+Version of T\+Safe\+Reverse\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}\label{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CSafeIterator@{CSafeIterator}}
+\index{CSafeIterator@{CSafeIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeIterator}{CSafeIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Safe\+Iterator$<$T$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}}}
+
+
+
+Iterator that does bounds checking and throws Out\+Of\+Range(). 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}\label{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!CSafeReverseIterator@{CSafeReverseIterator}}
+\index{CSafeReverseIterator@{CSafeReverseIterator}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeReverseIterator}{CSafeReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T\+Safe\+Reverse\+Iterator$<$T$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}}}
+
+
+
+Reverse iterator that can throw Out\+Of\+Range(). 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}\label{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!EReservedCapacityRule@{EReservedCapacityRule}}
+\index{EReservedCapacityRule@{EReservedCapacityRule}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EReservedCapacityRule}{EReservedCapacityRule}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+enum \mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{Common\+::\+T\+Vector\+::\+E\+Reserved\+Capacity\+Rule}} \+: uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Used to define how methods deal with Capacity. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Exponential@{Exponential}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Exponential@{Exponential}}}\mbox{\Hypertarget{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9ac1e19c09f700938f0ff7f1fd4722a3ac}\label{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9ac1e19c09f700938f0ff7f1fd4722a3ac}} 
+Exponential&\mbox{[}A\+DD\mbox{]} allocates (New\+Size-\/1)$\ast$2 if capacity exceed and vector is not small enough ~\newline
+ \mbox{[}D\+EL\mbox{]} allocates 2$\ast$\+Size if Capacity $>$ 4 $\ast$ Size and vector is not small enough \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Linear@{Linear}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Linear@{Linear}}}\mbox{\Hypertarget{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a32a843da6ea40ab3b17a3421ccdf671b}\label{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a32a843da6ea40ab3b17a3421ccdf671b}} 
+Linear&\mbox{[}A\+DD\mbox{]} allocates New\+Size + 3 + 32 / sizeof(\+T) if capacity exceed ~\newline
+ \mbox{[}D\+EL\mbox{]} allocates Size + 4 + 32 / sizeof(\+T) if size exceeds capacity by more than 2$\ast$(8 + 64 / sizeof(\+T)) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NeverReserve@{NeverReserve}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!NeverReserve@{NeverReserve}}}\mbox{\Hypertarget{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a661a50974112b2afaa5fc055d89a27de}\label{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9a661a50974112b2afaa5fc055d89a27de}} 
+Never\+Reserve&\mbox{[}A\+DD, D\+EL\mbox{]} memory is never reserved automatically; if true b\+Allow\+Auto\+Shrink was passed into another method, then \mbox{\hyperlink{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}{Shrink\+To\+Fit()}} will be called \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a06f65afe586f1ad373215a4a6023f3d9}\label{class_common_1_1_t_vector_a06f65afe586f1ad373215a4a6023f3d9}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Empty vector with no heap allocation. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a292d1b33a2c92e092e88704a12180ace}\label{class_common_1_1_t_vector_a292d1b33a2c92e092e88704a12180ace}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}}}]{Capacity\+Rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Creates empty vector with Capacity preset predefined. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Capacity\+Rule} & Describes how memory will be reserved \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} for more info about presets. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a32fe4c53e91761c2e74d1c60a129e19e}\label{class_common_1_1_t_vector_a32fe4c53e91761c2e74d1c60a129e19e}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{const T \&}]{Default\+Value = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Vector with pre-\/allocated elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Number of elements to allocate \\
+\hline
+{\em Default\+Value} & Optional. Value to initialize with \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Use \mbox{\hyperlink{class_common_1_1_t_vector_aa4ce7e570833e9f5b6ed8a87529e7acb}{Reserve()}} on empty vector to avoid initialization. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a0a52533465aeda64aca70875ad397acd}\label{class_common_1_1_t_vector_a0a52533465aeda64aca70875ad397acd}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{const T $\ast$const}]{Array }\end{DoxyParamCaption})}
+
+
+
+Vector constructed from raw dynamic array (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Number of elements in original array \\
+\hline
+{\em Array} & Pointer to heap with C-\/style array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Array\mbox{[}0\mbox{]} to Array\mbox{[}Size-\/1\mbox{]} must exist and have the same type as vector. 
+
+Raw array is not changed. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a06352a0489692cda3c97da5e448962c5}\label{class_common_1_1_t_vector_a06352a0489692cda3c97da5e448962c5}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{Values\+List }\end{DoxyParamCaption})}
+
+
+
+Modern C++ initialization syntax\+: name = \{...\}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Values\+List} & Initializer list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a8f0b03d7b5296c85fc170e9e1d91f9aa}\label{class_common_1_1_t_vector_a8f0b03d7b5296c85fc170e9e1d91f9aa}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor to get values from another container. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator that implements ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the beginning of container \\
+\hline
+{\em End} & Iterator referring to the end of container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_afc1503385b6e91ef3c0b11d9f29ca417}\label{class_common_1_1_t_vector_afc1503385b6e91ef3c0b11d9f29ca417}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & vector to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae80c6e32c6bd2baadc07f46fc7a4fa44}\label{class_common_1_1_t_vector_ae80c6e32c6bd2baadc07f46fc7a4fa44}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!TVector@{TVector}}
+\index{TVector@{TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TVector()}{TVector()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Temporary object to get data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a41dbc556f69d28bc8c370afa5a4d6f35}\label{class_common_1_1_t_vector_a41dbc556f69d28bc8c370afa5a4d6f35}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!````~TVector@{$\sim$TVector}}
+\index{````~TVector@{$\sim$TVector}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$TVector()}{~TVector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a35241b84a165059df5fb32fc6a4f4aa1}\label{class_common_1_1_t_vector_a35241b84a165059df5fb32fc6a4f4aa1}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Assign@{Assign}}
+\index{Assign@{Assign}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Assign()}{Assign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Assign (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Allows to copy values from another container. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator that implements ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the beginning of container \\
+\hline
+{\em End} & Iterator referring to the end of container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a8e772bfe52d4776ad89cd2e10a032534}\label{class_common_1_1_t_vector_a8e772bfe52d4776ad89cd2e10a032534}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!AutoAt@{AutoAt}}
+\index{AutoAt@{AutoAt}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AutoAt()}{AutoAt()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Auto\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index,  }\item[{const T \&}]{Default\+Value = {\ttfamily \{\}} }\end{DoxyParamCaption})}
+
+
+
+If element does not exist, this will resize vector and fill newly created elements with provided value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & aka offset value \\
+\hline
+{\em Default\+Value} & Value to initialize added elements \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the requested element 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Use operator \mbox{[}\mbox{]} if you are sure, that element exists 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}\label{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Back@{Back}}
+\index{Back@{Back}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Back()}{Back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides access to the last element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the last element 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Vector must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a093d18082c8ed965ad337cc8638981c8}\label{class_common_1_1_t_vector_a093d18082c8ed965ad337cc8638981c8}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Back@{Back}}
+\index{Back@{Back}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Back()}{Back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}{Back()}} for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}\label{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Begin@{Begin}}
+\index{Begin@{Begin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+C\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a311c8d0d5bde17cb4aaa9fdd1f5c541f}\label{class_common_1_1_t_vector_a311c8d0d5bde17cb4aaa9fdd1f5c541f}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_accd4a771d43b896a745cf2a4f2ff62ea}{Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_aaab3b25c6522737e84823dd07841b08b}\label{class_common_1_1_t_vector_aaab3b25c6522737e84823dd07841b08b}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}{Const\+Begin()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a9b9a93a0a3f873b4171382afa10bf804}\label{class_common_1_1_t_vector_a9b9a93a0a3f873b4171382afa10bf804}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}{Const\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a8c52709393f927cda247027dc60e0b9e}\label{class_common_1_1_t_vector_a8c52709393f927cda247027dc60e0b9e}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!cend@{cend}}
+\index{cend@{cend}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}\label{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes all elements from the vector. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}\label{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ConstBegin@{ConstBegin}}
+\index{ConstBegin@{ConstBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstBegin()}{ConstBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Const\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}\label{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ConstEnd@{ConstEnd}}
+\index{ConstEnd@{ConstEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstEnd()}{ConstEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Const\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}\label{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ConstReverseBegin@{ConstReverseBegin}}
+\index{ConstReverseBegin@{ConstReverseBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstReverseBegin()}{ConstReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Const\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Reverse iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Const\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}\label{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ConstReverseEnd@{ConstReverseEnd}}
+\index{ConstReverseEnd@{ConstReverseEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstReverseEnd()}{ConstReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Const\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Reverse iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Const\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_addfd624b66342be573447b93a3e139f7}\label{class_common_1_1_t_vector_addfd624b66342be573447b93a3e139f7}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}{Const\+Reverse\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a0de015e10f1db89a438084121c75e33f}\label{class_common_1_1_t_vector_a0de015e10f1db89a438084121c75e33f}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!crend@{crend}}
+\index{crend@{crend}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crend()}{crend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::crend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}{Const\+Reverse\+End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}\label{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!End@{End}}
+\index{End@{End}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+C\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a1a008d5b2b5d7bbc4e4a5ccea077bc71}\label{class_common_1_1_t_vector_a1a008d5b2b5d7bbc4e4a5ccea077bc71}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!end@{end}}
+\index{end@{end}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a652c25a5143b2494732a42f6cf84c968}{C\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_ae6f082451d8a03611bfb5c627155ed31}{End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_abd5e2129f351d6102bf4987ec1e2971e}\label{class_common_1_1_t_vector_abd5e2129f351d6102bf4987ec1e2971e}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!end@{end}}
+\index{end@{end}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ae0cbcdf3adbfe67697fdf44d86e6f24d}{C\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a2726e32a3100881be46a26f33f0a77f0}\label{class_common_1_1_t_vector_a2726e32a3100881be46a26f33f0a77f0}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Erase@{Erase}}
+\index{Erase@{Erase}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Erase()}{Erase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Erase (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Position,  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes element with specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & Position of element to be removed \\
+\hline
+{\em b\+Allow\+Auto\+Shrink} & Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Position is greater than max index, does nothing. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This method removes one element. To remove multiple, use \mbox{\hyperlink{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}{Erase\+Multiple()}}. Your code with such a mistake will be compiled because of optional bool param. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}\label{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!EraseMultiple@{EraseMultiple}}
+\index{EraseMultiple@{EraseMultiple}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EraseMultiple()}{EraseMultiple()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Erase\+Multiple (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Position\+From,  }\item[{size\+\_\+t}]{Position\+To,  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes range of elements from vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position\+From} & Starting index for erase \\
+\hline
+{\em Position\+To} & End point for erase. Element with this index will also be removed \\
+\hline
+{\em b\+Allow\+Auto\+Shrink} & Optional. Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Ignores elements at unavailable positions. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This method removes multiple elements. To remove one, use \mbox{\hyperlink{class_common_1_1_t_vector_a2726e32a3100881be46a26f33f0a77f0}{Erase()}}. Your code with such a mistake will be compiled because of optional bool param. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}\label{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Front@{Front}}
+\index{Front@{Front}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Front()}{Front()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides access to the first element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the first element 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Vector must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a5a17a4d52a156ba905fa6c03e413e245}\label{class_common_1_1_t_vector_a5a17a4d52a156ba905fa6c03e413e245}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Front@{Front}}
+\index{Front@{Front}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Front()}{Front()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}{Front()}} for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a9d93c3a7bd6c62d556020e93fc0e0fae}\label{class_common_1_1_t_vector_a9d93c3a7bd6c62d556020e93fc0e0fae}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!GetCapacity@{GetCapacity}}
+\index{GetCapacity@{GetCapacity}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetCapacity()}{GetCapacity()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Capacity is Size + reserved space for the future use. 
+
+\begin{DoxyReturn}{Returns}
+Capacity of vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_afde279a09ddc6246c2455f7e1c8df7fd}\label{class_common_1_1_t_vector_afde279a09ddc6246c2455f7e1c8df7fd}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!GetCapacityRule@{GetCapacityRule}}
+\index{GetCapacityRule@{GetCapacityRule}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetCapacityRule()}{GetCapacityRule()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Get\+Capacity\+Rule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Returns Capacity rule that is currently applied. It affects how elements are allocated \& destructed. 
+
+\begin{DoxyReturn}{Returns}
+E\+Reserved\+Capacity\+Rule Current capacity rule 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}} for more info about presets. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ab369d828bdc8322133940541b4f9c9f8}\label{class_common_1_1_t_vector_ab369d828bdc8322133940541b4f9c9f8}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Size is number of elements that you can use. 
+
+\begin{DoxyReturn}{Returns}
+Size of vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ac35a22dbbb3f0c012756936f197e46f0}\label{class_common_1_1_t_vector_ac35a22dbbb3f0c012756936f197e46f0}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Position,  }\item[{const T \&}]{Value = {\ttfamily T\{\}},  }\item[{const T \&}]{Fill\+On\+Resize\+With = {\ttfamily T\{\}} }\end{DoxyParamCaption})}
+
+
+
+Inserts one elements to the specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & Index where to insert \\
+\hline
+{\em Value} & Value to insert \\
+\hline
+{\em Fill\+On\+Resize\+With} & If position is larger than vector size, elements that appear on resize will be initialized with this value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Position is greater than max index, vector is resized. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a127c071eb5ab242598cfbf4752327718}\label{class_common_1_1_t_vector_a127c071eb5ab242598cfbf4752327718}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Position,  }\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{const T \&}]{Fill\+On\+Resize\+With = {\ttfamily T\{\}},  }\item[{typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Inserts range of elements, starting at Position. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & Index of the first inserted element \\
+\hline
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+{\em Fill\+On\+Resize\+With} & If position is larger than vector size, elements that appear on resize will be initialized with this value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Position is greater than max index, vector is resized. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae50f2b9986d95285fb1827e60c0a039b}\label{class_common_1_1_t_vector_ae50f2b9986d95285fb1827e60c0a039b}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Simple check if size of this vector equals 0. 
+
+\begin{DoxyReturn}{Returns}
+True if empty, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a551eae84407bf7dc0330518e5058978d}\label{class_common_1_1_t_vector_a551eae84407bf7dc0330518e5058978d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Opposite to operator ==. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae3630a743579413731bc45f6f8a05725}\label{class_common_1_1_t_vector_ae3630a743579413731bc45f6f8a05725}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{Values\+List }\end{DoxyParamCaption})}
+
+
+
+Allows assignment with = \{...\} style. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Values\+List} & Initializer list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a5fad32a50ab9a0c26b41e154d3208485}\label{class_common_1_1_t_vector_a5fad32a50ab9a0c26b41e154d3208485}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Assingment operator makes a copy of another vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a3f809bf06b1b274497beb336b23ecc90}\label{class_common_1_1_t_vector_a3f809bf06b1b274497beb336b23ecc90}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Temporary object to get data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a948e7a6fcb269ec2fee9ea6f2476ef83}\label{class_common_1_1_t_vector_a948e7a6fcb269ec2fee9ea6f2476ef83}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if two vectors contain the same values by calling equality operator recursively. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Other vector to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if sizes and values are equal, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Containing elements must implement == operator 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a72d27069bd4c75b8d8c400f50f3f8c1d}\label{class_common_1_1_t_vector_a72d27069bd4c75b8d8c400f50f3f8c1d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index }\end{DoxyParamCaption})}
+
+
+
+Index operator that prodives access to the element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Index} & aka offset value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the requested element 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Element with requested index must exist in vector. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a998e017cc2ebf5ec5da75ecada4f1768}\label{class_common_1_1_t_vector_a998e017cc2ebf5ec5da75ecada4f1768}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Index operator for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a07d3006c13efa25dc0abf1d1f55d1092}\label{class_common_1_1_t_vector_a07d3006c13efa25dc0abf1d1f55d1092}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Pop (\begin{DoxyParamCaption}\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes one element from the end of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Allow\+Auto\+Shrink} & Optional. Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Removed element (by value) 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Vector must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a80d2a825549568315b2f2f8c00bd5a29}\label{class_common_1_1_t_vector_a80d2a825549568315b2f2f8c00bd5a29}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!PopMultiple@{PopMultiple}}
+\index{PopMultiple@{PopMultiple}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{PopMultiple()}{PopMultiple()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Pop\+Multiple (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Elements\+Count,  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes N elements from the end of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Elements\+Count} & Number of elements to be removed \\
+\hline
+{\em b\+Allow\+Auto\+Shrink} & Optional. Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Elements\+Count $>$= Size, clears vector 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ab7f2d52c3264a6351839beee7d9041dc}\label{class_common_1_1_t_vector_ab7f2d52c3264a6351839beee7d9041dc}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Push (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Adds one element to the end of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Element to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Call \mbox{\hyperlink{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}{Shrink\+To\+Fit()}} to clear reserved memory, \mbox{\hyperlink{class_common_1_1_t_vector_aa4ce7e570833e9f5b6ed8a87529e7acb}{Reserve()}} to increase it 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a024b2f76d062f2ead120fd60c55d7d86}\label{class_common_1_1_t_vector_a024b2f76d062f2ead120fd60c55d7d86}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Push (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Adds elements to the end, uses iterators. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a27b784a5b7c673dcb72593df1efa0564}\label{class_common_1_1_t_vector_a27b784a5b7c673dcb72593df1efa0564}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!RawData@{RawData}}
+\index{RawData@{RawData}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RawData()}{RawData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T$\ast$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Raw\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_aefa7ae2e67ba665cbb09f3f100d0a8f2}{Raw\+Data()}} for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_aefa7ae2e67ba665cbb09f3f100d0a8f2}\label{class_common_1_1_t_vector_aefa7ae2e67ba665cbb09f3f100d0a8f2}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!RawData@{RawData}}
+\index{RawData@{RawData}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RawData()}{RawData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Raw\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Provides access to the internal buffer. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to c-\/style heap array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a099e402047ded53305319675e93f442c}\label{class_common_1_1_t_vector_a099e402047ded53305319675e93f442c}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_aeb2b0f6f89ddf9207afdc82b9e016fd3}{Reverse\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a78b186c7438610a815abf110f3eb0bde}\label{class_common_1_1_t_vector_a78b186c7438610a815abf110f3eb0bde}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_adcdafcdc204ab13361c046b4079d58a5}{Const\+Reverse\+Begin()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a93ce41ca7234c18d7fcaf583cd2e0a36}\label{class_common_1_1_t_vector_a93ce41ca7234c18d7fcaf583cd2e0a36}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a235eac07ed0051f720efdaac7b7a6f9f}{Reverse\+End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ac831612b2da9aefedeac345112b603ac}\label{class_common_1_1_t_vector_ac831612b2da9aefedeac345112b603ac}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a620ba915fe6601254e82360781ac8cd3}{C\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_af50fcd9bee3c5ecb912d4bac5f77462d}{Const\+Reverse\+End()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_aa4ce7e570833e9f5b6ed8a87529e7acb}\label{class_common_1_1_t_vector_aa4ce7e570833e9f5b6ed8a87529e7acb}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Reserve@{Reserve}}
+\index{Reserve@{Reserve}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reserve()}{Reserve()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Reserve (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{New\+Capacity }\end{DoxyParamCaption})}
+
+
+
+Allocates elements internally for the future use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Capacity} & If greater than size, will update internal capacity \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Call \mbox{\hyperlink{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}{Shrink\+To\+Fit()}} to clear reserved memory. 
+\end{DoxySeeAlso}
+\begin{DoxyNote}{Note}
+Passing b\+Allow\+Auto\+Shrink to methods may cause shrink. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a60f6c69c7451b622aca89e24cf81ec61}\label{class_common_1_1_t_vector_a60f6c69c7451b622aca89e24cf81ec61}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Resize@{Resize}}
+\index{Resize@{Resize}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{New\+Size,  }\item[{const T \&}]{Default\+Value = {\ttfamily \{\}},  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Changes size of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em New\+Size} & New size of vector. If New\+Size $<$ Size, deletes last elements. Otherwise, creates new with passed value. \\
+\hline
+{\em Default\+Value} & Optional. Value to initialize added elements \\
+\hline
+{\em b\+Allow\+Auto\+Shrink} & Optional. Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_vector_aeb2b0f6f89ddf9207afdc82b9e016fd3}\label{class_common_1_1_t_vector_aeb2b0f6f89ddf9207afdc82b9e016fd3}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ReverseBegin@{ReverseBegin}}
+\index{ReverseBegin@{ReverseBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ReverseBegin()}{ReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+C\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a235eac07ed0051f720efdaac7b7a6f9f}\label{class_common_1_1_t_vector_a235eac07ed0051f720efdaac7b7a6f9f}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ReverseEnd@{ReverseEnd}}
+\index{ReverseEnd@{ReverseEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ReverseEnd()}{ReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_abc0c21b3e1404bbbc0ea2f4d44020b5d}{C\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+C\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a56dc9af2d256198d8df92154adbda4ea}\label{class_common_1_1_t_vector_a56dc9af2d256198d8df92154adbda4ea}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeAt@{SafeAt}}
+\index{SafeAt@{SafeAt}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeAt()}{SafeAt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index }\end{DoxyParamCaption})}
+
+
+
+\mbox{[}\mbox{]} with range check. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a0a1784efec9a7c23eee1c024c3b73f18}\label{class_common_1_1_t_vector_a0a1784efec9a7c23eee1c024c3b73f18}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeAt@{SafeAt}}
+\index{SafeAt@{SafeAt}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeAt()}{SafeAt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+At (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_adcde95defa55d50bbd2aa889fc0632ad}\label{class_common_1_1_t_vector_adcde95defa55d50bbd2aa889fc0632ad}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeBack@{SafeBack}}
+\index{SafeBack@{SafeBack}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeBack()}{SafeBack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a79ad5cf5cabca33285e267595700edbb}{Back()}} with range check. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_acf25672d9a2be8530f3d59536a8cc55a}\label{class_common_1_1_t_vector_acf25672d9a2be8530f3d59536a8cc55a}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeBack@{SafeBack}}
+\index{SafeBack@{SafeBack}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeBack()}{SafeBack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_adcde95defa55d50bbd2aa889fc0632ad}{Safe\+Back()}} for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_ac99e39a82ba80e52d5d32000b679ef3d}\label{class_common_1_1_t_vector_ac99e39a82ba80e52d5d32000b679ef3d}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeBegin@{SafeBegin}}
+\index{SafeBegin@{SafeBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeBegin()}{SafeBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_ab0376e0a629ec7afa97bcbcb274db1e0}\label{class_common_1_1_t_vector_ab0376e0a629ec7afa97bcbcb274db1e0}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeConstBegin@{SafeConstBegin}}
+\index{SafeConstBegin@{SafeConstBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstBegin()}{SafeConstBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Const\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a6eca58c21a6dcf351198541e9d062785}\label{class_common_1_1_t_vector_a6eca58c21a6dcf351198541e9d062785}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeConstEnd@{SafeConstEnd}}
+\index{SafeConstEnd@{SafeConstEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstEnd()}{SafeConstEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a87927820350f8bc80ac7ad41cc97753a}{C\+Safe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Const\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a7867f17103c8ad7c97c1a02d1e91ae93}\label{class_common_1_1_t_vector_a7867f17103c8ad7c97c1a02d1e91ae93}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeConstReverseBegin@{SafeConstReverseBegin}}
+\index{SafeConstReverseBegin@{SafeConstReverseBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstReverseBegin()}{SafeConstReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Const\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe reverse iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Const\+Reverse\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_adb49407670de6b064203103198c25fb1}\label{class_common_1_1_t_vector_adb49407670de6b064203103198c25fb1}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeConstReverseEnd@{SafeConstReverseEnd}}
+\index{SafeConstReverseEnd@{SafeConstReverseEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstReverseEnd()}{SafeConstReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a903eca6362843ebacffd6b63ae85b5db}{C\+Safe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Const\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe reverse it. pointing to elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Const\+Reverse\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_acb4f534420bd80b50faeba5dfc7b4195}\label{class_common_1_1_t_vector_acb4f534420bd80b50faeba5dfc7b4195}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeEnd@{SafeEnd}}
+\index{SafeEnd@{SafeEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeEnd()}{SafeEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_ab3a5ce0edf70da5e5d94bbc280f140cb}{C\+Safe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a038ce8266736da3ea9999be8c7d388ca}\label{class_common_1_1_t_vector_a038ce8266736da3ea9999be8c7d388ca}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeFront@{SafeFront}}
+\index{SafeFront@{SafeFront}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeFront()}{SafeFront()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}{Front()}} with range check. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a9edc2a3851d07627f333c4ff1d5f9aa7}\label{class_common_1_1_t_vector_a9edc2a3851d07627f333c4ff1d5f9aa7}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeFront@{SafeFront}}
+\index{SafeFront@{SafeFront}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeFront()}{SafeFront()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a038ce8266736da3ea9999be8c7d388ca}{Safe\+Front()}} for const vectors. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a8930b8690ca6ac278b78f44df731cdc6}\label{class_common_1_1_t_vector_a8930b8690ca6ac278b78f44df731cdc6}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafePop@{SafePop}}
+\index{SafePop@{SafePop}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafePop()}{SafePop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Pop (\begin{DoxyParamCaption}\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a07d3006c13efa25dc0abf1d1f55d1092}{Pop()}} with range check. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a7cbc34f370a123b70406dce5c9e4f7f0}\label{class_common_1_1_t_vector_a7cbc34f370a123b70406dce5c9e4f7f0}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeReverseBegin@{SafeReverseBegin}}
+\index{SafeReverseBegin@{SafeReverseBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeReverseBegin()}{SafeReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe reverse iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a1e75dd85282a98d1001961adece43616}\label{class_common_1_1_t_vector_a1e75dd85282a98d1001961adece43616}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeReverseEnd@{SafeReverseEnd}}
+\index{SafeReverseEnd@{SafeReverseEnd}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeReverseEnd()}{SafeReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_vector_a0344a8c164afdf2d7ba66c07be804f79}{C\+Safe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe reverse iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+C\+Safe\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_aba9bb87bd0d8367d341904b90915425c}\label{class_common_1_1_t_vector_aba9bb87bd0d8367d341904b90915425c}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SafeShift@{SafeShift}}
+\index{SafeShift@{SafeShift}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeShift()}{SafeShift()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Safe\+Shift (\begin{DoxyParamCaption}\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_vector_a6bebae24de311966508f2e60e744987c}{Shift()}} with range check. 
+
+\mbox{\Hypertarget{class_common_1_1_t_vector_a49e1cd83803d7579f8e3febbaff17f2b}\label{class_common_1_1_t_vector_a49e1cd83803d7579f8e3febbaff17f2b}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!SetCapacityRule@{SetCapacityRule}}
+\index{SetCapacityRule@{SetCapacityRule}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetCapacityRule()}{SetCapacityRule()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Set\+Capacity\+Rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_vector_a519da74235c0cc6e30868e3aaf24f1d9}{E\+Reserved\+Capacity\+Rule}}}]{Capacity\+Rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Set enum value that will describe how re-\/allocation works when elements are added / removed from vertor. Reallocation on removal happens only if bool b\+Allow\+Auto\+Shrink was passed with supported operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Capacity\+Rule} & Preset value from E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If b\+Allow\+Auto\+Shrink was passed with operation, size that you have manually reserved may also be deallocated 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a6bebae24de311966508f2e60e744987c}\label{class_common_1_1_t_vector_a6bebae24de311966508f2e60e744987c}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Shift@{Shift}}
+\index{Shift@{Shift}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Shift()}{Shift()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Shift (\begin{DoxyParamCaption}\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes one element from the beginning of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Allow\+Auto\+Shrink} & Optional. Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Removed element (by value) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a5ccce21ef8696b9729eca027b2455a0f}\label{class_common_1_1_t_vector_a5ccce21ef8696b9729eca027b2455a0f}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ShiftMultiple@{ShiftMultiple}}
+\index{ShiftMultiple@{ShiftMultiple}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ShiftMultiple()}{ShiftMultiple()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Shift\+Multiple (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Elements\+Count,  }\item[{bool}]{b\+Allow\+Auto\+Shrink = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Removes N elements from the beginning of vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Elements\+Count} & Number of elements to be removed \\
+\hline
+{\em b\+Allow\+Auto\+Shrink} & Enables auto shrink according to the capacity rule. See\+: E\+Reserved\+Capacity\+Rule \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If Elements\+Count $>$= Size, clears vector 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}\label{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ShrinkToFit@{ShrinkToFit}}
+\index{ShrinkToFit@{ShrinkToFit}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ShrinkToFit()}{ShrinkToFit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Shrink\+To\+Fit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears memory that was reserved for future use. 
+
+\begin{DoxySeeAlso}{See also}
+Methods that can reserve memory\+: push(), reserve(), etc. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_common_1_1_t_vector_a1237537b0f430dc5b82043a527185dc3}\label{class_common_1_1_t_vector_a1237537b0f430dc5b82043a527185dc3}} 
+\index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Vector1,  }\item[{\mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}$<$ T $>$ \&}]{Vector2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [noexcept]}}
+
+
+
+Swaps two vectors internally without deep copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vector1} & First vector \\
+\hline
+{\em Vector2} & Second vector \\
+\hline
+\end{DoxyParams}

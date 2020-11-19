@@ -1,0 +1,149 @@
+\hypertarget{class_common_1_1_t_optional}{}\doxysection{Common\+::T\+Optional$<$ T $>$ Class Template Reference}
+\label{class_common_1_1_t_optional}\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+
+
+Represents object that may not exist.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Common\+Types/\+Optional.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}{T\+Optional}} ()=default
+\begin{DoxyCompactList}\small\item\em No object by default. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}{T\+Optional}} (const T \&Value) noexcept
+\begin{DoxyCompactList}\small\item\em Initialize optional with existing value (copy). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}{Set\+Value}} (const T \&Value) noexcept
+\begin{DoxyCompactList}\small\item\em Set value to optional (copy). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}{operator=}} (const T \&Value) noexcept
+\begin{DoxyCompactList}\small\item\em Set value to the optional (copy). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}{Value\+Exists}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Check if optional has value. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}{Get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets value if it exists or throws an exception. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_optional_ae15f3cfc76592dcbbf89994833c2e32d}{Get\+Value\+Or}} (const T \&Other\+Variant) const noexcept
+\begin{DoxyCompactList}\small\item\em Get value or passed value (if not possible) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Common\+::\+T\+Optional$<$ T $>$}
+
+Represents object that may not exist. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}\label{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
+\index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+No object by default. 
+
+\mbox{\Hypertarget{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}\label{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
+\index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}} (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Initialize optional with existing value (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Object to create copy from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}\label{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets value if it exists or throws an exception. 
+
+\begin{DoxyReturn}{Returns}
+Optional\textquotesingle{}s value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_ae15f3cfc76592dcbbf89994833c2e32d}\label{class_common_1_1_t_optional_ae15f3cfc76592dcbbf89994833c2e32d}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!GetValueOr@{GetValueOr}}
+\index{GetValueOr@{GetValueOr}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetValueOr()}{GetValueOr()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Get\+Value\+Or (\begin{DoxyParamCaption}\item[{const T \&}]{Other\+Variant }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Get value or passed value (if not possible) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other\+Variant} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Optional value or provided value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}\label{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Set value to the optional (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Object to create copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this optional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}\label{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Set\+Value (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Set value to optional (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Object to create copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}\label{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!ValueExists@{ValueExists}}
+\index{ValueExists@{ValueExists}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ValueExists()}{ValueExists()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Value\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Check if optional has value. 
+
+\begin{DoxyReturn}{Returns}
+True if value exists 
+\end{DoxyReturn}
