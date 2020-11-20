@@ -257,9 +257,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8787ec26793a93cb9f1dfe3da108a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_1_1_t_vector.html#aa8787ec26793a93cb9f1dfe3da108a21">ShrinkToFit</a> ()</td></tr>
 <tr class="memdesc:aa8787ec26793a93cb9f1dfe3da108a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears memory that was reserved for future use.  <a href="class_common_1_1_t_vector.html#aa8787ec26793a93cb9f1dfe3da108a21">More...</a><br /></td></tr>
 <tr class="separator:aa8787ec26793a93cb9f1dfe3da108a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad259dad057dfe4b0bf91be678fd19152"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_1_1_t_vector.html#ad259dad057dfe4b0bf91be678fd19152">Clear</a> ()</td></tr>
-<tr class="memdesc:ad259dad057dfe4b0bf91be678fd19152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements from the vector.  <a href="class_common_1_1_t_vector.html#ad259dad057dfe4b0bf91be678fd19152">More...</a><br /></td></tr>
-<tr class="separator:ad259dad057dfe4b0bf91be678fd19152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d8ea8716f37c92564f7461e7eb43c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_1_1_t_vector.html#ae6d8ea8716f37c92564f7461e7eb43c9">Clear</a> (bool bDoFreeMemory=false)</td></tr>
+<tr class="memdesc:ae6d8ea8716f37c92564f7461e7eb43c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements from the vector.  <a href="class_common_1_1_t_vector.html#ae6d8ea8716f37c92564f7461e7eb43c9">More...</a><br /></td></tr>
+<tr class="separator:ae6d8ea8716f37c92564f7461e7eb43c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab369d828bdc8322133940541b4f9c9f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_1_1_t_vector.html#ab369d828bdc8322133940541b4f9c9f8">GetSize</a> () const noexcept</td></tr>
 <tr class="memdesc:ab369d828bdc8322133940541b4f9c9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size is number of elements that you can use.  <a href="class_common_1_1_t_vector.html#ab369d828bdc8322133940541b4f9c9f8">More...</a><br /></td></tr>
 <tr class="separator:ab369d828bdc8322133940541b4f9c9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1187,8 +1187,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ad259dad057dfe4b0bf91be678fd19152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad259dad057dfe4b0bf91be678fd19152">&#9670;&nbsp;</a></span>Clear()</h2>
+<a id="ae6d8ea8716f37c92564f7461e7eb43c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6d8ea8716f37c92564f7461e7eb43c9">&#9670;&nbsp;</a></span>Clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1198,13 +1198,21 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="class_common_1_1_t_vector.html">Common::TVector</a>&lt; T &gt;::Clear </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDoFreeMemory</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Removes all elements from the vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bDoForceDelete</td><td>If set to true, will also update capacity. otherwise, actual delete operation will not be called </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>Set bool to true if you really want to free memory. </dd></dl>
 
 </div>
 </div>
@@ -1471,7 +1479,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If Position is greater than max index, does nothing. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This method removes one element. To remove multiple, use <a class="el" href="class_common_1_1_t_vector.html#aa5fec059588a4ce275c5a02ad8a8135d" title="Removes range of elements from vector.">EraseMultiple()</a>. Your code with such a mistake will be compiled because of optional bool param. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method removes one element. To remove multiple, use <a class="el" href="class_common_1_1_t_vector.html#aa5fec059588a4ce275c5a02ad8a8135d" title="Removes range of elements from vector.">EraseMultiple()</a>. Your code with such a mistake will be compiled because of optional bool param. </dd></dl>
 
 </div>
 </div>
@@ -1519,7 +1527,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Ignores elements at unavailable positions. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This method removes multiple elements. To remove one, use <a class="el" href="class_common_1_1_t_vector.html#a2726e32a3100881be46a26f33f0a77f0" title="Removes element with specified position.">Erase()</a>. Your code with such a mistake will be compiled because of optional bool param. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>This method removes multiple elements. To remove one, use <a class="el" href="class_common_1_1_t_vector.html#a2726e32a3100881be46a26f33f0a77f0" title="Removes element with specified position.">Erase()</a>. Your code with such a mistake will be compiled because of optional bool param. </dd></dl>
 
 </div>
 </div>

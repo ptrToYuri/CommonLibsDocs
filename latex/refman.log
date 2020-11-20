@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  19 NOV 2020 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  20 NOV 2020 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -997,7 +997,7 @@ Underfull \hbox (badness 10000) detected at line 180
 Chapter 6.
 (./class_common_1_1_c_does_not_exist.tex <./class_common_1_1_c_does_not_exist.p
 df>
-<class_common_1_1_c_does_not_exist.pdf, id=1064, 501.875pt x 255.73543pt>
+<class_common_1_1_c_does_not_exist.pdf, id=1071, 501.875pt x 255.73543pt>
 File: class_common_1_1_c_does_not_exist.pdf Graphic file (type pdf)
 <use class_common_1_1_c_does_not_exist.pdf>
 Package pdftex.def Info: class_common_1_1_c_does_not_exist.pdf  used on input l
@@ -1011,7 +1011,7 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
 ) (./class_common_1_1_c_exception.tex <./class_common_1_1_c_exception.pdf>
-<class_common_1_1_c_exception.pdf, id=1080, 501.875pt x 127.8677pt>
+<class_common_1_1_c_exception.pdf, id=1087, 501.875pt x 127.8677pt>
 File: class_common_1_1_c_exception.pdf Graphic file (type pdf)
 <use class_common_1_1_c_exception.pdf>
 Package pdftex.def Info: class_common_1_1_c_exception.pdf  used on input line 1
@@ -1030,20 +1030,13 @@ Underfull \hbox (badness 10000) detected at line 75
 
 ) (./class_common_1_1_c_out_of_range.tex <./class_common_1_1_c_out_of_range.pdf
 >
-<class_common_1_1_c_out_of_range.pdf, id=1102, 501.875pt x 262.4204pt>
+<class_common_1_1_c_out_of_range.pdf, id=1109, 501.875pt x 262.4204pt>
 File: class_common_1_1_c_out_of_range.pdf Graphic file (type pdf)
 <use class_common_1_1_c_out_of_range.pdf>
 Package pdftex.def Info: class_common_1_1_c_out_of_range.pdf  used on input lin
 e 15.
 (pdftex.def)             Requested size: 108.82764pt x 56.9055pt.
-
-Underfull \hbox (badness 2818) in paragraph at lines 23--24
-[][] \T1/phv/m/n/10 (const char $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 const [], 
-int [], const []$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 size[]_[]t, size[]_[]t $\OM
-L/cmm/m/it/10 >$
- []
-
-[15]
+ [15]
 Underfull \hbox (badness 10000) detected at line 57
 [][][]
  []
@@ -1218,245 +1211,259 @@ Underfull \hbox (badness 10000) detected at line 584
 [][][]
  []
 
-[33]
-Underfull \hbox (badness 10000) detected at line 653
-[][][]
- []
-
-[34]
-Underfull \hbox (badness 10000) detected at line 667
+[33] [34]
+Underfull \hbox (badness 10000) detected at line 647
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 681
+Underfull \hbox (badness 10000) detected at line 661
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 695
+Underfull \hbox (badness 10000) detected at line 675
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 689
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 703
 [][][]
  []
 
 [35]
-Underfull \hbox (badness 10000) detected at line 731
+Underfull \hbox (badness 10000) detected at line 739
 [][][]
  []
 
 [36]
-Underfull \hbox (badness 10000) detected at line 774
+Underfull \hbox (badness 10000) detected at line 782
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 777
+Underfull \hbox (badness 10000) detected at line 785
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 800
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \hbox (badness 10000) detected at line 808
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 803
+Underfull \hbox (badness 10000) detected at line 811
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 817
-[][][]
- []
-
-[37]
-Underfull \hbox (badness 10000) detected at line 820
+Underfull \hbox (badness 10000) detected at line 825
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 845
+Underfull \hbox (badness 10000) detected at line 828
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 859
+Underfull \hbox (badness 10000) detected at line 853
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 862
+Underfull \hbox (badness 10000) detected at line 867
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 876
+Underfull \hbox (badness 10000) detected at line 870
 [][][]
  []
 
 [38]
-Underfull \hbox (badness 10000) detected at line 899
+Underfull \hbox (badness 10000) detected at line 884
+[][][]
+ []
+
+[39]
+Underfull \hbox (badness 10000) detected at line 907
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--909
+Underfull \hbox (badness 10000) in paragraph at lines 914--917
 |  \T1/pcr/m/n/8 typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 
 !std[]::is[]_[]integral$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Iterator[]Type $\OML/c
 mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
 \OMS/cmsy/m/n/8 ^^C$  \T1/pcr/m/sl/8 = 0
  []
 
-[39]
-Underfull \hbox (badness 10000) detected at line 930
+
+Underfull \hbox (badness 10000) detected at line 938
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 944
+Underfull \hbox (badness 10000) detected at line 952
 [][][]
  []
 
 [40]
-Underfull \hbox (badness 10000) detected at line 974
+Underfull \hbox (badness 10000) detected at line 982
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 993
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1012
+Underfull \hbox (badness 10000) detected at line 1001
 [][][]
  []
 
 [41]
-Underfull \hbox (badness 10000) detected at line 1031
+Underfull \hbox (badness 10000) detected at line 1020
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1034
+Underfull \hbox (badness 10000) detected at line 1039
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1053
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1056
+Underfull \hbox (badness 10000) detected at line 1042
 [][][]
  []
 
 [42]
-Underfull \hbox (badness 10000) detected at line 1086
+Underfull \hbox (badness 10000) detected at line 1061
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1089
+Underfull \hbox (badness 10000) detected at line 1064
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1110
+Underfull \hbox (badness 10000) detected at line 1094
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1097
 [][][]
  []
 
 [43]
-Underfull \hbox (badness 10000) detected at line 1129
+Underfull \hbox (badness 10000) detected at line 1118
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1178
-[][][]
- []
-
-[44] [45]
-Underfull \hbox (badness 10000) detected at line 1241
+Underfull \hbox (badness 10000) detected at line 1137
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1244
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \hbox (badness 10000) detected at line 1186
+[][][]
+ []
+
+[45]
+Underfull \hbox (badness 10000) detected at line 1249
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1278
+Underfull \hbox (badness 10000) detected at line 1252
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1292
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \hbox (badness 10000) detected at line 1286
 [][][]
  []
 
-[46]
-Underfull \hbox (badness 10000) detected at line 1346
-[][][]
- []
 
-
-Underfull \hbox (badness 10000) detected at line 1360
+Underfull \hbox (badness 10000) detected at line 1300
 [][][]
  []
 
 [47]
-Underfull \hbox (badness 10000) detected at line 1374
+Underfull \hbox (badness 10000) detected at line 1354
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1388
+Underfull \hbox (badness 10000) detected at line 1368
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1402
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1416
+Underfull \hbox (badness 10000) detected at line 1382
 [][][]
  []
 
 [48]
-Underfull \hbox (badness 10000) detected at line 1463
+Underfull \hbox (badness 10000) detected at line 1396
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1477
+Underfull \hbox (badness 10000) detected at line 1410
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1424
 [][][]
  []
 
 [49]
-Underfull \hbox (badness 10000) detected at line 1507
+Underfull \hbox (badness 10000) detected at line 1471
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1485
 [][][]
  []
 
 [50]
-Underfull \hbox (badness 10000) detected at line 1526
+Underfull \hbox (badness 10000) detected at line 1515
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1547
+Underfull \hbox (badness 10000) detected at line 1534
+[][][]
+ []
+
+[51]
+Underfull \hbox (badness 10000) detected at line 1555
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1561
+Underfull \hbox (badness 10000) detected at line 1569
 [][][]
  []
 
-[51]) [52]
+) [52]
 Chapter 7.
 (./_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
@@ -1470,7 +1477,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 ) (./_pair_8h.tex [53
 
-]) (./_vector_8tpp.tex) (./_vector_iterators_8tpp.tex)
+]) (./_block_iterator_8tpp.tex) (./_vector_8tpp.tex)
 (./_vector_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
@@ -1491,7 +1498,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[55]) (./_raw_string_8h.tex)
+[55]) (./_raw_string_8h.tex) (./_code_analysis_result_manifest_8txt.tex)
 (./_common_libs_8vcxproj_8_file_list_absolute_8txt.tex) [56] (./refman.ind
 [57
 
@@ -1499,13 +1506,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 ] [58] [59]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 0CB285BE7223FFE4ECD6126ADB5FDC45;36410.
+(rerunfilecheck)             Checksum: 9E86312E99AC25658F7699FDA1A246B9;36766.
  ) 
 Here is how much of TeX's memory you used:
- 17537 strings out of 479485
- 274889 string characters out of 5865982
- 625155 words of memory out of 5000000
- 33715 multiletter control sequences out of 15000+600000
+ 17547 strings out of 479485
+ 275147 string characters out of 5865982
+ 625746 words of memory out of 5000000
+ 33719 multiletter control sequences out of 15000+600000
  598703 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,16n,115p,788b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1526,10 +1533,10 @@ uhvb8a.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/helv
 etic/uhvb8ac.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/ur
 w/helvetic/uhvr8a.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (67 pages, 282522 bytes).
+Output written on refman.pdf (67 pages, 283365 bytes).
 PDF statistics:
- 2287 PDF objects out of 2487 (max. 8388607)
- 2174 compressed objects within 22 object streams
- 464 named destinations out of 1000 (max. 500000)
- 1416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2293 PDF objects out of 2487 (max. 8388607)
+ 2180 compressed objects within 22 object streams
+ 467 named destinations out of 1000 (max. 500000)
+ 1424 words of extra memory for PDF output out of 10000 (max. 10000000)
 

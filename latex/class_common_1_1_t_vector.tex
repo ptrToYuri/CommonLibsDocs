@@ -110,7 +110,7 @@ void \mbox{\hyperlink{class_common_1_1_t_vector_a60f6c69c7451b622aca89e24cf81ec6
 \begin{DoxyCompactList}\small\item\em Changes size of vector. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_common_1_1_t_vector_aa8787ec26793a93cb9f1dfe3da108a21}{Shrink\+To\+Fit}} ()
 \begin{DoxyCompactList}\small\item\em Clears memory that was reserved for future use. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}{Clear}} ()
+void \mbox{\hyperlink{class_common_1_1_t_vector_ae6d8ea8716f37c92564f7461e7eb43c9}{Clear}} (bool b\+Do\+Free\+Memory=false)
 \begin{DoxyCompactList}\small\item\em Removes all elements from the vector. \end{DoxyCompactList}\item 
 size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_vector_ab369d828bdc8322133940541b4f9c9f8}{Get\+Size}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Size is number of elements that you can use. \end{DoxyCompactList}\item 
@@ -628,17 +628,25 @@ C\+Iterator iterator
 
 \mbox{\hyperlink{class_common_1_1_t_vector_a2424af5eaa1d4c38c5df07466c37b2bb}{Const\+End()}} alias (for compatibity) 
 
-\mbox{\Hypertarget{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}\label{class_common_1_1_t_vector_ad259dad057dfe4b0bf91be678fd19152}} 
+\mbox{\Hypertarget{class_common_1_1_t_vector_ae6d8ea8716f37c92564f7461e7eb43c9}\label{class_common_1_1_t_vector_ae6d8ea8716f37c92564f7461e7eb43c9}} 
 \index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Clear@{Clear}}
 \index{Clear@{Clear}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+void \mbox{\hyperlink{class_common_1_1_t_vector}{Common\+::\+T\+Vector}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}\item[{bool}]{b\+Do\+Free\+Memory = {\ttfamily false} }\end{DoxyParamCaption})}
 
 
 
 Removes all elements from the vector. 
 
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Do\+Force\+Delete} & If set to true, will also update capacity. otherwise, actual delete operation will not be called \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Set bool to true if you really want to free memory. 
+\end{DoxyAttention}
 \mbox{\Hypertarget{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}\label{class_common_1_1_t_vector_a0e1fd9f1ecb757f61e9d6ffb6a63a8fb}} 
 \index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!ConstBegin@{ConstBegin}}
 \index{ConstBegin@{ConstBegin}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
@@ -774,9 +782,9 @@ Removes element with specified position.
 \begin{DoxyNote}{Note}
 If Position is greater than max index, does nothing. 
 \end{DoxyNote}
-\begin{DoxyWarning}{Warning}
+\begin{DoxyAttention}{Attention}
 This method removes one element. To remove multiple, use \mbox{\hyperlink{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}{Erase\+Multiple()}}. Your code with such a mistake will be compiled because of optional bool param. 
-\end{DoxyWarning}
+\end{DoxyAttention}
 \mbox{\Hypertarget{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}\label{class_common_1_1_t_vector_aa5fec059588a4ce275c5a02ad8a8135d}} 
 \index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!EraseMultiple@{EraseMultiple}}
 \index{EraseMultiple@{EraseMultiple}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}
@@ -800,9 +808,9 @@ Removes range of elements from vector.
 \begin{DoxyNote}{Note}
 Ignores elements at unavailable positions. 
 \end{DoxyNote}
-\begin{DoxyWarning}{Warning}
+\begin{DoxyAttention}{Attention}
 This method removes multiple elements. To remove one, use \mbox{\hyperlink{class_common_1_1_t_vector_a2726e32a3100881be46a26f33f0a77f0}{Erase()}}. Your code with such a mistake will be compiled because of optional bool param. 
-\end{DoxyWarning}
+\end{DoxyAttention}
 \mbox{\Hypertarget{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}\label{class_common_1_1_t_vector_a5c58ce64e0c1556c4cbb008ce477ce6e}} 
 \index{Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}!Front@{Front}}
 \index{Front@{Front}!Common::TVector$<$ T $>$@{Common::TVector$<$ T $>$}}

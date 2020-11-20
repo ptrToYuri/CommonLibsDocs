@@ -128,28 +128,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a13c1fbdc92d146783301a7a1c4b4a975"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_common.html#a13c1fbdc92d146783301a7a1c4b4a975">GetIteratorDistance</a> (IteratorType Begin, IteratorType End)</td></tr>
 <tr class="memdesc:a13c1fbdc92d146783301a7a1c4b4a975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts elements between two iterators. Range: [Begin: End)  <a href="namespace_common.html#a13c1fbdc92d146783301a7a1c4b4a975">More...</a><br /></td></tr>
 <tr class="separator:a13c1fbdc92d146783301a7a1c4b4a975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addfb3a9701818cc518916763508c72db"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#addfb3a9701818cc518916763508c72db">GetRawStringLength</a> (const char *const NullTermString)</td></tr>
-<tr class="memdesc:addfb3a9701818cc518916763508c72db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates length of the C-string.  <a href="namespace_common.html#addfb3a9701818cc518916763508c72db">More...</a><br /></td></tr>
-<tr class="separator:addfb3a9701818cc518916763508c72db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7426e26ef8a3023a9e595764ee2c55c6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a7426e26ef8a3023a9e595764ee2c55c6">GetRawStringLength</a> (const char *const NullTermString, size_t MaxLength)</td></tr>
-<tr class="memdesc:a7426e26ef8a3023a9e595764ee2c55c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates length of the C-string. Stops when null character is reached or MaxLength elements have been counted. Useful with malformatted input.  <a href="namespace_common.html#a7426e26ef8a3023a9e595764ee2c55c6">More...</a><br /></td></tr>
-<tr class="separator:a7426e26ef8a3023a9e595764ee2c55c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44378309dbe31f188f59bcdad13667e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a44378309dbe31f188f59bcdad13667e7">CopyRawString</a> (const char *const NullTermStringFrom, char *const RawStringTo)</td></tr>
-<tr class="memdesc:a44378309dbe31f188f59bcdad13667e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the copy of C-style string (ended with '\0').  <a href="namespace_common.html#a44378309dbe31f188f59bcdad13667e7">More...</a><br /></td></tr>
-<tr class="separator:a44378309dbe31f188f59bcdad13667e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e4ee92fe73357b11dcc0341b43dff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#ac9e4ee92fe73357b11dcc0341b43dff3">CopyRawString</a> (const char *const NullTermStringFrom, char *const RawStringTo, size_t MaxLength)</td></tr>
-<tr class="memdesc:ac9e4ee92fe73357b11dcc0341b43dff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the copy of C-style string. Stops when null character is reached or MaxLength elements have been copied. Useful when string should be cut.  <a href="namespace_common.html#ac9e4ee92fe73357b11dcc0341b43dff3">More...</a><br /></td></tr>
-<tr class="separator:ac9e4ee92fe73357b11dcc0341b43dff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd1554dc1a8e0e5c419a1c7750f75e7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#abd1554dc1a8e0e5c419a1c7750f75e7d">AreRawStringsEqual</a> (const char *const NullTermString1, const char *const NullTermString2)</td></tr>
-<tr class="memdesc:abd1554dc1a8e0e5c419a1c7750f75e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether two C-style strings are equal.  <a href="namespace_common.html#abd1554dc1a8e0e5c419a1c7750f75e7d">More...</a><br /></td></tr>
-<tr class="separator:abd1554dc1a8e0e5c419a1c7750f75e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada4a51bc0ee26f0d92566667c0694412"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#ada4a51bc0ee26f0d92566667c0694412">AreRawStringsEqual</a> (const char *const NullTermString1, const char *const NullTermString2, size_t MaxCompareLength)</td></tr>
-<tr class="memdesc:ada4a51bc0ee26f0d92566667c0694412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether two C-style strings are equal. Use this to compare N first elements, even if strings are not null-terminated.  <a href="namespace_common.html#ada4a51bc0ee26f0d92566667c0694412">More...</a><br /></td></tr>
-<tr class="separator:ada4a51bc0ee26f0d92566667c0694412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48135767b49723cc707edb3c983f19bc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a48135767b49723cc707edb3c983f19bc">GetRawStringLength</a> (const char *NullTermString)</td></tr>
+<tr class="memdesc:a48135767b49723cc707edb3c983f19bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates length of the C-string.  <a href="namespace_common.html#a48135767b49723cc707edb3c983f19bc">More...</a><br /></td></tr>
+<tr class="separator:a48135767b49723cc707edb3c983f19bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af086bd9d76130aa103039e7c4a6e46eb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#af086bd9d76130aa103039e7c4a6e46eb">GetRawStringLength</a> (const char *NullTermString, size_t MaxLength)</td></tr>
+<tr class="memdesc:af086bd9d76130aa103039e7c4a6e46eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates length of the C-string. Stops when null character is reached or MaxLength elements have been counted. Useful with malformatted input.  <a href="namespace_common.html#af086bd9d76130aa103039e7c4a6e46eb">More...</a><br /></td></tr>
+<tr class="separator:af086bd9d76130aa103039e7c4a6e46eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c5b9479559bec9bdbbcc8814b3dc8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a50c5b9479559bec9bdbbcc8814b3dc8b">CopyRawString</a> (const char *NullTermStringFrom, char *const RawStringTo)</td></tr>
+<tr class="memdesc:a50c5b9479559bec9bdbbcc8814b3dc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the copy of C-style string (ended with '\0').  <a href="namespace_common.html#a50c5b9479559bec9bdbbcc8814b3dc8b">More...</a><br /></td></tr>
+<tr class="separator:a50c5b9479559bec9bdbbcc8814b3dc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6b1a9cb6b139054327a5de9bf97dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a0a6b1a9cb6b139054327a5de9bf97dcd">CopyRawString</a> (const char *NullTermStringFrom, char *RawStringTo, size_t MaxLength)</td></tr>
+<tr class="memdesc:a0a6b1a9cb6b139054327a5de9bf97dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the copy of C-style string. Stops when null character is reached or MaxLength elements have been copied. Useful when string should be cut.  <a href="namespace_common.html#a0a6b1a9cb6b139054327a5de9bf97dcd">More...</a><br /></td></tr>
+<tr class="separator:a0a6b1a9cb6b139054327a5de9bf97dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11d3055bcf8c58203f8da5c9bc92ec1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#ab11d3055bcf8c58203f8da5c9bc92ec1">AreRawStringsEqual</a> (const char *NullTermString1, const char *NullTermString2)</td></tr>
+<tr class="memdesc:ab11d3055bcf8c58203f8da5c9bc92ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether two C-style strings are equal.  <a href="namespace_common.html#ab11d3055bcf8c58203f8da5c9bc92ec1">More...</a><br /></td></tr>
+<tr class="separator:ab11d3055bcf8c58203f8da5c9bc92ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434656e76107e1b974921eb2738d7d40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_common.html#a434656e76107e1b974921eb2738d7d40">AreRawStringsEqual</a> (const char *NullTermString1, const char *NullTermString2, size_t MaxCompareLength)</td></tr>
+<tr class="memdesc:a434656e76107e1b974921eb2738d7d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether two C-style strings are equal. Use this to compare N first elements, even if strings are not null-terminated.  <a href="namespace_common.html#a434656e76107e1b974921eb2738d7d40">More...</a><br /></td></tr>
+<tr class="separator:a434656e76107e1b974921eb2738d7d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abd1554dc1a8e0e5c419a1c7750f75e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd1554dc1a8e0e5c419a1c7750f75e7d">&#9670;&nbsp;</a></span>AreRawStringsEqual() <span class="overload">[1/2]</span></h2>
+<a id="ab11d3055bcf8c58203f8da5c9bc92ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11d3055bcf8c58203f8da5c9bc92ec1">&#9670;&nbsp;</a></span>AreRawStringsEqual() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,13 +157,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool Common::AreRawStringsEqual </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString2</em>&#160;</td>
         </tr>
         <tr>
@@ -186,8 +186,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada4a51bc0ee26f0d92566667c0694412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada4a51bc0ee26f0d92566667c0694412">&#9670;&nbsp;</a></span>AreRawStringsEqual() <span class="overload">[2/2]</span></h2>
+<a id="a434656e76107e1b974921eb2738d7d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434656e76107e1b974921eb2738d7d40">&#9670;&nbsp;</a></span>AreRawStringsEqual() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,13 +195,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool Common::AreRawStringsEqual </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString2</em>, </td>
         </tr>
         <tr>
@@ -231,8 +231,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a44378309dbe31f188f59bcdad13667e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44378309dbe31f188f59bcdad13667e7">&#9670;&nbsp;</a></span>CopyRawString() <span class="overload">[1/2]</span></h2>
+<a id="a50c5b9479559bec9bdbbcc8814b3dc8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c5b9479559bec9bdbbcc8814b3dc8b">&#9670;&nbsp;</a></span>CopyRawString() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Common::CopyRawString </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermStringFrom</em>, </td>
         </tr>
         <tr>
@@ -268,8 +268,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac9e4ee92fe73357b11dcc0341b43dff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e4ee92fe73357b11dcc0341b43dff3">&#9670;&nbsp;</a></span>CopyRawString() <span class="overload">[2/2]</span></h2>
+<a id="a0a6b1a9cb6b139054327a5de9bf97dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6b1a9cb6b139054327a5de9bf97dcd">&#9670;&nbsp;</a></span>CopyRawString() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,13 +277,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void Common::CopyRawString </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermStringFrom</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *const&#160;</td>
+          <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>RawStringTo</em>, </td>
         </tr>
         <tr>
@@ -359,8 +359,8 @@ template&lt;typename IteratorType &gt; </div>
 
 </div>
 </div>
-<a id="addfb3a9701818cc518916763508c72db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addfb3a9701818cc518916763508c72db">&#9670;&nbsp;</a></span>GetRawStringLength() <span class="overload">[1/2]</span></h2>
+<a id="a48135767b49723cc707edb3c983f19bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48135767b49723cc707edb3c983f19bc">&#9670;&nbsp;</a></span>GetRawStringLength() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +368,7 @@ template&lt;typename IteratorType &gt; </div>
         <tr>
           <td class="memname">size_t Common::GetRawStringLength </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString</em></td><td>)</td>
           <td></td>
         </tr>
@@ -386,8 +386,8 @@ template&lt;typename IteratorType &gt; </div>
 
 </div>
 </div>
-<a id="a7426e26ef8a3023a9e595764ee2c55c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7426e26ef8a3023a9e595764ee2c55c6">&#9670;&nbsp;</a></span>GetRawStringLength() <span class="overload">[2/2]</span></h2>
+<a id="af086bd9d76130aa103039e7c4a6e46eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af086bd9d76130aa103039e7c4a6e46eb">&#9670;&nbsp;</a></span>GetRawStringLength() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -395,7 +395,7 @@ template&lt;typename IteratorType &gt; </div>
         <tr>
           <td class="memname">size_t Common::GetRawStringLength </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>NullTermString</em>, </td>
         </tr>
         <tr>

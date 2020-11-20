@@ -100,70 +100,70 @@
 \contentsline {subsubsection}{\numberline {6.6.5.11}ConstBegin()}{35}{subsubsection.6.6.5.11}%
 \contentsline {subsubsection}{\numberline {6.6.5.12}ConstEnd()}{35}{subsubsection.6.6.5.12}%
 \contentsline {subsubsection}{\numberline {6.6.5.13}ConstReverseBegin()}{35}{subsubsection.6.6.5.13}%
-\contentsline {subsubsection}{\numberline {6.6.5.14}ConstReverseEnd()}{35}{subsubsection.6.6.5.14}%
+\contentsline {subsubsection}{\numberline {6.6.5.14}ConstReverseEnd()}{36}{subsubsection.6.6.5.14}%
 \contentsline {subsubsection}{\numberline {6.6.5.15}crbegin()}{36}{subsubsection.6.6.5.15}%
 \contentsline {subsubsection}{\numberline {6.6.5.16}crend()}{36}{subsubsection.6.6.5.16}%
 \contentsline {subsubsection}{\numberline {6.6.5.17}End()}{36}{subsubsection.6.6.5.17}%
 \contentsline {subsubsection}{\numberline {6.6.5.18}end()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{36}{subsubsection.6.6.5.18}%
-\contentsline {subsubsection}{\numberline {6.6.5.19}end()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{36}{subsubsection.6.6.5.19}%
-\contentsline {subsubsection}{\numberline {6.6.5.20}Erase()}{36}{subsubsection.6.6.5.20}%
+\contentsline {subsubsection}{\numberline {6.6.5.19}end()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{37}{subsubsection.6.6.5.19}%
+\contentsline {subsubsection}{\numberline {6.6.5.20}Erase()}{37}{subsubsection.6.6.5.20}%
 \contentsline {subsubsection}{\numberline {6.6.5.21}EraseMultiple()}{37}{subsubsection.6.6.5.21}%
-\contentsline {subsubsection}{\numberline {6.6.5.22}Front()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{37}{subsubsection.6.6.5.22}%
+\contentsline {subsubsection}{\numberline {6.6.5.22}Front()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{38}{subsubsection.6.6.5.22}%
 \contentsline {subsubsection}{\numberline {6.6.5.23}Front()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{38}{subsubsection.6.6.5.23}%
 \contentsline {subsubsection}{\numberline {6.6.5.24}GetCapacity()}{38}{subsubsection.6.6.5.24}%
-\contentsline {subsubsection}{\numberline {6.6.5.25}GetCapacityRule()}{38}{subsubsection.6.6.5.25}%
+\contentsline {subsubsection}{\numberline {6.6.5.25}GetCapacityRule()}{39}{subsubsection.6.6.5.25}%
 \contentsline {subsubsection}{\numberline {6.6.5.26}GetSize()}{39}{subsubsection.6.6.5.26}%
 \contentsline {subsubsection}{\numberline {6.6.5.27}Insert()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{39}{subsubsection.6.6.5.27}%
-\contentsline {subsubsection}{\numberline {6.6.5.28}Insert()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{39}{subsubsection.6.6.5.28}%
+\contentsline {subsubsection}{\numberline {6.6.5.28}Insert()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{40}{subsubsection.6.6.5.28}%
 \contentsline {subsubsection}{\numberline {6.6.5.29}IsEmpty()}{40}{subsubsection.6.6.5.29}%
-\contentsline {subsubsection}{\numberline {6.6.5.30}operator"!=()}{40}{subsubsection.6.6.5.30}%
-\contentsline {subsubsection}{\numberline {6.6.5.31}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{40}{subsubsection.6.6.5.31}%
+\contentsline {subsubsection}{\numberline {6.6.5.30}operator"!=()}{41}{subsubsection.6.6.5.30}%
+\contentsline {subsubsection}{\numberline {6.6.5.31}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{41}{subsubsection.6.6.5.31}%
 \contentsline {subsubsection}{\numberline {6.6.5.32}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{41}{subsubsection.6.6.5.32}%
 \contentsline {subsubsection}{\numberline {6.6.5.33}operator=()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{41}{subsubsection.6.6.5.33}%
 \contentsline {subsubsection}{\numberline {6.6.5.34}operator==()}{42}{subsubsection.6.6.5.34}%
 \contentsline {subsubsection}{\numberline {6.6.5.35}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{42}{subsubsection.6.6.5.35}%
-\contentsline {subsubsection}{\numberline {6.6.5.36}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{42}{subsubsection.6.6.5.36}%
+\contentsline {subsubsection}{\numberline {6.6.5.36}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{43}{subsubsection.6.6.5.36}%
 \contentsline {subsubsection}{\numberline {6.6.5.37}Pop()}{43}{subsubsection.6.6.5.37}%
 \contentsline {subsubsection}{\numberline {6.6.5.38}PopMultiple()}{43}{subsubsection.6.6.5.38}%
-\contentsline {subsubsection}{\numberline {6.6.5.39}Push()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{43}{subsubsection.6.6.5.39}%
+\contentsline {subsubsection}{\numberline {6.6.5.39}Push()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{44}{subsubsection.6.6.5.39}%
 \contentsline {subsubsection}{\numberline {6.6.5.40}Push()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{44}{subsubsection.6.6.5.40}%
-\contentsline {subsubsection}{\numberline {6.6.5.41}RawData()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{44}{subsubsection.6.6.5.41}%
-\contentsline {subsubsection}{\numberline {6.6.5.42}RawData()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{44}{subsubsection.6.6.5.42}%
+\contentsline {subsubsection}{\numberline {6.6.5.41}RawData()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{45}{subsubsection.6.6.5.41}%
+\contentsline {subsubsection}{\numberline {6.6.5.42}RawData()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{45}{subsubsection.6.6.5.42}%
 \contentsline {subsubsection}{\numberline {6.6.5.43}rbegin()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{45}{subsubsection.6.6.5.43}%
 \contentsline {subsubsection}{\numberline {6.6.5.44}rbegin()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{45}{subsubsection.6.6.5.44}%
 \contentsline {subsubsection}{\numberline {6.6.5.45}rend()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{45}{subsubsection.6.6.5.45}%
-\contentsline {subsubsection}{\numberline {6.6.5.46}rend()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{45}{subsubsection.6.6.5.46}%
-\contentsline {subsubsection}{\numberline {6.6.5.47}Reserve()}{45}{subsubsection.6.6.5.47}%
+\contentsline {subsubsection}{\numberline {6.6.5.46}rend()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{46}{subsubsection.6.6.5.46}%
+\contentsline {subsubsection}{\numberline {6.6.5.47}Reserve()}{46}{subsubsection.6.6.5.47}%
 \contentsline {subsubsection}{\numberline {6.6.5.48}Resize()}{46}{subsubsection.6.6.5.48}%
-\contentsline {subsubsection}{\numberline {6.6.5.49}ReverseBegin()}{46}{subsubsection.6.6.5.49}%
-\contentsline {subsubsection}{\numberline {6.6.5.50}ReverseEnd()}{46}{subsubsection.6.6.5.50}%
+\contentsline {subsubsection}{\numberline {6.6.5.49}ReverseBegin()}{47}{subsubsection.6.6.5.49}%
+\contentsline {subsubsection}{\numberline {6.6.5.50}ReverseEnd()}{47}{subsubsection.6.6.5.50}%
 \contentsline {subsubsection}{\numberline {6.6.5.51}SafeAt()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{47}{subsubsection.6.6.5.51}%
 \contentsline {subsubsection}{\numberline {6.6.5.52}SafeAt()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{47}{subsubsection.6.6.5.52}%
-\contentsline {subsubsection}{\numberline {6.6.5.53}SafeBack()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{47}{subsubsection.6.6.5.53}%
-\contentsline {subsubsection}{\numberline {6.6.5.54}SafeBack()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{47}{subsubsection.6.6.5.54}%
-\contentsline {subsubsection}{\numberline {6.6.5.55}SafeBegin()}{47}{subsubsection.6.6.5.55}%
+\contentsline {subsubsection}{\numberline {6.6.5.53}SafeBack()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{48}{subsubsection.6.6.5.53}%
+\contentsline {subsubsection}{\numberline {6.6.5.54}SafeBack()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{48}{subsubsection.6.6.5.54}%
+\contentsline {subsubsection}{\numberline {6.6.5.55}SafeBegin()}{48}{subsubsection.6.6.5.55}%
 \contentsline {subsubsection}{\numberline {6.6.5.56}SafeConstBegin()}{48}{subsubsection.6.6.5.56}%
-\contentsline {subsubsection}{\numberline {6.6.5.57}SafeConstEnd()}{48}{subsubsection.6.6.5.57}%
-\contentsline {subsubsection}{\numberline {6.6.5.58}SafeConstReverseBegin()}{48}{subsubsection.6.6.5.58}%
-\contentsline {subsubsection}{\numberline {6.6.5.59}SafeConstReverseEnd()}{48}{subsubsection.6.6.5.59}%
+\contentsline {subsubsection}{\numberline {6.6.5.57}SafeConstEnd()}{49}{subsubsection.6.6.5.57}%
+\contentsline {subsubsection}{\numberline {6.6.5.58}SafeConstReverseBegin()}{49}{subsubsection.6.6.5.58}%
+\contentsline {subsubsection}{\numberline {6.6.5.59}SafeConstReverseEnd()}{49}{subsubsection.6.6.5.59}%
 \contentsline {subsubsection}{\numberline {6.6.5.60}SafeEnd()}{49}{subsubsection.6.6.5.60}%
-\contentsline {subsubsection}{\numberline {6.6.5.61}SafeFront()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{49}{subsubsection.6.6.5.61}%
-\contentsline {subsubsection}{\numberline {6.6.5.62}SafeFront()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{49}{subsubsection.6.6.5.62}%
-\contentsline {subsubsection}{\numberline {6.6.5.63}SafePop()}{49}{subsubsection.6.6.5.63}%
-\contentsline {subsubsection}{\numberline {6.6.5.64}SafeReverseBegin()}{49}{subsubsection.6.6.5.64}%
+\contentsline {subsubsection}{\numberline {6.6.5.61}SafeFront()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{50}{subsubsection.6.6.5.61}%
+\contentsline {subsubsection}{\numberline {6.6.5.62}SafeFront()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{50}{subsubsection.6.6.5.62}%
+\contentsline {subsubsection}{\numberline {6.6.5.63}SafePop()}{50}{subsubsection.6.6.5.63}%
+\contentsline {subsubsection}{\numberline {6.6.5.64}SafeReverseBegin()}{50}{subsubsection.6.6.5.64}%
 \contentsline {subsubsection}{\numberline {6.6.5.65}SafeReverseEnd()}{50}{subsubsection.6.6.5.65}%
-\contentsline {subsubsection}{\numberline {6.6.5.66}SafeShift()}{50}{subsubsection.6.6.5.66}%
-\contentsline {subsubsection}{\numberline {6.6.5.67}SetCapacityRule()}{50}{subsubsection.6.6.5.67}%
-\contentsline {subsubsection}{\numberline {6.6.5.68}Shift()}{50}{subsubsection.6.6.5.68}%
-\contentsline {subsubsection}{\numberline {6.6.5.69}ShiftMultiple()}{51}{subsubsection.6.6.5.69}%
-\contentsline {subsubsection}{\numberline {6.6.5.70}ShrinkToFit()}{51}{subsubsection.6.6.5.70}%
-\contentsline {subsubsection}{\numberline {6.6.5.71}Swap()}{51}{subsubsection.6.6.5.71}%
+\contentsline {subsubsection}{\numberline {6.6.5.66}SafeShift()}{51}{subsubsection.6.6.5.66}%
+\contentsline {subsubsection}{\numberline {6.6.5.67}SetCapacityRule()}{51}{subsubsection.6.6.5.67}%
+\contentsline {subsubsection}{\numberline {6.6.5.68}Shift()}{51}{subsubsection.6.6.5.68}%
+\contentsline {subsubsection}{\numberline {6.6.5.69}ShiftMultiple()}{52}{subsubsection.6.6.5.69}%
+\contentsline {subsubsection}{\numberline {6.6.5.70}ShrinkToFit()}{52}{subsubsection.6.6.5.70}%
+\contentsline {subsubsection}{\numberline {6.6.5.71}Swap()}{52}{subsubsection.6.6.5.71}%
 \contentsline {chapter}{\numberline {7}File Documentation}{53}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.h File Reference}{53}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Optional.h File Reference}{53}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pair.h File Reference}{54}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vector.tpp File Reference}{54}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Iterators.tpp File Reference}{54}{section.7.5}%
+\contentsline {section}{\numberline {7.4}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Block\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Iterator.tpp File Reference}{54}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vector.tpp File Reference}{54}{section.7.5}%
 \contentsline {section}{\numberline {7.6}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Types/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vector.h File Reference}{54}{section.7.6}%
 \contentsline {section}{\numberline {7.7}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Advanced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Iteration.h File Reference}{54}{section.7.7}%
 \contentsline {section}{\numberline {7.8}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assert.h File Reference}{55}{section.7.8}%
@@ -172,5 +172,6 @@
 \contentsline {section}{\numberline {7.9}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Advanced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Iteration.tpp File Reference}{55}{section.7.9}%
 \contentsline {section}{\numberline {7.10}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Private/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Raw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.cpp File Reference}{55}{section.7.10}%
 \contentsline {section}{\numberline {7.11}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Utils/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Raw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String.h File Reference}{56}{section.7.11}%
-\contentsline {section}{\numberline {7.12}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Libs.vcxproj.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Absolute.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt File Reference}{56}{section.7.12}%
+\contentsline {section}{\numberline {7.12}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Code\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Analysis\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Manifest.txt File Reference}{56}{section.7.12}%
+\contentsline {section}{\numberline {7.13}x64/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Common\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Libs.vcxproj.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Absolute.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}txt File Reference}{56}{section.7.13}%
 \contentsline {chapter}{Index}{57}{section*.36}%

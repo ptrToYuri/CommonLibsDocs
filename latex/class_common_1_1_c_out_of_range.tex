@@ -18,9 +18,9 @@ Inheritance diagram for Common\+::C\+Out\+Of\+Range\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_common_1_1_c_out_of_range_a858b30cef40a0f01048966a315e5aaac}{C\+Out\+Of\+Range}} (const char $\ast$const \mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}}) noexcept
+\mbox{\hyperlink{class_common_1_1_c_out_of_range_a183a3255abe761d37279fb8c8254e83d}{C\+Out\+Of\+Range}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}}) noexcept
 \begin{DoxyCompactList}\small\item\em Pass only message, if other properties cannot be specified. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_common_1_1_c_out_of_range_a6599506cd47808a8f5a1ace69e1ddd04}{C\+Out\+Of\+Range}} (const char $\ast$const \mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}}, int \mbox{\hyperlink{class_common_1_1_c_out_of_range_a29b079728893ed1311d9cef60c5df99b}{Requested\+Index}}, const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+\_\+t $>$ \&\mbox{\hyperlink{class_common_1_1_c_out_of_range_a4f8e34b8626cad635fff3039b6c9ed25}{Expected\+Index}}) noexcept
+\mbox{\hyperlink{class_common_1_1_c_out_of_range_a766c3aef8c5c26b5ceab30cb99c38c5b}{C\+Out\+Of\+Range}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}}, int \mbox{\hyperlink{class_common_1_1_c_out_of_range_a29b079728893ed1311d9cef60c5df99b}{Requested\+Index}}, const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+\_\+t $>$ \&\mbox{\hyperlink{class_common_1_1_c_out_of_range_a4f8e34b8626cad635fff3039b6c9ed25}{Expected\+Index}}) noexcept
 \begin{DoxyCompactList}\small\item\em Describes valid range and errored value. Contains message. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+\_\+t $>$ \& \mbox{\hyperlink{class_common_1_1_c_out_of_range_a203572b4a82d33d9153059d3f9d69fbb}{Get\+Expected\+Range}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Specifies valid range. \end{DoxyCompactList}\item 
@@ -39,11 +39,11 @@ const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+
 Represents \char`\"{}\+Out of Range\char`\"{} error. Can hold message, requested and expected indices. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_common_1_1_c_out_of_range_a858b30cef40a0f01048966a315e5aaac}\label{class_common_1_1_c_out_of_range_a858b30cef40a0f01048966a315e5aaac}} 
+\mbox{\Hypertarget{class_common_1_1_c_out_of_range_a183a3255abe761d37279fb8c8254e83d}\label{class_common_1_1_c_out_of_range_a183a3255abe761d37279fb8c8254e83d}} 
 \index{Common::COutOfRange@{Common::COutOfRange}!COutOfRange@{COutOfRange}}
 \index{COutOfRange@{COutOfRange}!Common::COutOfRange@{Common::COutOfRange}}
 \doxysubsubsection{\texorpdfstring{COutOfRange()}{COutOfRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Common\+::\+C\+Out\+Of\+Range\+::\+C\+Out\+Of\+Range (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily Common\+::\+C\+Out\+Of\+Range\+::\+C\+Out\+Of\+Range (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
@@ -59,11 +59,11 @@ Range will be set to empty \mbox{[}0\+: 0), requested index to 0.
 
 If length of message $>$ 40, first 40 symbols will be saved. 
 \end{DoxyNote}
-\mbox{\Hypertarget{class_common_1_1_c_out_of_range_a6599506cd47808a8f5a1ace69e1ddd04}\label{class_common_1_1_c_out_of_range_a6599506cd47808a8f5a1ace69e1ddd04}} 
+\mbox{\Hypertarget{class_common_1_1_c_out_of_range_a766c3aef8c5c26b5ceab30cb99c38c5b}\label{class_common_1_1_c_out_of_range_a766c3aef8c5c26b5ceab30cb99c38c5b}} 
 \index{Common::COutOfRange@{Common::COutOfRange}!COutOfRange@{COutOfRange}}
 \index{COutOfRange@{COutOfRange}!Common::COutOfRange@{Common::COutOfRange}}
 \doxysubsubsection{\texorpdfstring{COutOfRange()}{COutOfRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Common\+::\+C\+Out\+Of\+Range\+::\+C\+Out\+Of\+Range (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{Message,  }\item[{int}]{Requested\+Index,  }\item[{const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+\_\+t $>$ \&}]{Expected\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily Common\+::\+C\+Out\+Of\+Range\+::\+C\+Out\+Of\+Range (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message,  }\item[{int}]{Requested\+Index,  }\item[{const \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ size\+\_\+t, size\+\_\+t $>$ \&}]{Expected\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
