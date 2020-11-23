@@ -9,9 +9,7 @@ var dir_c2d05fee98459b5e6b5c475753344854 =
     [ "Optional.h", "_optional_8h.html", [
       [ "TOptional", "class_common_1_1_t_optional.html", "class_common_1_1_t_optional" ]
     ] ],
-    [ "Pair.h", "_pair_8h.html", [
-      [ "TPair", "class_common_1_1_t_pair.html", "class_common_1_1_t_pair" ]
-    ] ],
+    [ "Pair.h", "_pair_8h.html", "_pair_8h" ],
     [ "Vector.h", "_vector_8h.html", [
       [ "TVector", "class_common_1_1_t_vector.html", "class_common_1_1_t_vector" ]
     ] ]

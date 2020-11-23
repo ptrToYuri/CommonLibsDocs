@@ -214,6 +214,9 @@ If the logical result of operation may not be determined, there are two methods\
 
 May throw std\+::bad\+\_\+alloc if allocation fails. Allocation failure in assignment operations will cause the vector to be cleared (as you intended to remove old elements anyway). If allocation fails in insertions, resize, push/pop, etc. -\/ vector will stay in the previous state. 
 \end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+Containing type must provide a default (or empty) constructor. This will be fixed in the future. 
+\end{DoxyAttention}
 
 
 \doxysubsection{Member Typedef Documentation}

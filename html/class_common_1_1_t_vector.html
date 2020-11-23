@@ -399,6 +399,7 @@ class Common::TVector&lt; T &gt;</h3>
 <dl class="section note"><dt>Note</dt><dd>If the logical result of operation may not be determined, there are two methods: one that throws an exception ("Safe" prefix) and another one that does assertion in debug mode. Custom exception is <a class="el" href="class_common_1_1_c_out_of_range.html" title="Represents &quot;Out of Range&quot; error. Can hold message, requested and expected indices.">COutOfRange</a>, derived from <a class="el" href="class_common_1_1_c_exception.html" title="Basic exception class. C-style message is required.">CException</a></dd>
 <dd>
 May throw std::bad_alloc if allocation fails. Allocation failure in assignment operations will cause the vector to be cleared (as you intended to remove old elements anyway). If allocation fails in insertions, resize, push/pop, etc. - vector will stay in the previous state. </dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Containing type must provide a default (or empty) constructor. This will be fixed in the future. </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae0cbcdf3adbfe67697fdf44d86e6f24d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0cbcdf3adbfe67697fdf44d86e6f24d">&#9670;&nbsp;</a></span>CConstIterator</h2>

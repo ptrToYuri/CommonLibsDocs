@@ -123,15 +123,25 @@ $(document).ready(function(){initNavTree('_pair_8h_source.html',''); initResizab
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_common_1_1_t_pair.html#a490c7ca990480a5d09c93cd879c7af5a">   40</a></span>&#160;        T1 <a class="code" href="class_common_1_1_t_pair.html#a490c7ca990480a5d09c93cd879c7af5a">First</a> = T1();</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_common_1_1_t_pair.html#a65a3f0e3115dc385d14dbf34ebd660ec">   42</a></span>&#160;        T2 <a class="code" href="class_common_1_1_t_pair.html#a65a3f0e3115dc385d14dbf34ebd660ec">Second</a> = T2();</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_common_1_1_t_pair.html#a490c7ca990480a5d09c93cd879c7af5a">   40</a></span>&#160;        T1 <a class="code" href="class_common_1_1_t_pair.html#a490c7ca990480a5d09c93cd879c7af5a">First</a> = T1{};</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_common_1_1_t_pair.html#a65a3f0e3115dc385d14dbf34ebd660ec">   42</a></span>&#160;        T2 <a class="code" href="class_common_1_1_t_pair.html#a65a3f0e3115dc385d14dbf34ebd660ec">Second</a> = T2{};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespace_common.html#ac767690c597f8dc4d175533919f7d215">   49</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_common_1_1_t_pair.html">TPair&lt;T1, T2&gt;</a> <a class="code" href="namespace_common.html#ac767690c597f8dc4d175533919f7d215">MakePair</a>(<span class="keyword">const</span> T1&amp; First,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> T2&amp; Second) noexcept</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_common_1_1_t_pair.html">TPair&lt;T1, T2&gt;</a>(First, Second);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_common_1_1_t_pair_html_a65a3f0e3115dc385d14dbf34ebd660ec"><div class="ttname"><a href="class_common_1_1_t_pair.html#a65a3f0e3115dc385d14dbf34ebd660ec">Common::TPair::Second</a></div><div class="ttdeci">T2 Second</div><div class="ttdoc">Second value in pair.</div><div class="ttdef"><b>Definition:</b> Pair.h:42</div></div>
+<div class="ttc" id="anamespace_common_html_ac767690c597f8dc4d175533919f7d215"><div class="ttname"><a href="namespace_common.html#ac767690c597f8dc4d175533919f7d215">Common::MakePair</a></div><div class="ttdeci">TPair&lt; T1, T2 &gt; MakePair(const T1 &amp;First, const T2 &amp;Second) noexcept</div><div class="ttdef"><b>Definition:</b> Pair.h:49</div></div>
 <div class="ttc" id="aclass_common_1_1_t_pair_html_aa43df9085731ab64c07f260736fbbd43"><div class="ttname"><a href="class_common_1_1_t_pair.html#aa43df9085731ab64c07f260736fbbd43">Common::TPair::TPair</a></div><div class="ttdeci">TPair(const T1 &amp;First, const T2 &amp;Second) noexcept</div><div class="ttdoc">Creates a pair copying passed values.</div><div class="ttdef"><b>Definition:</b> Pair.h:23</div></div>
 <div class="ttc" id="aclass_common_1_1_t_pair_html_a415a3bbd99efab16703b9352468002df"><div class="ttname"><a href="class_common_1_1_t_pair.html#a415a3bbd99efab16703b9352468002df">Common::TPair::TPair</a></div><div class="ttdeci">TPair()=default</div><div class="ttdoc">Initialize pair with type default values.</div></div>
 <div class="ttc" id="aclass_common_1_1_t_pair_html_a490c7ca990480a5d09c93cd879c7af5a"><div class="ttname"><a href="class_common_1_1_t_pair.html#a490c7ca990480a5d09c93cd879c7af5a">Common::TPair::First</a></div><div class="ttdeci">T1 First</div><div class="ttdoc">First value in pair.</div><div class="ttdef"><b>Definition:</b> Pair.h:40</div></div>
