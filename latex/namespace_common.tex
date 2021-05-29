@@ -1,27 +1,62 @@
 \hypertarget{namespace_common}{}\doxysection{Common Namespace Reference}
 \label{namespace_common}\index{Common@{Common}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_common_1_1_iterators}{Iterators}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{class_common_1_1_c_does_not_exist}{C\+Does\+Not\+Exist}}
-\begin{DoxyCompactList}\small\item\em Represents \char`\"{}\+Element does not exist\char`\"{} error. Stores message. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_common_1_1_c_exception}{C\+Exception}}
+class \mbox{\hyperlink{class_common_1_1_c_exception}{CException}}
 \begin{DoxyCompactList}\small\item\em Basic exception class. C-\/style message is required. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_common_1_1_c_out_of_range}{C\+Out\+Of\+Range}}
+class \mbox{\hyperlink{class_common_1_1_c_out_of_range}{COut\+Of\+Range}}
 \begin{DoxyCompactList}\small\item\em Represents \char`\"{}\+Out of Range\char`\"{} error. Can hold message, requested and expected indices. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}
+class \mbox{\hyperlink{class_common_1_1_c_bad_alloc}{CBad\+Alloc}}
+\begin{DoxyCompactList}\small\item\em Represents allocation failed error (usually rethrown from new) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_c_does_not_exist}{CDoes\+Not\+Exist}}
+\begin{DoxyCompactList}\small\item\em Represents \char`\"{}\+Element does not exist\char`\"{} error. Stores message. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}
 \begin{DoxyCompactList}\small\item\em Represents object that may not exist. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}
-\begin{DoxyCompactList}\small\item\em Represents a pair of objects. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{class_common_1_1_t_vector}{T\+Vector}}
-\begin{DoxyCompactList}\small\item\em Container representing array that can change its size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{class_common_1_1_t_pair}{TPair}}
+\begin{DoxyCompactList}\small\item\em Container that represents a pair of objects. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}}
+\begin{DoxyCompactList}\small\item\em Container representing array that can change its size. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_common_1_1_remove_reference}{Remove\+Reference}}
+\item 
+struct \mbox{\hyperlink{struct_common_1_1_remove_reference_3_01_t_01_6_01_4}{Remove\+Reference$<$ T \& $>$}}
+\item 
+struct \mbox{\hyperlink{struct_common_1_1_remove_reference_3_01_t_01_6_6_01_4}{Remove\+Reference$<$ T \&\& $>$}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$ T1, T2 $>$ \mbox{\hyperlink{namespace_common_ac767690c597f8dc4d175533919f7d215}{Make\+Pair}} (const T1 \&First, const T2 \&Second) noexcept
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\\mbox{\hyperlink{class_common_1_1_t_pair}{TPair}}$<$ T1, T2 $>$ \mbox{\hyperlink{namespace_common_ac767690c597f8dc4d175533919f7d215}{Make\+Pair}} (const T1 \&First, const T2 \&Second) noexcept
 \item 
 {\footnotesize template$<$typename Iterator\+Type $>$ }\\size\+\_\+t \mbox{\hyperlink{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}{Get\+Iterator\+Distance}} (Iterator\+Type Begin, Iterator\+Type End)
 \begin{DoxyCompactList}\small\item\em Counts elements between two iterators. Range\+: \mbox{[}Begin\+: End) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a8efd01a228351016a526c702e46cd907}{Allocate}} (size\+\_\+t New\+Size, T $\ast$\&Out\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a5d64f3b64f8ff64734ee910d467f58ac}{Deallocate}} (T $\ast$\&Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a2be471ab3500a00b02f9ad063ebb45ad}{Construct}} (size\+\_\+t Index, T $\ast$Out\+Buffer, const T \&Value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a34f5d0ceed687296a8c49a6474f21df3}{Destruct}} (size\+\_\+t Index, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a1b9615a7bb09c3a8296ede9ecc3193cc}{Destruct\+Range}} (size\+\_\+t From, size\+\_\+t To, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a6074d217289c099285c7bd5b40300934}{Destruct\+All}} (size\+\_\+t Size, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a969ae2ba6ab06274634d7e6bf248f9a7}{Safe\+Move\+Block}} (size\+\_\+t Size, T $\ast$From\+Buffer, T $\ast$To\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_aaaa2432103657bec639bed2fa85c267c}{Safe\+Move\+Block\+Reverse}} (size\+\_\+t Size, T $\ast$From\+Buffer, T $\ast$To\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a85300a00935a75aedee9531e2d56eff8}{Reconstruct}} (size\+\_\+t Copy\+Size, size\+\_\+t New\+Capacity, T $\ast$\&Out\+Buffer, size\+\_\+t \&Out\+Capacity, size\+\_\+t \&Out\+Size)
+\item 
+{\footnotesize template$<$typename Iterator\+Type , typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a867141d056e10b3b8898598f558373e7}{Safe\+Bulk\+Construct}} (size\+\_\+t Start\+Position, Iterator\+Type From, Iterator\+Type To, T $\ast$Out\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a981b94e60c2cbe31ae0fe31e7db08908}{Safe\+Fill\+Construct}} (size\+\_\+t Start\+Position, size\+\_\+t End\+Position, T $\ast$Out\+Buffer, const T \&Value)
+\item 
 size\+\_\+t \mbox{\hyperlink{namespace_common_a48135767b49723cc707edb3c983f19bc}{Get\+Raw\+String\+Length}} (const char $\ast$Null\+Term\+String)
 \begin{DoxyCompactList}\small\item\em Calculates length of the C-\/string. \end{DoxyCompactList}\item 
 size\+\_\+t \mbox{\hyperlink{namespace_common_af086bd9d76130aa103039e7c4a6e46eb}{Get\+Raw\+String\+Length}} (const char $\ast$Null\+Term\+String, size\+\_\+t Max\+Length)
@@ -33,10 +68,207 @@ void \mbox{\hyperlink{namespace_common_a0a6b1a9cb6b139054327a5de9bf97dcd}{Copy\+
 bool \mbox{\hyperlink{namespace_common_ab11d3055bcf8c58203f8da5c9bc92ec1}{Are\+Raw\+Strings\+Equal}} (const char $\ast$Null\+Term\+String1, const char $\ast$Null\+Term\+String2)
 \begin{DoxyCompactList}\small\item\em Checks whether two C-\/style strings are equal. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{namespace_common_a434656e76107e1b974921eb2738d7d40}{Are\+Raw\+Strings\+Equal}} (const char $\ast$Null\+Term\+String1, const char $\ast$Null\+Term\+String2, size\+\_\+t Max\+Compare\+Length)
-\begin{DoxyCompactList}\small\item\em Checks whether two C-\/style strings are equal. Use this to compare N first elements, even if strings are not null-\/terminated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks whether two C-\/style strings are equal. Use this to compare N first elements, even if strings are not null-\/terminated. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type , typename Function\+Type $>$ }\\void \mbox{\hyperlink{namespace_common_ad2a7c14311b1fa4e719684040c3c6659}{Bubble\+Sort}} (Iterator\+Type Begin, Iterator\+Type End, Function\+Type Comparator)
+\item 
+{\footnotesize template$<$typename Iterator\+Type , typename Function\+Type $>$ }\\void \mbox{\hyperlink{namespace_common_a7f20f081c6f396de62ed659d9bb21beb}{Selection\+Sort}} (Iterator\+Type Begin, Iterator\+Type End, Function\+Type Comparator)
+\item 
+{\footnotesize template$<$typename Iterator\+Type , typename Function\+Type $>$ }\\void \mbox{\hyperlink{namespace_common_a7f4c169076d93228e9e82f695ed7b494}{Quick\+Sort}} (Iterator\+Type Begin, Iterator\+Type End, Function\+Type Comparator)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{struct_common_1_1_remove_reference}{Remove\+Reference}}$<$ T $>$\+::Type \&\& \mbox{\hyperlink{namespace_common_a8a1f143ce9525c838cf712fc6be86800}{Move}} (T \&\&Value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a04c8b32eb39941c7a9e3ddf122a33032}{Swap}} (T \&First, T \&Second)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_common_ac767690c597f8dc4d175533919f7d215}\label{namespace_common_ac767690c597f8dc4d175533919f7d215}} 
+\index{Common@{Common}!MakePair@{MakePair}}
+\index{MakePair@{MakePair}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{MakePair()}{MakePair()}}
+{\footnotesize\ttfamily template$<$typename T1 , typename T2 $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_pair}{TPair}}$<$T1, T2$>$ Common\+::\+Make\+Pair (\begin{DoxyParamCaption}\item[{const T1 \&}]{First,  }\item[{const T2 \&}]{Second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}\label{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}} 
+\index{Common@{Common}!GetIteratorDistance@{GetIteratorDistance}}
+\index{GetIteratorDistance@{GetIteratorDistance}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetIteratorDistance()}{GetIteratorDistance()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
+size\+\_\+t Common\+::\+Get\+Iterator\+Distance (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Counts elements between two iterators. Range\+: \mbox{[}Begin\+: End) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between iterators 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Begin must not be greater than end (negative results are not supported) 
+\end{DoxyNote}
+\mbox{\Hypertarget{namespace_common_a8efd01a228351016a526c702e46cd907}\label{namespace_common_a8efd01a228351016a526c702e46cd907}} 
+\index{Common@{Common}!Allocate@{Allocate}}
+\index{Allocate@{Allocate}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Allocate()}{Allocate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Allocate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{New\+Size,  }\item[{T $\ast$\&}]{Out\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespace_common_a5d64f3b64f8ff64734ee910d467f58ac}\label{namespace_common_a5d64f3b64f8ff64734ee910d467f58ac}} 
+\index{Common@{Common}!Deallocate@{Deallocate}}
+\index{Deallocate@{Deallocate}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Deallocate()}{Deallocate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Deallocate (\begin{DoxyParamCaption}\item[{T $\ast$\&}]{Out\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespace_common_a2be471ab3500a00b02f9ad063ebb45ad}\label{namespace_common_a2be471ab3500a00b02f9ad063ebb45ad}} 
+\index{Common@{Common}!Construct@{Construct}}
+\index{Construct@{Construct}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Construct()}{Construct()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Construct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index,  }\item[{T $\ast$}]{Out\+Buffer,  }\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespace_common_a34f5d0ceed687296a8c49a6474f21df3}\label{namespace_common_a34f5d0ceed687296a8c49a6474f21df3}} 
+\index{Common@{Common}!Destruct@{Destruct}}
+\index{Destruct@{Destruct}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Destruct()}{Destruct()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Destruct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Index,  }\item[{T $\ast$}]{Out\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespace_common_a1b9615a7bb09c3a8296ede9ecc3193cc}\label{namespace_common_a1b9615a7bb09c3a8296ede9ecc3193cc}} 
+\index{Common@{Common}!DestructRange@{DestructRange}}
+\index{DestructRange@{DestructRange}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{DestructRange()}{DestructRange()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Destruct\+Range (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{From,  }\item[{size\+\_\+t}]{To,  }\item[{T $\ast$}]{Out\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespace_common_a6074d217289c099285c7bd5b40300934}\label{namespace_common_a6074d217289c099285c7bd5b40300934}} 
+\index{Common@{Common}!DestructAll@{DestructAll}}
+\index{DestructAll@{DestructAll}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{DestructAll()}{DestructAll()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Destruct\+All (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{T $\ast$}]{Out\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{namespace_common_a969ae2ba6ab06274634d7e6bf248f9a7}\label{namespace_common_a969ae2ba6ab06274634d7e6bf248f9a7}} 
+\index{Common@{Common}!SafeMoveBlock@{SafeMoveBlock}}
+\index{SafeMoveBlock@{SafeMoveBlock}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{SafeMoveBlock()}{SafeMoveBlock()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Safe\+Move\+Block (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{T $\ast$}]{From\+Buffer,  }\item[{T $\ast$}]{To\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_common_aaaa2432103657bec639bed2fa85c267c}\label{namespace_common_aaaa2432103657bec639bed2fa85c267c}} 
+\index{Common@{Common}!SafeMoveBlockReverse@{SafeMoveBlockReverse}}
+\index{SafeMoveBlockReverse@{SafeMoveBlockReverse}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{SafeMoveBlockReverse()}{SafeMoveBlockReverse()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Safe\+Move\+Block\+Reverse (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{T $\ast$}]{From\+Buffer,  }\item[{T $\ast$}]{To\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_common_a85300a00935a75aedee9531e2d56eff8}\label{namespace_common_a85300a00935a75aedee9531e2d56eff8}} 
+\index{Common@{Common}!Reconstruct@{Reconstruct}}
+\index{Reconstruct@{Reconstruct}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Reconstruct()}{Reconstruct()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Reconstruct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Copy\+Size,  }\item[{size\+\_\+t}]{New\+Capacity,  }\item[{T $\ast$\&}]{Out\+Buffer,  }\item[{size\+\_\+t \&}]{Out\+Capacity,  }\item[{size\+\_\+t \&}]{Out\+Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_common_a867141d056e10b3b8898598f558373e7}\label{namespace_common_a867141d056e10b3b8898598f558373e7}} 
+\index{Common@{Common}!SafeBulkConstruct@{SafeBulkConstruct}}
+\index{SafeBulkConstruct@{SafeBulkConstruct}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{SafeBulkConstruct()}{SafeBulkConstruct()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type , typename T $>$ \\
+void Common\+::\+Safe\+Bulk\+Construct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Start\+Position,  }\item[{Iterator\+Type}]{From,  }\item[{Iterator\+Type}]{To,  }\item[{T $\ast$}]{Out\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_common_a981b94e60c2cbe31ae0fe31e7db08908}\label{namespace_common_a981b94e60c2cbe31ae0fe31e7db08908}} 
+\index{Common@{Common}!SafeFillConstruct@{SafeFillConstruct}}
+\index{SafeFillConstruct@{SafeFillConstruct}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{SafeFillConstruct()}{SafeFillConstruct()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Safe\+Fill\+Construct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Start\+Position,  }\item[{size\+\_\+t}]{End\+Position,  }\item[{T $\ast$}]{Out\+Buffer,  }\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_common_a48135767b49723cc707edb3c983f19bc}\label{namespace_common_a48135767b49723cc707edb3c983f19bc}} 
+\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
+\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String }\end{DoxyParamCaption})}
+
+
+
+Calculates length of the C-\/string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_common_af086bd9d76130aa103039e7c4a6e46eb}\label{namespace_common_af086bd9d76130aa103039e7c4a6e46eb}} 
+\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
+\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
+
+
+
+Calculates length of the C-\/string. Stops when null character is reached or Max\+Length elements have been counted. Useful with malformatted input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
+\hline
+{\em Max\+Length} & Max amount of characters to count; does not include the trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespace_common_a50c5b9479559bec9bdbbcc8814b3dc8b}\label{namespace_common_a50c5b9479559bec9bdbbcc8814b3dc8b}} 
+\index{Common@{Common}!CopyRawString@{CopyRawString}}
+\index{CopyRawString@{CopyRawString}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String\+From,  }\item[{char $\ast$const}]{Raw\+String\+To }\end{DoxyParamCaption})}
+
+
+
+Does the copy of C-\/style string (ended with \textquotesingle{}\textbackslash{}0\textquotesingle{}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_common_a0a6b1a9cb6b139054327a5de9bf97dcd}\label{namespace_common_a0a6b1a9cb6b139054327a5de9bf97dcd}} 
+\index{Common@{Common}!CopyRawString@{CopyRawString}}
+\index{CopyRawString@{CopyRawString}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String\+From,  }\item[{char $\ast$}]{Raw\+String\+To,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
+
+
+
+Does the copy of C-\/style string. Stops when null character is reached or Max\+Length elements have been copied. Useful when string should be cut. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
+\hline
+{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{}. After copying it gets \textquotesingle{}\textbackslash{}0\textquotesingle{} anyway \\
+\hline
+{\em Max\+Length} & Max amount of characters to copy; does not include trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespace_common_ab11d3055bcf8c58203f8da5c9bc92ec1}\label{namespace_common_ab11d3055bcf8c58203f8da5c9bc92ec1}} 
 \index{Common@{Common}!AreRawStringsEqual@{AreRawStringsEqual}}
 \index{AreRawStringsEqual@{AreRawStringsEqual}!Common@{Common}}
@@ -79,113 +311,38 @@ Checks whether two C-\/style strings are equal. Use this to compare N first elem
 \begin{DoxyReturn}{Returns}
 true if characters before \textquotesingle{}\textbackslash{}0\textquotesingle{} are the same false otherwise 
 \end{DoxyReturn}
-\mbox{\Hypertarget{namespace_common_a50c5b9479559bec9bdbbcc8814b3dc8b}\label{namespace_common_a50c5b9479559bec9bdbbcc8814b3dc8b}} 
-\index{Common@{Common}!CopyRawString@{CopyRawString}}
-\index{CopyRawString@{CopyRawString}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String\+From,  }\item[{char $\ast$const}]{Raw\+String\+To }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespace_common_ad2a7c14311b1fa4e719684040c3c6659}\label{namespace_common_ad2a7c14311b1fa4e719684040c3c6659}} 
+\index{Common@{Common}!BubbleSort@{BubbleSort}}
+\index{BubbleSort@{BubbleSort}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{BubbleSort()}{BubbleSort()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type , typename Function\+Type $>$ \\
+void Common\+::\+Bubble\+Sort (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{Function\+Type}]{Comparator }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{namespace_common_a7f20f081c6f396de62ed659d9bb21beb}\label{namespace_common_a7f20f081c6f396de62ed659d9bb21beb}} 
+\index{Common@{Common}!SelectionSort@{SelectionSort}}
+\index{SelectionSort@{SelectionSort}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{SelectionSort()}{SelectionSort()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type , typename Function\+Type $>$ \\
+void Common\+::\+Selection\+Sort (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{Function\+Type}]{Comparator }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{namespace_common_a7f4c169076d93228e9e82f695ed7b494}\label{namespace_common_a7f4c169076d93228e9e82f695ed7b494}} 
+\index{Common@{Common}!QuickSort@{QuickSort}}
+\index{QuickSort@{QuickSort}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{QuickSort()}{QuickSort()}}
+{\footnotesize\ttfamily template$<$typename Iterator\+Type , typename Function\+Type $>$ \\
+void Common\+::\+Quick\+Sort (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{Function\+Type}]{Comparator }\end{DoxyParamCaption})}
 
-Does the copy of C-\/style string (ended with \textquotesingle{}\textbackslash{}0\textquotesingle{}). 
+\mbox{\Hypertarget{namespace_common_a8a1f143ce9525c838cf712fc6be86800}\label{namespace_common_a8a1f143ce9525c838cf712fc6be86800}} 
+\index{Common@{Common}!Move@{Move}}
+\index{Move@{Move}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{struct_common_1_1_remove_reference}{Remove\+Reference}}$<$T$>$\+::Type\&\& Common\+::\+Move (\begin{DoxyParamCaption}\item[{T \&\&}]{Value }\end{DoxyParamCaption})}
 
-
-\begin{DoxyParams}{Parameters}
-{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
-\hline
-{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{namespace_common_a0a6b1a9cb6b139054327a5de9bf97dcd}\label{namespace_common_a0a6b1a9cb6b139054327a5de9bf97dcd}} 
-\index{Common@{Common}!CopyRawString@{CopyRawString}}
-\index{CopyRawString@{CopyRawString}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{CopyRawString()}{CopyRawString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Common\+::\+Copy\+Raw\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String\+From,  }\item[{char $\ast$}]{Raw\+String\+To,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
-
-
-
-Does the copy of C-\/style string. Stops when null character is reached or Max\+Length elements have been copied. Useful when string should be cut. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Null\+Term\+String\+From} & Source\+: char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
-\hline
-{\em Null\+Term\+String\+To} & Destination\+: Char array that is large enough to receive copied elements. May not end with \textquotesingle{}\textbackslash{}0\textquotesingle{}. After copying it gets \textquotesingle{}\textbackslash{}0\textquotesingle{} anyway \\
-\hline
-{\em Max\+Length} & Max amount of characters to copy; does not include trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}\label{namespace_common_a13c1fbdc92d146783301a7a1c4b4a975}} 
-\index{Common@{Common}!GetIteratorDistance@{GetIteratorDistance}}
-\index{GetIteratorDistance@{GetIteratorDistance}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{GetIteratorDistance()}{GetIteratorDistance()}}
-{\footnotesize\ttfamily template$<$typename Iterator\+Type $>$ \\
-size\+\_\+t Common\+::\+Get\+Iterator\+Distance (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
-
-
-
-Counts elements between two iterators. Range\+: \mbox{[}Begin\+: End) 
-
-
-\begin{DoxyTemplParams}{Template Parameters}
-{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
-\hline
-\end{DoxyTemplParams}
-
-\begin{DoxyParams}{Parameters}
-{\em Begin} & Iterator referring to the first element \\
-\hline
-{\em End} & Iterator referring to the element after last one \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Distance between iterators 
-\end{DoxyReturn}
-\begin{DoxyNote}{Note}
-Begin must not be greater than end (negative results are not supported) 
-\end{DoxyNote}
-\mbox{\Hypertarget{namespace_common_a48135767b49723cc707edb3c983f19bc}\label{namespace_common_a48135767b49723cc707edb3c983f19bc}} 
-\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
-\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String }\end{DoxyParamCaption})}
-
-
-
-Calculates length of the C-\/string. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespace_common_af086bd9d76130aa103039e7c4a6e46eb}\label{namespace_common_af086bd9d76130aa103039e7c4a6e46eb}} 
-\index{Common@{Common}!GetRawStringLength@{GetRawStringLength}}
-\index{GetRawStringLength@{GetRawStringLength}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{GetRawStringLength()}{GetRawStringLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily size\+\_\+t Common\+::\+Get\+Raw\+String\+Length (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Null\+Term\+String,  }\item[{size\+\_\+t}]{Max\+Length }\end{DoxyParamCaption})}
-
-
-
-Calculates length of the C-\/string. Stops when null character is reached or Max\+Length elements have been counted. Useful with malformatted input. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Null\+Term\+String} & Char array that ends with \textquotesingle{}\textbackslash{}0\textquotesingle{} (or not, if you rely on Max\+Length and buffer size) \\
-\hline
-{\em Max\+Length} & Max amount of characters to count; does not include the trailing \textquotesingle{}\textbackslash{}0\textquotesingle{} \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Number of actual letters in string (\textquotesingle{}\textbackslash{}0\textquotesingle{} is not counted) 
-\end{DoxyReturn}
-\mbox{\Hypertarget{namespace_common_ac767690c597f8dc4d175533919f7d215}\label{namespace_common_ac767690c597f8dc4d175533919f7d215}} 
-\index{Common@{Common}!MakePair@{MakePair}}
-\index{MakePair@{MakePair}!Common@{Common}}
-\doxysubsubsection{\texorpdfstring{MakePair()}{MakePair()}}
-{\footnotesize\ttfamily template$<$typename T1 , typename T2 $>$ \\
-\mbox{\hyperlink{class_common_1_1_t_pair}{T\+Pair}}$<$T1, T2$>$ Common\+::\+Make\+Pair (\begin{DoxyParamCaption}\item[{const T1 \&}]{First,  }\item[{const T2 \&}]{Second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+\mbox{\Hypertarget{namespace_common_a04c8b32eb39941c7a9e3ddf122a33032}\label{namespace_common_a04c8b32eb39941c7a9e3ddf122a33032}} 
+\index{Common@{Common}!Swap@{Swap}}
+\index{Swap@{Swap}!Common@{Common}}
+\doxysubsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Common\+::\+Swap (\begin{DoxyParamCaption}\item[{T \&}]{First,  }\item[{T \&}]{Second }\end{DoxyParamCaption})}
 

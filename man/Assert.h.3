@@ -1,0 +1,35 @@
+.TH "CommonUtils/Assert.h" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommonUtils/Assert.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBASSERT\fP(Condition,  Message)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ASSERT(Condition, Message)"
+\fBValue:\fP
+.PP
+.nf
+    do { \
+        if (!(Condition)) { \
+            std::cerr << "ASSERTION (" #Condition ") FAILED in " << __FILE__ \
+                << ", line " << __LINE__ << ": " << (Message) << std::endl; \
+            std::abort(); \
+         } \
+    } while (false)
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

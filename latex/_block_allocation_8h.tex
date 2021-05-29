@@ -1,0 +1,36 @@
+\hypertarget{_block_allocation_8h}{}\doxysection{Common\+Utils/\+Block\+Allocation.h File Reference}
+\label{_block_allocation_8h}\index{CommonUtils/BlockAllocation.h@{CommonUtils/BlockAllocation.h}}
+{\ttfamily \#include $<$new$>$}\newline
+{\ttfamily \#include \char`\"{}./../\+Common\+Types/\+Exception.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Type\+Operations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Private/\+Block\+Allocation.\+tpp\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_common}{Common}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a8efd01a228351016a526c702e46cd907}{Common\+::\+Allocate}} (size\+\_\+t New\+Size, T $\ast$\&Out\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a5d64f3b64f8ff64734ee910d467f58ac}{Common\+::\+Deallocate}} (T $\ast$\&Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a2be471ab3500a00b02f9ad063ebb45ad}{Common\+::\+Construct}} (size\+\_\+t Index, T $\ast$Out\+Buffer, const T \&Value)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a34f5d0ceed687296a8c49a6474f21df3}{Common\+::\+Destruct}} (size\+\_\+t Index, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a1b9615a7bb09c3a8296ede9ecc3193cc}{Common\+::\+Destruct\+Range}} (size\+\_\+t From, size\+\_\+t To, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a6074d217289c099285c7bd5b40300934}{Common\+::\+Destruct\+All}} (size\+\_\+t Size, T $\ast$Out\+Buffer) noexcept
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a969ae2ba6ab06274634d7e6bf248f9a7}{Common\+::\+Safe\+Move\+Block}} (size\+\_\+t Size, T $\ast$From\+Buffer, T $\ast$To\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_aaaa2432103657bec639bed2fa85c267c}{Common\+::\+Safe\+Move\+Block\+Reverse}} (size\+\_\+t Size, T $\ast$From\+Buffer, T $\ast$To\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a85300a00935a75aedee9531e2d56eff8}{Common\+::\+Reconstruct}} (size\+\_\+t Copy\+Size, size\+\_\+t New\+Capacity, T $\ast$\&Out\+Buffer, size\+\_\+t \&Out\+Capacity, size\+\_\+t \&Out\+Size)
+\item 
+{\footnotesize template$<$typename Iterator\+Type , typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a867141d056e10b3b8898598f558373e7}{Common\+::\+Safe\+Bulk\+Construct}} (size\+\_\+t Start\+Position, Iterator\+Type From, Iterator\+Type To, T $\ast$Out\+Buffer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespace_common_a981b94e60c2cbe31ae0fe31e7db08908}{Common\+::\+Safe\+Fill\+Construct}} (size\+\_\+t Start\+Position, size\+\_\+t End\+Position, T $\ast$Out\+Buffer, const T \&Value)
+\end{DoxyCompactItemize}

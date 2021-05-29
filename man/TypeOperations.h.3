@@ -1,0 +1,44 @@
+.TH "CommonUtils/TypeOperations.h" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommonUtils/TypeOperations.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Private/TypeOperations\&.tpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBCommon::RemoveReference< T >\fP"
+.br
+.ti -1c
+.RI "struct \fBCommon::RemoveReference< T & >\fP"
+.br
+.ti -1c
+.RI "struct \fBCommon::RemoveReference< T && >\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCommon\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > RemoveReference< T >::Type && \fBCommon::Move\fP (T &&Value)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::Swap\fP (T &First, T &Second)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

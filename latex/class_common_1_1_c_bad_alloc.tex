@@ -1,0 +1,103 @@
+\hypertarget{class_common_1_1_c_bad_alloc}{}\doxysection{Common\+::CBad\+Alloc Class Reference}
+\label{class_common_1_1_c_bad_alloc}\index{Common::CBadAlloc@{Common::CBadAlloc}}
+
+
+Represents allocation failed error (usually rethrown from new)  
+
+
+
+
+{\ttfamily \#include \char`\"{}Common\+Types/\+Exception.\+h\char`\"{}}
+
+Inheritance diagram for Common\+::CBad\+Alloc\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_common_1_1_c_bad_alloc}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_1_1_c_bad_alloc_ae0a2679f5a8de885ef7b3cab0288f14b}{CBad\+Alloc}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}{Message}}) noexcept
+\begin{DoxyCompactList}\small\item\em Pass only message, if other properties cannot be specified. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_c_bad_alloc_acd5c00f162f732cfef30021e2eb60ef1}{CBad\+Alloc}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}{Message}}, size\+\_\+t \mbox{\hyperlink{class_common_1_1_c_bad_alloc_a4805b5c3d8bd99132fb7f062428eea26}{Requested\+Alloc\+Size}}) noexcept
+\begin{DoxyCompactList}\small\item\em Also specify requested alloc size. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_c_bad_alloc_aa43ae403d7176d1f60aaa87b519ea343}{Get\+Requested\+Alloc\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Size in bytes that was intended to be allocated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const size\+\_\+t \mbox{\hyperlink{class_common_1_1_c_bad_alloc_a4805b5c3d8bd99132fb7f062428eea26}{Requested\+Alloc\+Size}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents allocation failed error (usually rethrown from new) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_common_1_1_c_bad_alloc_ae0a2679f5a8de885ef7b3cab0288f14b}\label{class_common_1_1_c_bad_alloc_ae0a2679f5a8de885ef7b3cab0288f14b}} 
+\index{Common::CBadAlloc@{Common::CBadAlloc}!CBadAlloc@{CBadAlloc}}
+\index{CBadAlloc@{CBadAlloc}!Common::CBadAlloc@{Common::CBadAlloc}}
+\doxysubsubsection{\texorpdfstring{CBadAlloc()}{CBadAlloc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Common\+::\+CBad\+Alloc\+::\+CBad\+Alloc (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Pass only message, if other properties cannot be specified. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Message} & Description. Will be copied to the inner buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If length of message $>$ 47, first 47 symbols will be saved. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_c_bad_alloc_acd5c00f162f732cfef30021e2eb60ef1}\label{class_common_1_1_c_bad_alloc_acd5c00f162f732cfef30021e2eb60ef1}} 
+\index{Common::CBadAlloc@{Common::CBadAlloc}!CBadAlloc@{CBadAlloc}}
+\index{CBadAlloc@{CBadAlloc}!Common::CBadAlloc@{Common::CBadAlloc}}
+\doxysubsubsection{\texorpdfstring{CBadAlloc()}{CBadAlloc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Common\+::\+CBad\+Alloc\+::\+CBad\+Alloc (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message,  }\item[{size\+\_\+t}]{Requested\+Alloc\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+Also specify requested alloc size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Message} & Description. Will be copied to the inner buffer \\
+\hline
+{\em Requested\+Alloc\+Size} & Requested allocation size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_1_1_c_bad_alloc_aa43ae403d7176d1f60aaa87b519ea343}\label{class_common_1_1_c_bad_alloc_aa43ae403d7176d1f60aaa87b519ea343}} 
+\index{Common::CBadAlloc@{Common::CBadAlloc}!GetRequestedAllocSize@{GetRequestedAllocSize}}
+\index{GetRequestedAllocSize@{GetRequestedAllocSize}!Common::CBadAlloc@{Common::CBadAlloc}}
+\doxysubsubsection{\texorpdfstring{GetRequestedAllocSize()}{GetRequestedAllocSize()}}
+{\footnotesize\ttfamily size\+\_\+t Common\+::\+CBad\+Alloc\+::\+Get\+Requested\+Alloc\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Size in bytes that was intended to be allocated. 
+
+\begin{DoxyReturn}{Returns}
+Requested allocation size, that failed 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Returns 0 if constructed only with message. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_common_1_1_c_bad_alloc_a4805b5c3d8bd99132fb7f062428eea26}\label{class_common_1_1_c_bad_alloc_a4805b5c3d8bd99132fb7f062428eea26}} 
+\index{Common::CBadAlloc@{Common::CBadAlloc}!RequestedAllocSize@{RequestedAllocSize}}
+\index{RequestedAllocSize@{RequestedAllocSize}!Common::CBadAlloc@{Common::CBadAlloc}}
+\doxysubsubsection{\texorpdfstring{RequestedAllocSize}{RequestedAllocSize}}
+{\footnotesize\ttfamily const size\+\_\+t Common\+::\+CBad\+Alloc\+::\+Requested\+Alloc\+Size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+

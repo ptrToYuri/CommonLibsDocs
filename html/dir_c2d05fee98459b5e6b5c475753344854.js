@@ -1,9 +1,10 @@
 var dir_c2d05fee98459b5e6b5c475753344854 =
 [
-    [ "Private", "dir_4c7c5c52063c5fa31f39f45be39a08fa.html", "dir_4c7c5c52063c5fa31f39f45be39a08fa" ],
+    [ "Iterators", "dir_97221e12c05308d6b693c6e41ccb3ebe.html", "dir_97221e12c05308d6b693c6e41ccb3ebe" ],
     [ "Exception.h", "_exception_8h.html", [
       [ "CException", "class_common_1_1_c_exception.html", "class_common_1_1_c_exception" ],
       [ "COutOfRange", "class_common_1_1_c_out_of_range.html", "class_common_1_1_c_out_of_range" ],
+      [ "CBadAlloc", "class_common_1_1_c_bad_alloc.html", "class_common_1_1_c_bad_alloc" ],
       [ "CDoesNotExist", "class_common_1_1_c_does_not_exist.html", "class_common_1_1_c_does_not_exist" ]
     ] ],
     [ "Optional.h", "_optional_8h.html", [

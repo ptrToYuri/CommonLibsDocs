@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['rawdata_170',['RawData',['../class_common_1_1_t_vector.html#aefa7ae2e67ba665cbb09f3f100d0a8f2',1,'Common::TVector::RawData() noexcept'],['../class_common_1_1_t_vector.html#a27b784a5b7c673dcb72593df1efa0564',1,'Common::TVector::RawData() const noexcept']]],
-  ['rbegin_171',['rbegin',['../class_common_1_1_t_vector.html#a099e402047ded53305319675e93f442c',1,'Common::TVector::rbegin()'],['../class_common_1_1_t_vector.html#a78b186c7438610a815abf110f3eb0bde',1,'Common::TVector::rbegin() const']]],
-  ['rend_172',['rend',['../class_common_1_1_t_vector.html#a93ce41ca7234c18d7fcaf583cd2e0a36',1,'Common::TVector::rend()'],['../class_common_1_1_t_vector.html#ac831612b2da9aefedeac345112b603ac',1,'Common::TVector::rend() const']]],
-  ['reserve_173',['Reserve',['../class_common_1_1_t_vector.html#aa4ce7e570833e9f5b6ed8a87529e7acb',1,'Common::TVector']]],
-  ['resize_174',['Resize',['../class_common_1_1_t_vector.html#a60f6c69c7451b622aca89e24cf81ec61',1,'Common::TVector']]],
-  ['reversebegin_175',['ReverseBegin',['../class_common_1_1_t_vector.html#aeb2b0f6f89ddf9207afdc82b9e016fd3',1,'Common::TVector']]],
-  ['reverseend_176',['ReverseEnd',['../class_common_1_1_t_vector.html#a235eac07ed0051f720efdaac7b7a6f9f',1,'Common::TVector']]]
+  ['pop_246',['Pop',['../class_common_1_1_t_vector.html#a19f0b8c8d3bbdaba5554103ed7e5232a',1,'Common::TVector']]],
+  ['popmultiple_247',['PopMultiple',['../class_common_1_1_t_vector.html#ae71e27d52008ed15b24e59480f7fd0c3',1,'Common::TVector']]],
+  ['push_248',['Push',['../class_common_1_1_t_vector.html#ab7f2d52c3264a6351839beee7d9041dc',1,'Common::TVector::Push(const T &amp;Value)'],['../class_common_1_1_t_vector.html#a024b2f76d062f2ead120fd60c55d7d86',1,'Common::TVector::Push(IteratorType Begin, IteratorType End)']]]
 ];

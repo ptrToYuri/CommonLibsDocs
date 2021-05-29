@@ -25,6 +25,15 @@
 var NAVTREE =
 [
   [ "CommonLibs", "index.html", [
+    [ "Home", "index.html", [
+      [ "Introduction", "index.html#Introduction", null ],
+      [ "Installation", "index.html#Installation", null ],
+      [ "Update", "index.html#Update", null ],
+      [ "Get started", "index.html#GetStarted", null ],
+      [ "Reliability", "index.html#Reliability", null ]
+    ] ],
+    [ "Todo List", "todo.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -56,7 +65,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_advanced_iteration_8h.html"
+"_advanced_iteration_8h.html",
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

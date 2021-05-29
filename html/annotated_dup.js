@@ -1,4 +1,21 @@
 var annotated_dup =
 [
-    [ "Common", "namespace_common.html", "namespace_common" ]
+    [ "Common", "namespace_common.html", [
+      [ "Iterators", "namespace_common_1_1_iterators.html", [
+        [ "TBlockIterator", "class_common_1_1_iterators_1_1_t_block_iterator.html", "class_common_1_1_iterators_1_1_t_block_iterator" ],
+        [ "TReverseBlockIterator", "class_common_1_1_iterators_1_1_t_reverse_block_iterator.html", "class_common_1_1_iterators_1_1_t_reverse_block_iterator" ],
+        [ "TSafeBlockIterator", "class_common_1_1_iterators_1_1_t_safe_block_iterator.html", "class_common_1_1_iterators_1_1_t_safe_block_iterator" ],
+        [ "TSafeReverseBlockIterator", "class_common_1_1_iterators_1_1_t_safe_reverse_block_iterator.html", "class_common_1_1_iterators_1_1_t_safe_reverse_block_iterator" ]
+      ] ],
+      [ "CException", "class_common_1_1_c_exception.html", "class_common_1_1_c_exception" ],
+      [ "COutOfRange", "class_common_1_1_c_out_of_range.html", "class_common_1_1_c_out_of_range" ],
+      [ "CBadAlloc", "class_common_1_1_c_bad_alloc.html", "class_common_1_1_c_bad_alloc" ],
+      [ "CDoesNotExist", "class_common_1_1_c_does_not_exist.html", "class_common_1_1_c_does_not_exist" ],
+      [ "TOptional", "class_common_1_1_t_optional.html", "class_common_1_1_t_optional" ],
+      [ "TPair", "class_common_1_1_t_pair.html", "class_common_1_1_t_pair" ],
+      [ "TVector", "class_common_1_1_t_vector.html", "class_common_1_1_t_vector" ],
+      [ "RemoveReference", "struct_common_1_1_remove_reference.html", "struct_common_1_1_remove_reference" ],
+      [ "RemoveReference< T & >", "struct_common_1_1_remove_reference_3_01_t_01_6_01_4.html", "struct_common_1_1_remove_reference_3_01_t_01_6_01_4" ],
+      [ "RemoveReference< T && >", "struct_common_1_1_remove_reference_3_01_t_01_6_6_01_4.html", "struct_common_1_1_remove_reference_3_01_t_01_6_6_01_4" ]
+    ] ]
 ];

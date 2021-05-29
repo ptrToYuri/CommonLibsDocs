@@ -1,4 +1,4 @@
-\hypertarget{class_common_1_1_t_optional}{}\doxysection{Common\+::T\+Optional$<$ T $>$ Class Template Reference}
+\hypertarget{class_common_1_1_t_optional}{}\doxysection{Common\+::TOptional$<$ T $>$ Class Template Reference}
 \label{class_common_1_1_t_optional}\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
 
 
@@ -12,46 +12,66 @@ Represents object that may not exist.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}{T\+Optional}} ()=default
+\mbox{\hyperlink{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}{TOptional}} ()=default
 \begin{DoxyCompactList}\small\item\em No object by default. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}{T\+Optional}} (const T \&Value) noexcept
+\mbox{\hyperlink{class_common_1_1_t_optional_a7223128855e1b339d73005da2691a071}{TOptional}} (const T \&Value)
 \begin{DoxyCompactList}\small\item\em Initialize optional with existing value (copy). \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}{Set\+Value}} (const T \&Value) noexcept
+\mbox{\hyperlink{class_common_1_1_t_optional_a2aa92d7606bed7e938c57ef823afba5e}{TOptional}} (const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional_a06064a0e292f1bc26439ed1081848abd}{TOptional}} (\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&\&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional_a8c77290311c59a13f055692c9280f5c8}{$\sim$\+TOptional}} ()
+\item 
+void \mbox{\hyperlink{class_common_1_1_t_optional_a1dda6478fd8aff0231790fa3bee8ebbb}{Set\+Value}} (const T \&Value)
 \begin{DoxyCompactList}\small\item\em Set value to optional (copy). \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}{operator=}} (const T \&Value) noexcept
-\begin{DoxyCompactList}\small\item\em Set value to the optional (copy). \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}{Value\+Exists}} () const noexcept
-\begin{DoxyCompactList}\small\item\em Check if optional has value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_optional_a1fd73ce5d5e0fd16d3f1d8fd199a8109}{Clear}} () noexcept
+\begin{DoxyCompactList}\small\item\em Remove value from optional. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_optional_acafa4e5dd750b43a82dc9870a0be3b70}{operator=}} (const T \&Value)
+\begin{DoxyCompactList}\small\item\em Assign value to the optional (copy). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_optional_a615a69d055c7f630a81fe712320269c8}{operator=}} (const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Assign from another optional (copy). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_optional_a7a4e14c4b04d40109326155de3c23311}{operator=}} (\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&\&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_optional_ad8c3629ffe954abec3a4e8edda0722b9}{Swap}} (\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Swaps two optionals without reconstructing values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_optional_ad1080b19c8184368a0496faf861e4325}{operator==}} (const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Checks if two optionals contain the same values. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_optional_a1c956203e321f21c7243a080673af5e4}{Does\+Value\+Exist}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Check if optional contains value. \end{DoxyCompactList}\item 
 const T \& \mbox{\hyperlink{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}{Get\+Value}} () const
 \begin{DoxyCompactList}\small\item\em Gets value if it exists or throws an exception. \end{DoxyCompactList}\item 
 const T \& \mbox{\hyperlink{class_common_1_1_t_optional_ae15f3cfc76592dcbbf89994833c2e32d}{Get\+Value\+Or}} (const T \&Other\+Variant) const noexcept
-\begin{DoxyCompactList}\small\item\em Get value or passed value (if not possible) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get value or passed value (if not possible). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \subsubsection*{template$<$typename T$>$\newline
-class Common\+::\+T\+Optional$<$ T $>$}
+class Common\+::\+TOptional$<$ T $>$}
 
 Represents object that may not exist. 
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]SFINAE for == operator \end{DoxyRefDesc}
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}\label{class_common_1_1_t_optional_a376877c56ae1107b64d443a787cc74c5}} 
 \index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
 \index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 No object by default. 
 
-\mbox{\Hypertarget{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}\label{class_common_1_1_t_optional_a762ac7067796988288b0e2967f7a6e8d}} 
+\mbox{\Hypertarget{class_common_1_1_t_optional_a7223128855e1b339d73005da2691a071}\label{class_common_1_1_t_optional_a7223128855e1b339d73005da2691a071}} 
 \index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
 \index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}} (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}} (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
 
 
 
@@ -62,15 +82,193 @@ Initialize optional with existing value (copy).
 {\em Value} & Object to create copy from \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a2aa92d7606bed7e938c57ef823afba5e}\label{class_common_1_1_t_optional_a2aa92d7606bed7e938c57ef823afba5e}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
+\index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Optional to create copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a06064a0e292f1bc26439ed1081848abd}\label{class_common_1_1_t_optional_a06064a0e292f1bc26439ed1081848abd}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!TOptional@{TOptional}}
+\index{TOptional@{TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TOptional()}{TOptional()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Temporary object to get data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a8c77290311c59a13f055692c9280f5c8}\label{class_common_1_1_t_optional_a8c77290311c59a13f055692c9280f5c8}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!````~TOptional@{$\sim$TOptional}}
+\index{````~TOptional@{$\sim$TOptional}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$TOptional()}{~TOptional()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a1dda6478fd8aff0231790fa3bee8ebbb}\label{class_common_1_1_t_optional_a1dda6478fd8aff0231790fa3bee8ebbb}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Set\+Value (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Set value to optional (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Object to create copy from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a1fd73ce5d5e0fd16d3f1d8fd199a8109}\label{class_common_1_1_t_optional_a1fd73ce5d5e0fd16d3f1d8fd199a8109}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Remove value from optional. 
+
+\begin{DoxyNote}{Note}
+This will call destructor on internal object. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_optional_acafa4e5dd750b43a82dc9870a0be3b70}\label{class_common_1_1_t_optional_acafa4e5dd750b43a82dc9870a0be3b70}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Assign value to the optional (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Object to create copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this optional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a615a69d055c7f630a81fe712320269c8}\label{class_common_1_1_t_optional_a615a69d055c7f630a81fe712320269c8}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Assign from another optional (copy). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Optional to create copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this optional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a7a4e14c4b04d40109326155de3c23311}\label{class_common_1_1_t_optional_a7a4e14c4b04d40109326155de3c23311}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move assignment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Temporary object to get data from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to this optional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_optional_ad8c3629ffe954abec3a4e8edda0722b9}\label{class_common_1_1_t_optional_ad8c3629ffe954abec3a4e8edda0722b9}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Swaps two optionals without reconstructing values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Object to swap resources with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_optional_ad1080b19c8184368a0496faf861e4325}\label{class_common_1_1_t_optional_ad1080b19c8184368a0496faf861e4325}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_optional}{TOptional}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Checks if two optionals contain the same values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Other optional to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if sizes and values are equal, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Containing element must implement == operator. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_optional_a1c956203e321f21c7243a080673af5e4}\label{class_common_1_1_t_optional_a1c956203e321f21c7243a080673af5e4}} 
+\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!DoesValueExist@{DoesValueExist}}
+\index{DoesValueExist@{DoesValueExist}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DoesValueExist()}{DoesValueExist()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Does\+Value\+Exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Check if optional contains value. 
+
+\begin{DoxyReturn}{Returns}
+True if value exists, false otherwise 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}\label{class_common_1_1_t_optional_a5866406d6248f9cd49a358a921c16af8}} 
 \index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!GetValue@{GetValue}}
 \index{GetValue@{GetValue}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -84,11 +282,11 @@ Optional\textquotesingle{}s value
 \index{GetValueOr@{GetValueOr}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
 \doxysubsubsection{\texorpdfstring{GetValueOr()}{GetValueOr()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Get\+Value\+Or (\begin{DoxyParamCaption}\item[{const T \&}]{Other\+Variant }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+const T\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+TOptional}}$<$ T $>$\+::Get\+Value\+Or (\begin{DoxyParamCaption}\item[{const T \&}]{Other\+Variant }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
 
 
 
-Get value or passed value (if not possible) 
+Get value or passed value (if not possible). 
 
 
 \begin{DoxyParams}{Parameters}
@@ -96,54 +294,5 @@ Get value or passed value (if not possible)
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Optional value or provided value 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}\label{class_common_1_1_t_optional_a03801ef2b8b51792d919ae9681d1c0a2}} 
-\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!operator=@{operator=}}
-\index{operator=@{operator=}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-\mbox{\hyperlink{class_common_1_1_t_optional}{T\+Optional}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
-
-
-
-Set value to the optional (copy). 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Value} & Object to create copy from \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Reference to this optional 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}\label{class_common_1_1_t_optional_a488fa8f99f4a72694325d3924dc6c793}} 
-\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!SetValue@{SetValue}}
-\index{SetValue@{SetValue}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-void \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Set\+Value (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
-
-
-
-Set value to optional (copy). 
-
-
-\begin{DoxyParams}{Parameters}
-{\em Value} & Object to create copy from \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}\label{class_common_1_1_t_optional_ab4ab5a1e0822c7072bb6607498b5162d}} 
-\index{Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}!ValueExists@{ValueExists}}
-\index{ValueExists@{ValueExists}!Common::TOptional$<$ T $>$@{Common::TOptional$<$ T $>$}}
-\doxysubsubsection{\texorpdfstring{ValueExists()}{ValueExists()}}
-{\footnotesize\ttfamily template$<$typename T $>$ \\
-bool \mbox{\hyperlink{class_common_1_1_t_optional}{Common\+::\+T\+Optional}}$<$ T $>$\+::Value\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
-
-
-
-Check if optional has value. 
-
-\begin{DoxyReturn}{Returns}
-True if value exists 
+Optional internal value or provided value 
 \end{DoxyReturn}

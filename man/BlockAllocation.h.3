@@ -1,0 +1,64 @@
+.TH "CommonUtils/BlockAllocation.h" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommonUtils/BlockAllocation.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <new>\fP
+.br
+\fC#include '\&./\&.\&./CommonTypes/Exception\&.h'\fP
+.br
+\fC#include 'TypeOperations\&.h'\fP
+.br
+\fC#include 'Private/BlockAllocation\&.tpp'\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCommon\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > void \fBCommon::Allocate\fP (size_t NewSize, T *&OutBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::Deallocate\fP (T *&OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::Construct\fP (size_t Index, T *OutBuffer, const T &Value)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::Destruct\fP (size_t Index, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::DestructRange\fP (size_t From, size_t To, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::DestructAll\fP (size_t Size, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::SafeMoveBlock\fP (size_t Size, T *FromBuffer, T *ToBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::SafeMoveBlockReverse\fP (size_t Size, T *FromBuffer, T *ToBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::Reconstruct\fP (size_t CopySize, size_t NewCapacity, T *&OutBuffer, size_t &OutCapacity, size_t &OutSize)"
+.br
+.ti -1c
+.RI "template<typename IteratorType , typename T > void \fBCommon::SafeBulkConstruct\fP (size_t StartPosition, IteratorType From, IteratorType To, T *OutBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBCommon::SafeFillConstruct\fP (size_t StartPosition, size_t EndPosition, T *OutBuffer, const T &Value)"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

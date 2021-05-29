@@ -1,0 +1,130 @@
+.TH "Common::COutOfRange" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::COutOfRange \- Represents 'Out of Range' error\&. Can hold message, requested and expected indices\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Exception\&.h'\fP
+.PP
+Inherits \fBCommon::CException\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCOutOfRange\fP (const char *\fBMessage\fP) noexcept"
+.br
+.RI "Pass only message, if other properties cannot be specified\&. "
+.ti -1c
+.RI "\fBCOutOfRange\fP (const char *\fBMessage\fP, int \fBRequestedIndex\fP, const \fBTPair\fP< size_t, size_t > &\fBExpectedIndex\fP) noexcept"
+.br
+.RI "Describes valid range and errored value\&. Contains message\&. "
+.ti -1c
+.RI "const \fBTPair\fP< size_t, size_t > & \fBGetExpectedRange\fP () const noexcept"
+.br
+.RI "Specifies valid range\&. "
+.ti -1c
+.RI "int \fBGetRequestedIndex\fP () const noexcept"
+.br
+.RI "Index that caused this exception\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const int \fBRequestedIndex\fP = 0"
+.br
+.ti -1c
+.RI "const \fBTPair\fP< size_t, size_t > \fBExpectedIndex\fP = { 0,0 }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents 'Out of Range' error\&. Can hold message, requested and expected indices\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Common::COutOfRange::COutOfRange (const char * Message)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Pass only message, if other properties cannot be specified\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Description\&. Will be copied to an inner buffer 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Range will be set to empty [0: 0), requested index to 0\&. 
+.PP
+If length of message > 47, first 47 symbols will be saved\&. 
+.RE
+.PP
+
+.SS "Common::COutOfRange::COutOfRange (const char * Message, int RequestedIndex, const \fBTPair\fP< size_t, size_t > & ExpectedIndex)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Describes valid range and errored value\&. Contains message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Description\&. Will be copied to an inner buffer 
+.br
+\fIRequestedIndex\fP Errored index (out of range)\&. 
+.br
+\fIExpectedIndex\fP Pair of Min and Max+1 indexes, that were available\&. Range: [First: Second) 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If length of message > 47, first 47 symbols will be saved\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBTPair\fP<size_t, size_t>& Common::COutOfRange::GetExpectedRange () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Specifies valid range\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Pair of Min and Max+1 indexes, that were available\&. Range: [First: Second) 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Returns 0 Index with [0: 0) range if constructed only with message\&. 
+.RE
+.PP
+
+.SS "int Common::COutOfRange::GetRequestedIndex () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Index that caused this exception\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Value of index, that is not in expected range 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Returns 0 Index with [0: 0) range if constructed only with message\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const int Common::COutOfRange::RequestedIndex = 0\fC [protected]\fP"
+
+.SS "const \fBTPair\fP<size_t, size_t> Common::COutOfRange::ExpectedIndex = { 0,0 }\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

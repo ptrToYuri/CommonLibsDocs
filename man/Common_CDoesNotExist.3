@@ -1,0 +1,47 @@
+.TH "Common::CDoesNotExist" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::CDoesNotExist \- Represents 'Element does not exist' error\&. Stores message\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Exception\&.h'\fP
+.PP
+Inherits \fBCommon::CException\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCDoesNotExist\fP (const char *\fBMessage\fP) noexcept"
+.br
+.RI "Pass only message, if other properties cannot be specified\&. "
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Represents 'Element does not exist' error\&. Stores message\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Common::CDoesNotExist::CDoesNotExist (const char * Message)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Pass only message, if other properties cannot be specified\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Description\&. Will be copied to the inner buffer 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If length of message > 47, first 47 symbols will be saved\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

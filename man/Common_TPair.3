@@ -1,0 +1,103 @@
+.TH "Common::TPair< T1, T2 >" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::TPair< T1, T2 > \- Container that represents a pair of objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Pair\&.h'\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTPair\fP ()=default"
+.br
+.RI "Initialize pair with type default values\&. "
+.ti -1c
+.RI "\fBTPair\fP (const T1 &\fBFirst\fP, const T2 &\fBSecond\fP) noexcept"
+.br
+.RI "Creates a pair copying passed values\&. "
+.ti -1c
+.RI "void \fBMakePair\fP (T1 \fBFirst\fP, T2 \fBSecond\fP) noexcept"
+.br
+.RI "Assigns two values to pair at once (copy)\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "T1 \fBFirst\fP = T1{}"
+.br
+.RI "First value in pair\&. "
+.ti -1c
+.RI "T2 \fBSecond\fP = T2{}"
+.br
+.RI "Second value in pair\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T1, typename T2>
+.br
+class Common::TPair< T1, T2 >"
+Container that represents a pair of objects\&. 
+
+
+.PP
+\fBTodo\fP
+.RS 4
+Placement new
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T1 , typename T2 > \fBCommon::TPair\fP< T1, T2 >::\fBTPair\fP ()\fC [default]\fP"
+
+.PP
+Initialize pair with type default values\&. 
+.SS "template<typename T1 , typename T2 > \fBCommon::TPair\fP< T1, T2 >::\fBTPair\fP (const T1 & First, const T2 & Second)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Creates a pair copying passed values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIFirst\fP First value in pair 
+.br
+\fISecond\fP Second value in pair 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T1 , typename T2 > void \fBCommon::TPair\fP< T1, T2 >::MakePair (T1 First, T2 Second)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Assigns two values to pair at once (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIFirst\fP First value in pair 
+.br
+\fISecond\fP Second value in pair 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "template<typename T1 , typename T2 > T1 \fBCommon::TPair\fP< T1, T2 >::First = T1{}"
+
+.PP
+First value in pair\&. 
+.SS "template<typename T1 , typename T2 > T2 \fBCommon::TPair\fP< T1, T2 >::Second = T2{}"
+
+.PP
+Second value in pair\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

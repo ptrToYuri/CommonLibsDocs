@@ -1,38 +1,44 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.11.2)  23 NOV 2020 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.17)  29 MAY 2021 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **refman
 (./refman.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03>
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/book.cls
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-05-07>
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/bo
+ok.cls
 Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/bk10.clo
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/bk
+10.clo
 File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count179
+\c@chapter=\count180
+\c@section=\count181
+\c@subsection=\count182
+\c@subsubsection=\count183
+\c@paragraph=\count184
+\c@subparagraph=\count185
+\c@figure=\count186
+\c@table=\count187
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/if
+then.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/a
+rray.sty
 Rollback for package 'array' requested -> date 2016-10-06.
          Best approximation is the release introduced on 2016-10-06.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/array-2016-10-0
-6.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/a
+rray-2016-10-06.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen139
 \extrarowheight=\dimen140
@@ -40,68 +46,74 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip49
 \backup@length=\skip50
 ))
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/fixltx2e.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/fi
+xltx2e.sty
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
 Applying: [2015/01/01] Old fixltx2e package on input line 46.
-
 
 Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+) (./doxygen.sty
+Package: doxygen 
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/al
+ltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/c
+alc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count184
-\calc@Bcount=\count185
+\calc@Acount=\count188
+\calc@Bcount=\count189
 \calc@Adimen=\dimen141
 \calc@Bdimen=\dimen142
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count186
+\calc@Ccount=\count190
 \calc@Cskip=\skip53
 )
-(./doxygen.sty
-Package: doxygen 
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/alltt.sty
-Package: alltt 1997/06/16 v2.0g defines alltt environment
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/float/float.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/float/f
+loat.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count187
+\c@float@type=\count191
 \float@exts=\toks16
 \float@box=\box47
 \@float@everytoks=\toks17
 \@floatcapt=\box48
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/v
+erbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks18
 \verbatim@line=\toks19
 \verbatim@in@stream=\read2
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/xcolor/
+xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cf
-g
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.d
-ef
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/colortb
+l/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks20
 \minrowclearance=\skip54
 )
-\rownum=\count188
+\rownum=\count192
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -118,34 +130,35 @@ ozen version for doxygen
 \LTright=\skip56
 \LTpre=\skip57
 \LTpost=\skip58
-\LTchunksize=\count189
+\LTchunksize=\count193
 \LTcapwidth=\dimen143
 \LT@head=\box49
 \LT@firsthead=\box50
 \LT@foot=\box51
 \LT@lastfoot=\box52
-\LT@cols=\count190
-\LT@rows=\count191
-\c@LT@tables=\count192
-\c@LT@chunks=\count193
+\LT@cols=\count194
+\LT@rows=\count195
+\c@LT@tables=\count196
+\c@LT@chunks=\count197
 \LT@p@ftn=\toks21
 ) (./tabu_doxygen.sty
 Package: tabu_doxygen 2011/02/26 v2.8 - flexible LaTeX tabulars (FC), frozen ve
 rsion for doxygen
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/varwidth/varwidth.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/varwidt
+h/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box53
-\sift@deathcycles=\count194
+\sift@deathcycles=\count198
 \@vwid@loff=\dimen144
 \@vwid@roff=\dimen145
 )
-\c@taburow=\count195
-\tabu@nbcols=\count196
-\tabu@cnt=\count197
-\tabu@Xcol=\count198
-\tabu@alloc=\count199
-\tabu@nested=\count266
+\c@taburow=\count199
+\tabu@nbcols=\count266
+\tabu@cnt=\count267
+\tabu@Xcol=\count268
+\tabu@alloc=\count269
+\tabu@nested=\count270
 \tabu@target=\dimen146
 \tabu@spreadtarget=\dimen147
 \tabu@naturalX=\dimen148
@@ -163,212 +176,66 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \tabu@vleads=\box57
 \tabu@cellskip=\skip59
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/fancyvr
+b/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-\FV@CodeLineNo=\count267
+\FV@CodeLineNo=\count271
 \FV@InFile=\read3
 \FV@TabBox=\box58
-\c@FancyVerbLine=\count268
-\FV@StepNumber=\count269
+\c@FancyVerbLine=\count272
+\FV@StepNumber=\count273
 \FV@OutFile=\write3
-) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/tabularx.sty
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/t
+abularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen155
 \TX@old@table=\dimen156
 \TX@old@col=\dimen157
 \TX@target=\dimen158
 \TX@delta=\dimen159
-\TX@cols=\count270
+\TX@cols=\count274
 \TX@ftn=\toks25
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count271
-\multirow@dima=\skip61
-\bigstrutjot=\dimen160
-) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hanging/hanging.sty
-Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
-\h@ngcommawd=\skip62
-\h@ngfstopwd=\skip63
-\h@ngquotewd=\skip64
-\h@ngdquotewd=\skip65
-\h@ngquerywd=\skip66
-\h@ngexclwd=\skip67
-\h@ngcolonwd=\skip68
-\h@ngscolonwd=\skip69
-) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/adjustbox/adjustbox.s
-ty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.te
-x
-\XKV@toks=\toks26
-\XKV@tempa@toks=\toks27
-)
-\XKV@depth=\count272
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/adjustbox/trimclip.st
-y
-Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics
-.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-)
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/collectbox/collectbox
-.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box59
-)
-\tc@llx=\dimen163
-\tc@lly=\dimen164
-\tc@urx=\dimen165
-\tc@ury=\dimen166
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/adjustbox/tc-pdftex.d
-ef
-File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen167
-\adjbox@Height=\dimen168
-\adjbox@Depth=\dimen169
-\adjbox@Totalheight=\dimen170
-\adjbox@pwidth=\dimen171
-\adjbox@pheight=\dimen172
-\adjbox@pdepth=\dimen173
-\adjbox@ptotalheight=\dimen174
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/ifoddpage/ifoddpage.s
-ty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count273
-))
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks28
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/stackengine/stackengi
-ne.sty
-Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
-ways
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count274
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/listofitems/listofi
-tems.sty
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/listofitems/listofi
-tems.tex
-\loi_cnt_foreach_nest=\count275
-\loi_nestcnt=\count276
-)
-Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
-sep char (CT)
-)
-\c@@stackindex=\count277
-\@boxshift=\skip70
-\stack@tmplength=\skip71
-\temp@stkl=\skip72
-\@stackedboxwidth=\skip73
-\@addedbox=\box60
-\@anchorbox=\box61
-\stackedbox=\box62
-\@centerbox=\box63
-\c@ROWcellindex@=\count278
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box64
-\UL@hyphenbox=\box65
-\UL@skip=\skip74
-\UL@hook=\toks29
-\UL@height=\dimen175
-\UL@pe=\count279
-\UL@pixel=\dimen176
-\ULC@box=\box66
-Package: ulem 2019/11/18
-\ULdepth=\dimen177
-)
-\xrefbox=\box67
-\xreflength=\skip75
-\CodeWidthChar=\skip76
-\CodeHeightChar=\skip77
-\DoxyCodeWidth=\skip78
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks30
-\inpenc@posthook=\toks31
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tools/m
+ulticol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count280
-\mult@box=\box68
-\multicol@leftmargin=\dimen178
-\c@unbalance=\count281
-\c@collectmore=\count282
-\doublecol@number=\count283
-\multicoltolerance=\count284
-\multicolpretolerance=\count285
-\full@width=\dimen179
-\page@free=\dimen180
-\premulticols=\dimen181
-\postmulticols=\dimen182
-\multicolsep=\skip79
-\multicolbaselineskip=\skip80
-\partial@page=\box69
-\last@line=\box70
-\maxbalancingoverflow=\dimen183
-\mult@rightbox=\box71
-\mult@grightbox=\box72
-\mult@gfirstbox=\box73
-\mult@firstbox=\box74
+\c@tracingmulticols=\count275
+\mult@box=\box59
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count276
+\c@collectmore=\count277
+\doublecol@number=\count278
+\multicoltolerance=\count279
+\multicolpretolerance=\count280
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip60
+\multicolbaselineskip=\skip61
+\partial@page=\box60
+\last@line=\box61
+\maxbalancingoverflow=\dimen165
+\mult@rightbox=\box62
+\mult@grightbox=\box63
+\mult@gfirstbox=\box64
+\mult@firstbox=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
 \@tempa=\box75
 \@tempa=\box76
 \@tempa=\box77
@@ -397,50 +264,226 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box100
 \@tempa=\box101
 \@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\c@minrows=\count286
-\c@columnbadness=\count287
-\c@finalcolumnbadness=\count288
-\last@try=\dimen184
-\multicolovershoot=\dimen185
-\multicolundershoot=\dimen186
-\mult@nat@firstbox=\box112
-\colbreak@box=\box113
-\mc@col@check@num=\count289
+\c@minrows=\count281
+\c@columnbadness=\count282
+\c@finalcolumnbadness=\count283
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
+\mult@nat@firstbox=\box103
+\colbreak@box=\box104
+\mc@col@check@num=\count284
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/multiro
+w/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count285
+\multirow@dima=\skip63
+\bigstrutjot=\dimen169
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hanging
+/hanging.sty
+Package: hanging 2009/09/02 v1.2b hanging paragraphs and punctuation
+\h@ngcommawd=\skip64
+\h@ngfstopwd=\skip65
+\h@ngquotewd=\skip66
+\h@ngdquotewd=\skip67
+\h@ngquerywd=\skip68
+\h@ngexclwd=\skip69
+\h@ngcolonwd=\skip70
+\h@ngscolonwd=\skip71
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/iftex
+/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/iftex
+/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/adjustb
+ox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/xkeyval
+/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/xkeyv
+al/xkeyval.tex
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/xkeyv
+al/xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count286
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/adjustb
+ox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/adjustb
+ox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/graphic
+s-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+)
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/collect
+box/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box105
+)
+\tc@llx=\dimen172
+\tc@lly=\dimen173
+\tc@urx=\dimen174
+\tc@ury=\dimen175
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/adjustb
+ox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen176
+\adjbox@Height=\dimen177
+\adjbox@Depth=\dimen178
+\adjbox@Totalheight=\dimen179
+\adjbox@pwidth=\dimen180
+\adjbox@pheight=\dimen181
+\adjbox@pdepth=\dimen182
+\adjbox@ptotalheight=\dimen183
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/ifoddpa
+ge/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count287
+))
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/amsfont
+s/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/amsfont
+s/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/stacken
+gine/stackengine.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/etoolbo
+x/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count288
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/listo
+fitems/listofitems.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/listo
+fitems/listofitems.tex
+\loi_cnt_foreach_nest=\count289
+\loi_nestcnt=\count290
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count291
+\@boxshift=\skip72
+\stack@tmplength=\skip73
+\temp@stkl=\skip74
+\@stackedboxwidth=\skip75
+\@addedbox=\box106
+\@anchorbox=\box107
+\stackedbox=\box108
+\@centerbox=\box109
+\c@ROWcellindex@=\count292
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/ulem/
+ulem.sty
+\UL@box=\box110
+\UL@hyphenbox=\box111
+\UL@skip=\skip76
+\UL@hook=\toks29
+\UL@height=\dimen184
+\UL@pe=\count293
+\UL@pixel=\dimen185
+\ULC@box=\box112
+Package: ulem 2019/11/18
+\ULdepth=\dimen186
+)
+\xrefbox=\box113
+\xreflength=\skip77
+\CodeWidthChar=\skip78
+\CodeHeightChar=\skip79
+\DoxyCodeWidth=\skip80
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/in
+putenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks30
+\inpenc@posthook=\toks31
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/ma
+keidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/te
+xtcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/wasysym/wasysym.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/wasysym
+/wasysym.sty
 Package: wasysym 2020/01/19 v2.4 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 93.
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/iftex
+/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/fo
+ntenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/psnfss/helvet.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/psnfss/
+helvet.sty
 Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/psnfss/courier.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/psnfss/
+courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/sectsty/sectsty.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/sectsty
+/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
-
 
 LaTeX Warning: Command \underbar  has changed.
                Check if current package is valid.
@@ -450,14 +493,17 @@ LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/geometr
+y/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/iftex
+/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count290
-\Gm@cntv=\count291
-\c@Gm@tempcnt=\count292
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
 \Gm@bindingoffset=\dimen187
 \Gm@wd@mp=\dimen188
 \Gm@odd@mp=\dimen189
@@ -468,9 +514,10 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen194
 \Gm@dimlist=\toks32
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
-s
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/fancyhd
+r/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
 \f@nch@headwidth=\skip81
 \f@nch@O@elh=\skip82
 \f@nch@O@erh=\skip83
@@ -480,14 +527,17 @@ s
 \f@nch@O@erf=\skip87
 \f@nch@O@olf=\skip88
 \f@nch@O@orf=\skip89
-) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/natbib/
+natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip90
 \bibsep=\skip91
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count293
+\c@NAT@ctr=\count297
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/tocloft/tocloft.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/tocloft
+/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip92
@@ -519,8 +569,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip118
 \cftfigindent=\skip119
 \cftfignumwidth=\skip120
-\c@lofdepth=\count294
-\c@lotdepth=\count295
+\c@lofdepth=\count298
+\c@lotdepth=\count299
 \cftbeforelottitleskip=\skip121
 \cftafterlottitleskip=\skip122
 \cftbeforetabskip=\skip123
@@ -530,170 +580,190 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \@indexfile=\write4
 \openout4 = `refman.idx'.
 
-
 Writing index file refman.idx
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/newunicodechar/newuni
-codechar.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/newunic
+odechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 )
+
+Package newunicodechar Warning: Redefining Unicode character on input line 116.
+
+
 
 Package newunicodechar Warning: Redefining Unicode character on input line 117.
 
 
 
-Package newunicodechar Warning: Redefining Unicode character on input line 118.
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
-
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/ltxcm
+ds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcm
-ds.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/pdfte
+xcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr
-.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/infwa
+rerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys
-.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/kvset
+keys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefi
-nekeys.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/kvdef
+inekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape
-.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/pdfes
+cape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hycolor
+/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmac
-ro.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/letltxm
+acro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/auxhook
+/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.s
-ty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/kvoptio
+ns/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen195
-\Hy@linkcounter=\count296
-\Hy@pagecounter=\count297
+\Hy@linkcounter=\count300
+\Hy@pagecounter=\count301
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/intca
+lc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.s
-ty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/etexc
+mds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count298
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing ON on input line 4482.
+\Hy@SavedSpaceFactor=\count302
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing ON on input line 4210.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
+Package hyperref Info: Bookmarks ON on input line 4445.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/backref.sty
-Package: backref 2020/01/14 v1.40 Bibliographical back referencing
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/backref.sty
+Package: backref 2021/02/04 v1.41 Bibliographical back referencing
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunf
-ilecheck.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/rerunfi
+lecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.st
-y
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/at
+veryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniqu
-ecounter.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/uniqu
+ecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintca
-lc.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/bigin
+tcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 ))
-\c@Hy@tempcnt=\count299
+\c@Hy@tempcnt=\count303
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/url/url.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/url/url
+.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5076.
+LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen196
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/bitse
+t/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 )
-\Fld@menulength=\count300
+\Fld@menulength=\count304
 \Field@Width=\dimen197
 \Fld@charsize=\dimen198
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing ON on input line 6360.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing ON on input line 6088.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/base/at
+begshi-ltx.sty
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count301
-\c@Item=\count302
-\c@Hfootnote=\count303
+\Hy@abspage=\count305
+\c@Item=\count306
+\c@Hfootnote=\count307
 )
 Package hyperref Info: Driver: hpdftex.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
-\Fld@listcount=\count304
-\c@bookmark@seq@number=\count305
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+\Fld@listcount=\count308
+\c@bookmark@seq@number=\count309
 \Hy@SectionHShift=\skip126
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 136.
-Package hyperref Info: Option `unicode' set `true' on input line 136.
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package hyperref Info: Option `colorlinks' set `true' on input line 135.
+Package hyperref Info: Option `unicode' set `true' on input line 135.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/caption
+/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/caption
+/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen199
 \captionmargin@=\dimen256
@@ -704,81 +774,85 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen261
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count306
-\c@continuedfloat=\count307
+\c@caption@flags=\count310
+\c@continuedfloat=\count311
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/caption
+/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
-)) (c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/etoc/etoc.sty
+))
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/etoc/et
+oc.sty
 Package: etoc 2020/05/15 v1.09c Completely customisable TOCs (JFB)
 \Etoc@toctoks=\toks33
-\c@etoc@tocid=\count308
-\c@etoc@tocdepth=\count309
+\c@etoc@tocid=\count312
+\c@etoc@tocdepth=\count313
 \etoc@framed@titlebox=\box114
 \etoc@framed@contentsbox=\box115
 )
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 15
-1.
+0.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/psnfss/t1phv.fd
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/psnfss/
+t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 151.
+(Font)              scaled to size 8.99994pt on input line 150.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-p
-dftex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count310
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/l3backe
+nd/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count314
 \l__pdf_internal_box=\box116
 ) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 151.
-LaTeX Font Info:    ... okay on input line 151.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.
-mkii
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/context/base/
+mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
+\scratchcounter=\count315
 \scratchdimen=\dimen262
 \scratchbox=\box117
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count316
+\nofMParguments=\count317
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count314
+\MPscratchCnt=\count318
 \MPscratchDim=\dimen263
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
 \everyMPtoPDFconversion=\toks35
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf
--base.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/epstopd
+f-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-
-sys.cfg
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/latexco
+nfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -816,27 +890,30 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 151.
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+Package hyperref Info: Link coloring ON on input line 150.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/hyperre
+f/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/refcoun
+t/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/generic/gettitlestring/gett
-itlestring.sty
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/generic/getti
+tlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count317
+\c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 151.
-LaTeX Info: Redefining \pageref on input line 151.
-LaTeX Info: Redefining \nameref on input line 151.
- (./refman.out) (./refman.out)
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
+(./refman.out) (./refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
-Package backref Info: ** backref set up for natbib ** on input line 151.
+Package backref Info: ** backref set up for natbib ** on input line 150.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \Etoc@tf=\read4
@@ -846,179 +923,226 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 157.
 Package hyperref Info: Option `unicode' set `true' on input line 157.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 162.
- [1
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 162.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162
+.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/amsfont
+s/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162
+.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/amsfont
+s/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+2.
+
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/wasysym
+/uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 162.
+[1
 
 
-{c:/Program Files (x86)/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.m
-ap}] [2
+{c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-var/fonts/map/pdftex/u
+pdmap/pdftex.map}] [2
 
 ]
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 172.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 172
-.
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 172
-.
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 17
-2.
-
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
-)
+(Font)              scaled to size 8.99994pt on input line 170.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 172.
+(Font)              scaled to size 7.19995pt on input line 170.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
-2.
+0.
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/psnfss/
+t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 172.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 172.
-
-[1] [2] [3] [4] [5] [6
-
-]
-Package hyperref Info: Option `pageanchor' set `true' on input line 174.
-
+(Font)              scaled to size 6.29996pt on input line 170.
+[1] [2] [3] [4] [5] [6] [7] [8]
+Package hyperref Info: Option `pageanchor' set `true' on input line 172.
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 177.
+(Font)              scaled to size 18.66588pt on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 177.
+(Font)              scaled to size 18.66588pt on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 177.
+(Font)              scaled to size 18.66588pt on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 177.
+(Font)              scaled to size 22.39185pt on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 177.
+(Font)              scaled to size 22.39185pt on input line 175.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 177.
-(./namespaces.tex
+(Font)              scaled to size 22.39185pt on input line 175.
+(./index.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
+
+Underfull \hbox (badness 3942) in paragraph at lines 14--14
+\T1/phv/m/n/10 If you down-loaded Common[]Libs via git sub-mod-ule, run \T1/pcr
+/m/n/10 git submodule update --recursive
+ []
+
 ) [1
+
 
 ] [2
 
 ]
 Chapter 2.
-(./hierarchy.tex) [3] [4
+(./todo.tex) [3] [4
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
+(./bug.tex) [5] [6
 
 ]
 Chapter 4.
-(./files.tex) [7] [8
+(./namespaces.tex) [7] [8
 
 ]
 Chapter 5.
+(./hierarchy.tex) [9] [10
+
+]
+Chapter 6.
+(./annotated.tex) [11] [12
+
+]
+Chapter 7.
+(./files.tex) [13] [14
+
+]
+Chapter 8.
 (./namespace_common.tex
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 6
 .
 
-(c:/Program Files (x86)/texlive/2020/texmf-dist/tex/latex/psnfss/ts1phv.fd
+(c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/tex/latex/psnfss/
+ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 7.
+(Font)              scaled to size 8.09995pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 7.
+(Font)              scaled to size 8.09995pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 7.
+(Font)              scaled to size 6.29996pt on input line 14.
+[15]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 30.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 65.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 30.
-
-[9]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 43.
+(Font)              scaled to size 8.09995pt on input line 65.
+[16]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 44.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 90.
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 118
+[][][]
+ []
+
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 44.
-
-Underfull \hbox (badness 10000) detected at line 57
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 126.
+[17] [18]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 201.
+[19] [20]
+Underfull \hbox (badness 10000) detected at line 213
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 79
+Underfull \hbox (badness 10000) detected at line 233
 [][][]
  []
 
-[10] [11]
-Underfull \hbox (badness 10000) detected at line 141
+[21]
+Underfull \hbox (badness 10000) detected at line 289
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 144
+[22]
+Underfull \hbox (badness 10000) detected at line 311
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 162
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 182
-[][][]
- []
-
-[12]) [13] [14
+) (./namespace_common_1_1_iterators.tex [23]) [24]
+Chapter 9.
+(./class_common_1_1_c_bad_alloc.tex <./class_common_1_1_c_bad_alloc.pdf>
+<class_common_1_1_c_bad_alloc.pdf, id=1829, 501.875pt x 290.94696pt>
+File: class_common_1_1_c_bad_alloc.pdf Graphic file (type pdf)
+<use class_common_1_1_c_bad_alloc.pdf>
+Package pdftex.def Info: class_common_1_1_c_bad_alloc.pdf  used on input line 1
+5.
+(pdftex.def)             Requested size: 98.16005pt x 56.9055pt.
+[25
 
 ]
-Chapter 6.
-(./class_common_1_1_c_does_not_exist.tex <./class_common_1_1_c_does_not_exist.p
-df>
-<class_common_1_1_c_does_not_exist.pdf, id=1088, 501.875pt x 255.73543pt>
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][][]
+ []
+
+[26]
+Underfull \hbox (badness 10000) detected at line 89
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][][]
+ []
+
+) (./class_common_1_1_c_does_not_exist.tex <./class_common_1_1_c_does_not_exist
+.pdf>
+<class_common_1_1_c_does_not_exist.pdf, id=1860, 501.875pt x 255.73543pt>
 File: class_common_1_1_c_does_not_exist.pdf Graphic file (type pdf)
 <use class_common_1_1_c_does_not_exist.pdf>
 Package pdftex.def Info: class_common_1_1_c_does_not_exist.pdf  used on input l
 ine 15.
 (pdftex.def)             Requested size: 111.66875pt x 56.9055pt.
- [15]
+[27]
 Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
 
 ) (./class_common_1_1_c_exception.tex <./class_common_1_1_c_exception.pdf>
-<class_common_1_1_c_exception.pdf, id=1105, 501.875pt x 127.8677pt>
+<class_common_1_1_c_exception.pdf, id=1876, 501.875pt x 85.24849pt>
 File: class_common_1_1_c_exception.pdf Graphic file (type pdf)
 <use class_common_1_1_c_exception.pdf>
 Package pdftex.def Info: class_common_1_1_c_exception.pdf  used on input line 1
 5.
-(pdftex.def)             Requested size: 223.34515pt x 56.9055pt.
-
-[16]
+(pdftex.def)             Requested size: 335.02156pt x 56.9055pt.
+[28]
 Underfull \hbox (badness 10000) detected at line 53
 [][][]
  []
@@ -1030,18 +1154,18 @@ Underfull \hbox (badness 10000) detected at line 75
 
 ) (./class_common_1_1_c_out_of_range.tex <./class_common_1_1_c_out_of_range.pdf
 >
-<class_common_1_1_c_out_of_range.pdf, id=1126, 501.875pt x 262.4204pt>
+<class_common_1_1_c_out_of_range.pdf, id=1897, 501.875pt x 262.4204pt>
 File: class_common_1_1_c_out_of_range.pdf Graphic file (type pdf)
 <use class_common_1_1_c_out_of_range.pdf>
 Package pdftex.def Info: class_common_1_1_c_out_of_range.pdf  used on input lin
 e 15.
 (pdftex.def)             Requested size: 108.82764pt x 56.9055pt.
- [17]
+[29]
 Underfull \hbox (badness 10000) detected at line 57
 [][][]
  []
 
-[18]
+[30]
 Underfull \hbox (badness 10000) detected at line 81
 [][][]
  []
@@ -1049,8 +1173,8 @@ Underfull \hbox (badness 10000) detected at line 81
 
 Overfull \hbox (17.7145pt too wide) in paragraph at lines 91--92
 \T1/pcr/m/n/8 const []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 size[]_[]t, size[]_[]t$\
-OML/cmm/m/it/8 >$\T1/pcr/m/n/8 & Common[]::[]C[]Out[]Of[]Range[]::[]Get[]Expect
-ed[]Range ( ) const [inline], [noexcept] 
+OML/cmm/m/it/8 >$\T1/pcr/m/n/8 & Common[]::[]COut[]Of[]Range[]::[]Get[]Expected
+[]Range ( ) const [inline], [noexcept] 
  []
 
 
@@ -1073,7 +1197,7 @@ Underfull \hbox (badness 10000) detected at line 116
 [][][]
  []
 
-) (./class_common_1_1_t_optional.tex [19]
+) (./struct_common_1_1_remove_reference.tex [31]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1090,25 +1214,119 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
+) (./struct_common_1_1_remove_reference_3_01_t_01_6_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./struct_common_1_1_remove_reference_3_01_t_01_6_6_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[32]) (./class_common_1_1_iterators_1_1_t_block_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[33] [34]) (./class_common_1_1_t_optional.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[35]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 33.
-[20]
-Underfull \hbox (badness 10000) detected at line 79
+(Font)              scaled to size 6.29996pt on input line 49.
+[36] [37]
+Underfull \hbox (badness 10000) detected at line 154
 [][][]
  []
 
-[21]
-Underfull \hbox (badness 10000) detected at line 98
+[38]
+Underfull \hbox (badness 10000) detected at line 173
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 117
+Underfull \hbox (badness 10000) detected at line 192
 [][][]
  []
 
-[22]
-Underfull \hbox (badness 10000) detected at line 147
+
+Underfull \hbox (badness 10000) detected at line 211
+[][][]
+ []
+
+[39]
+Underfull \hbox (badness 10000) detected at line 246
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 249
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 263
+[][][]
+ []
+
+[40]
+Underfull \hbox (badness 10000) detected at line 277
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 296
 [][][]
  []
 
@@ -1129,7 +1347,169 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[23]) (./class_common_1_1_t_vector.tex
+[41] [42] [43]) (./class_common_1_1_iterators_1_1_t_reverse_block_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e $\OML/cmm/m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type $\OML/cmm/m/it/8 >$
+[]\T1/pcr/m/n/8 ::operator+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e $\OML/cmm/m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e $\OML/cmm/m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type $\OML/cmm/m/it/8 >$
+[]\T1/pcr/m/n/8 ::operator-
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e $\OML/cmm/m/it/8 >$[]
+ []
+
+) (./class_common_1_1_iterators_1_1_t_safe_block_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e, Cont[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e, Cont[]Type
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e, Cont[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e, Cont[]Type
+ []
+
+) (./class_common_1_1_iterators_1_1_t_safe_reverse_block_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[48]
+Overfull \hbox (33.1786pt too wide) in paragraph at lines 37--39
+[]$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type, Cont[]Type $\OML/cmm/
+m/it/8 >$[]\T1/pcr/m/n/8 ::[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+\T1/pcr/m/n/8 Ref[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
+e, Cont[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator$\OMS/cmsy/m/n/8 ^^C
+$
+ []
+
+[50]) (./class_common_1_1_t_vector.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1147,37 +1527,102 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Overfull \hbox (18.41727pt too wide) in paragraph at lines 15--19
-[]\T1/phv/m/n/10 enum [] []: uint8[]_[]t { [], [],
+Underfull \hbox (badness 2547) in paragraph at lines 41--42
+[]\T1/phv/m/n/10 typedef []$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 const T $\OMS/cm
+sy/m/n/10 ^^C$\T1/phv/m/n/10 , const T &, const []$\OML/cmm/m/it/10 <$ \T1/phv/
+m/n/10 T $\OML/cmm/m/it/10 >$ $\OMS/cmsy/m/n/10 ^^C$ $\OML/cmm/m/it/10 >$
  []
 
-[24] [25] [26] [27] [28]
-Underfull \hbox (badness 10000) detected at line 212
+
+Overfull \hbox (67.58537pt too wide) in paragraph at lines 48--49
+[][] \T1/phv/m/n/10 (size[]_[]t Size, const T &Default[]Value={}, [] Capacity[]
+Rule=[]) 
+ []
+
+
+Overfull \hbox (48.34897pt too wide) in paragraph at lines 50--51
+[][] \T1/phv/m/n/10 (size[]_[]t Size, const T $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n
+/10 const Ar-ray, [] Capacity[]Rule=[]) 
+ []
+
+
+Overfull \hbox (63.3914pt too wide) in paragraph at lines 54--55
+[] \T1/phv/m/n/10 (Iterator[]Type [], Iterator[]Type [], [] Capacity[]Rule=[],
+ []
+
+[51] [52]
+Overfull \hbox (31.12723pt too wide) in paragraph at lines 130--131
+[]\T1/phv/m/n/10 void [] (size[]_[]t Position[]From, size[]_[]t Position[]To, [
+] Shrink[]Behavior=[]) 
+ []
+
+
+Overfull \hbox (19.78723pt too wide) in paragraph at lines 134--135
+[]\T1/phv/m/n/10 void [] (size[]_[]t New[]Size, const T &Default[]Value={}, [] 
+Shrink[]Behavior=[]) 
+ []
+
+[53] [54] [55]
+Underfull \hbox (badness 10000) detected at line 238
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 217
-[][][]
+Overfull \hbox (50.65108pt too wide) in paragraph at lines 300--302
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
+8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/c
+mm/m/it/8 >$[]\T1/pcr/m/n/8 ::[] 
  []
 
-[29] [30]
-Underfull \hbox (badness 10000) detected at line 371
-[][][]
- []
-
-[31]
-Underfull \hbox (badness 10000) detected at line 392
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 413
-[][][]
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
+8 ^^C$\T1/pcr/m/n/8 , const T&, const []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML
+/cmm/m/it/8 >$$\OMS/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--441
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OMS/cmsy/m/n/8 ^^C$
+\T1/pcr/m/n/8 , T&, []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML/cmm/m/it/8 >$$\OM
+S/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$[
+]
+ []
+
+
+Overfull \hbox (32.71233pt too wide) in paragraph at lines 344--346
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
+8 ^^C$\T1/pcr/m/n/8 , const T&, const []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML
+/cmm/m/it/8 >$$\OMS/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$
+ []
+
+[57]
+Underfull \hbox (badness 10000) detected at line 6
+[][][]
+ []
+
+[58]
+Underfull \hbox (badness 10000) detected at line 428
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 451
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 474
+[][][]
+ []
+
+[59]
+Underfull \hbox (badness 10000) detected at line 477
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--503
 |  \T1/pcr/m/n/8 typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 
 !std[]::is[]_[]integral$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Iterator[]Type $\OML/c
 mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
@@ -1185,190 +1630,117 @@ mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
  []
 
 
-Underfull \vbox (badness 2073) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 522
+[][][]
+ []
 
- [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-[34]
-Underfull \hbox (badness 10000) detected at line 542
+[60] [61]
+Underfull \hbox (badness 10000) detected at line 593
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 545
+Underfull \hbox (badness 10000) detected at line 612
+[][][]
+ []
+
+[62]
+Underfull \hbox (badness 10000) detected at line 631
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 559
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 562
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 587
-[][][]
- []
-
-[35] [36]
 Underfull \hbox (badness 10000) detected at line 650
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 664
+Underfull \hbox (badness 10000) detected at line 669
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 678
+Underfull \hbox (badness 10000) detected at line 672
+[][][]
+ []
+
+[63]
+Underfull \hbox (badness 10000) detected at line 726
+[][][]
+ []
+
+[64]
+Underfull \hbox (badness 10000) detected at line 729
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 692
+Underfull \hbox (badness 10000) detected at line 743
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 706
-[][][]
- []
-
-[37]
-Underfull \hbox (badness 10000) detected at line 742
-[][][]
- []
-
-[38]
-Underfull \hbox (badness 10000) detected at line 785
+Underfull \hbox (badness 10000) detected at line 773
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 788
+Underfull \hbox (badness 10000) detected at line 776
+[][][]
+ []
+
+[65]
+Underfull \hbox (badness 10000) detected at line 806
 [][][]
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 825
+[][][]
+ []
 
- [39]
-Underfull \hbox (badness 10000) detected at line 811
+[66]
+Underfull \hbox (badness 10000) detected at line 844
+[][][]
+ []
+
+[67]
+Underfull \hbox (badness 10000) detected at line 889
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 814
+Underfull \hbox (badness 10000) detected at line 923
+[][][]
+ []
+
+[68]
+Underfull \hbox (badness 10000) detected at line 952
+[][][]
+ []
+
+[69]
+Underfull \hbox (badness 10000) detected at line 995
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 828
+Underfull \hbox (badness 10000) detected at line 1014
+[][][]
+ []
+
+[70]
+Underfull \hbox (badness 10000) detected at line 1057
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 831
+Underfull \hbox (badness 10000) detected at line 1076
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 856
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 870
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 873
-[][][]
- []
-
-[40]
-Underfull \hbox (badness 10000) detected at line 887
-[][][]
- []
-
-[41]
-Underfull \hbox (badness 10000) detected at line 910
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 917--920
-|  \T1/pcr/m/n/8 typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 
-!std[]::is[]_[]integral$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Iterator[]Type $\OML/c
-mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
-\OMS/cmsy/m/n/8 ^^C$  \T1/pcr/m/sl/8 = 0
- []
-
-
-Underfull \hbox (badness 10000) detected at line 941
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 955
-[][][]
- []
-
-[42]
-Underfull \hbox (badness 10000) detected at line 985
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1004
-[][][]
- []
-
-[43]
-Underfull \hbox (badness 10000) detected at line 1023
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1042
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1045
-[][][]
- []
-
-[44]
-Underfull \hbox (badness 10000) detected at line 1064
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1067
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1097
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1100
-[][][]
- []
-
-[45]
-Underfull \hbox (badness 10000) detected at line 1121
+[71]
+Underfull \hbox (badness 10000) detected at line 1119
 [][][]
  []
 
@@ -1377,39 +1749,63 @@ Underfull \hbox (badness 10000) detected at line 1140
 [][][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-Underfull \hbox (badness 10000) detected at line 1189
-[][][]
- []
-
-[47]
-Underfull \hbox (badness 10000) detected at line 1252
+[72]
+Underfull \hbox (badness 10000) detected at line 1185
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1255
+Underfull \hbox (badness 10000) detected at line 1188
+[][][]
+ []
+
+[73]
+Underfull \hbox (badness 10000) detected at line 1207
 [][][]
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 1210
+[][][]
+ []
 
- [48]
-Underfull \hbox (badness 10000) detected at line 1289
+[74]
+Underfull \hbox (badness 10000) detected at line 1260
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1303
+Underfull \hbox (badness 10000) detected at line 1290
 [][][]
  []
 
-[49]
-Underfull \hbox (badness 10000) detected at line 1357
+[75]
+Underfull \hbox (badness 10000) detected at line 1304
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1318
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1337
+[][][]
+ []
+
+[76]
+Underfull \hbox (badness 10000) detected at line 1351
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1354
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1368
 [][][]
  []
 
@@ -1419,129 +1815,450 @@ Underfull \hbox (badness 10000) detected at line 1371
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1385
+Underfull \hbox (badness 10000) detected at line 1418
 [][][]
  []
 
-[50]
-Underfull \hbox (badness 10000) detected at line 1399
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1413
+[77]
+Underfull \hbox (badness 10000) detected at line 1421
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1427
+Underfull \hbox (badness 10000) detected at line 1468
 [][][]
  []
 
-[51]
-Underfull \hbox (badness 10000) detected at line 1474
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1488
-[][][]
- []
-
-[52]
-Underfull \hbox (badness 10000) detected at line 1518
+[78]
+Underfull \hbox (badness 10000) detected at line 1482
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1537
-[][][]
- []
-
-[53]
-Underfull \hbox (badness 10000) detected at line 1558
+Underfull \hbox (badness 10000) detected at line 1496
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1572
+Underfull \hbox (badness 10000) detected at line 1510
 [][][]
  []
 
-) [54]
-Chapter 7.
+
+Underfull \hbox (badness 10000) detected at line 1524
+[][][]
+ []
+
+[79]
+Underfull \hbox (badness 10000) detected at line 1538
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1552
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1566
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1580
+[][][]
+ []
+
+[80]
+Underfull \hbox (badness 10000) detected at line 1594
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1608
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1622
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1636
+[][][]
+ []
+
+[81]
+Underfull \hbox (badness 10000) detected at line 1650
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1664
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1678
+[][][]
+ []
+
+[82] [83]) [84]
+Chapter 10.
 (./_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
+) (./_block_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
 ) (./_optional_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+[85
+
+]) (./_pair_8h.tex) (./_vector_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--13
+
+ []
+
+[86]) (./_advanced_iteration_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./_pair_8h.tex [55
-
-]) (./_block_iterator_8tpp.tex) (./_vector_8tpp.tex)
-(./_vector_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--11
-
- []
-
-) (./_advanced_iteration_8h.tex
+) (./_assert_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[56]) (./_assert_8h.tex
+[87]) (./_block_allocation_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+) (./_raw_string_8h.tex [88]) (./_sort_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+) (./_type_operations_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./_advanced_iteration_8tpp.tex) (./_raw_string_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
+[89]) (./_pages_8dox.tex) [90] (./refman.ind
+Underfull \hbox (badness 1874) in paragraph at lines 102--104
+[]\T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/phv/
+m/n/10 Ptr-Type, RefType
  []
 
-[57]) (./_raw_string_8h.tex) (./_code_analysis_result_manifest_8txt.tex)
-(./_common_libs_8vcxproj_8_file_list_absolute_8txt.tex) [58] (./refman.ind
-[59
+[91
 
 
 
-] [60] [61]) (./refman.aux)
+]
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+[]\T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$ \
+T1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+[]\T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T1/
+phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+[]\T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/10 
+<$ \T1/phv/m/n/10 Ptr-
+ []
+
+[92] [93]
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 396--398
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--406
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 406--408
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--410
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--415
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 415--417
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--419
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 425--427
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--429
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--432
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 434--436
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--438
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--444
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 444--446
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--448
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--453
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 453--455
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--460
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 462--464
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--466
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 472--474
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 474--476
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--478
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 590--592
+[]| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
+v/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--599
+[]| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 Ptr-
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 600--602
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 Ptr-Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+[95] [96
+
+]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: C49407979BCA92F64780CE7204B5CE6F;36938.
+(rerunfilecheck)             Checksum: F2006AF1B9F542E2B8EDD455E9A83298;62273.
  ) 
 Here is how much of TeX's memory you used:
- 17554 strings out of 479485
- 275318 string characters out of 5865982
- 626038 words of memory out of 5000000
- 33721 multiletter control sequences out of 15000+600000
- 598703 words of font info for 110 fonts, out of 8000000 for 9000
+ 17911 strings out of 478846
+ 301455 string characters out of 5842655
+ 674497 words of memory out of 5000000
+ 34377 multiletter control sequences out of 15000+600000
+ 468199 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,16n,115p,788b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/Program Files (x86)/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Program Files (x86)/tex
-live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/Program Files
- (x86)/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/Pro
-gram Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:
-/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
-><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrro8
-a.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/helvetic/
-uhvb8a.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/urw/helv
-etic/uhvb8ac.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/type1/ur
-w/helvetic/uhvr8a.pfb><c:/Program Files (x86)/texlive/2020/texmf-dist/fonts/typ
-e1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (69 pages, 285286 bytes).
+ 99i,16n,117p,798b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/fonts/enc/dvips
+/base/8r.enc}<c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Yuri - work/AppData/Roaming/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/Users/Yuri -
+ work/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><c:/Users/Yuri - work/AppData/Roaming/texlive/2
+021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/Users/Yuri - work/
+AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><c:/Users/Yuri - work/AppData/Roaming/texlive/2021/te
+xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb><c:/Users/Yuri - work/AppData/Roami
+ng/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><c:/Users/Yuri - 
+work/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrro8a.pf
+b><c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/urw
+/helvetic/uhvb8a.pfb><c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8ac.pfb><c:/Users/Yuri - work/AppData/Roaming/
+texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/Yuri - wo
+rk/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
+>
+Output written on refman.pdf (106 pages, 375400 bytes).
 PDF statistics:
- 2317 PDF objects out of 2487 (max. 8388607)
- 2201 compressed objects within 23 object streams
- 472 named destinations out of 1000 (max. 500000)
- 1432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3910 PDF objects out of 4296 (max. 8388607)
+ 3732 compressed objects within 38 object streams
+ 768 named destinations out of 1000 (max. 500000)
+ 2357 words of extra memory for PDF output out of 10000 (max. 10000000)
 

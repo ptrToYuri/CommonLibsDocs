@@ -1,0 +1,46 @@
+.TH "CommonUtils/RawString.h" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommonUtils/RawString.h
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCommon\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBCommon::GetRawStringLength\fP (const char *NullTermString)"
+.br
+.RI "Calculates length of the C-string\&. "
+.ti -1c
+.RI "size_t \fBCommon::GetRawStringLength\fP (const char *NullTermString, size_t MaxLength)"
+.br
+.RI "Calculates length of the C-string\&. Stops when null character is reached or MaxLength elements have been counted\&. Useful with malformatted input\&. "
+.ti -1c
+.RI "void \fBCommon::CopyRawString\fP (const char *NullTermStringFrom, char *const RawStringTo)"
+.br
+.RI "Does the copy of C-style string (ended with '\\0')\&. "
+.ti -1c
+.RI "void \fBCommon::CopyRawString\fP (const char *NullTermStringFrom, char *RawStringTo, size_t MaxLength)"
+.br
+.RI "Does the copy of C-style string\&. Stops when null character is reached or MaxLength elements have been copied\&. Useful when string should be cut\&. "
+.ti -1c
+.RI "bool \fBCommon::AreRawStringsEqual\fP (const char *NullTermString1, const char *NullTermString2)"
+.br
+.RI "Checks whether two C-style strings are equal\&. "
+.ti -1c
+.RI "bool \fBCommon::AreRawStringsEqual\fP (const char *NullTermString1, const char *NullTermString2, size_t MaxCompareLength)"
+.br
+.RI "Checks whether two C-style strings are equal\&. Use this to compare N first elements, even if strings are not null-terminated\&. "
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

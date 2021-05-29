@@ -1,0 +1,17 @@
+\hypertarget{index_Introduction}{}\doxysection{Introduction}\label{index_Introduction}
+Library contains custom types and utulites (vector, string, etc.) created with minimal dependency from standard libraries. I implement this for educational purposes only.\hypertarget{index_Installation}{}\doxysection{Installation}\label{index_Installation}
+
+\begin{DoxyEnumerate}
+\item Create Visual Studio solution or use existing one 
+\item Place this folder into your solution. I recommend using git submodules, because it allows to update lib easily\+: 
+\begin{DoxyEnumerate}
+\item {\ttfamily git init}, if you do not have repository yet 
+\item {\ttfamily git submodule add \href{https://github.com/ptrToYuri/CommonLibs.git}{\texttt{ https\+://github.\+com/ptr\+To\+Yuri/\+Common\+Libs.\+git}}}
+\end{DoxyEnumerate}
+\item Right click on solution in Visual Studio -\/$>$ Add -\/$>$ Existing project -\/$>$ find and select \char`\"{}\+Common\+Libs.\+vcxproj\char`\"{} in the file explorer 
+\item Right click on project in which you want to use with this lib -\/$>$ Add -\/$>$ Reference -\/$>$ Select \char`\"{}\+Common\+Libs\char`\"{} -\/$>$ Ok
+\end{DoxyEnumerate}\hypertarget{index_Update}{}\doxysection{Update}\label{index_Update}
+If you downloaded Common\+Libs via git submodule, run {\ttfamily git submodule update -\/-\/recursive -\/-\/remote}. Otherwise files may be replaced manually.\hypertarget{index_GetStarted}{}\doxysection{Get started}\label{index_GetStarted}
+Documentation is available on this website\+: \href{namespaces.html}{\texttt{ Namespaces}}, \href{annotated.html}{\texttt{ List of classes}}, \href{files.html}{\texttt{ List of header files}}.~\newline
+ You can use the sidebar and dropdown menu for advanced navigation.\hypertarget{index_Reliability}{}\doxysection{Reliability}\label{index_Reliability}
+Code is neither enough optimized nor stable. Please, keep in mind that there might be bad pracices and mistakes if you want to learn something from this code. 

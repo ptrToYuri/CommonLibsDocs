@@ -1,0 +1,306 @@
+.TH "Common" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBIterators\fP"
+.br
+.in -1c
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCException\fP"
+.br
+.RI "Basic exception class\&. C-style message is required\&. "
+.ti -1c
+.RI "class \fBCOutOfRange\fP"
+.br
+.RI "Represents 'Out of Range' error\&. Can hold message, requested and expected indices\&. "
+.ti -1c
+.RI "class \fBCBadAlloc\fP"
+.br
+.RI "Represents allocation failed error (usually rethrown from new) "
+.ti -1c
+.RI "class \fBCDoesNotExist\fP"
+.br
+.RI "Represents 'Element does not exist' error\&. Stores message\&. "
+.ti -1c
+.RI "class \fBTOptional\fP"
+.br
+.RI "Represents object that may not exist\&. "
+.ti -1c
+.RI "class \fBTPair\fP"
+.br
+.RI "Container that represents a pair of objects\&. "
+.ti -1c
+.RI "class \fBTVector\fP"
+.br
+.RI "Container representing array that can change its size\&. "
+.ti -1c
+.RI "struct \fBRemoveReference\fP"
+.br
+.ti -1c
+.RI "struct \fBRemoveReference< T & >\fP"
+.br
+.ti -1c
+.RI "struct \fBRemoveReference< T && >\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T1 , typename T2 > \fBTPair\fP< T1, T2 > \fBMakePair\fP (const T1 &First, const T2 &Second) noexcept"
+.br
+.ti -1c
+.RI "template<typename IteratorType > size_t \fBGetIteratorDistance\fP (IteratorType Begin, IteratorType End)"
+.br
+.RI "Counts elements between two iterators\&. Range: [Begin: End) "
+.ti -1c
+.RI "template<typename T > void \fBAllocate\fP (size_t NewSize, T *&OutBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBDeallocate\fP (T *&OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBConstruct\fP (size_t Index, T *OutBuffer, const T &Value)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBDestruct\fP (size_t Index, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBDestructRange\fP (size_t From, size_t To, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBDestructAll\fP (size_t Size, T *OutBuffer) noexcept"
+.br
+.ti -1c
+.RI "template<typename T > void \fBSafeMoveBlock\fP (size_t Size, T *FromBuffer, T *ToBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBSafeMoveBlockReverse\fP (size_t Size, T *FromBuffer, T *ToBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBReconstruct\fP (size_t CopySize, size_t NewCapacity, T *&OutBuffer, size_t &OutCapacity, size_t &OutSize)"
+.br
+.ti -1c
+.RI "template<typename IteratorType , typename T > void \fBSafeBulkConstruct\fP (size_t StartPosition, IteratorType From, IteratorType To, T *OutBuffer)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBSafeFillConstruct\fP (size_t StartPosition, size_t EndPosition, T *OutBuffer, const T &Value)"
+.br
+.ti -1c
+.RI "size_t \fBGetRawStringLength\fP (const char *NullTermString)"
+.br
+.RI "Calculates length of the C-string\&. "
+.ti -1c
+.RI "size_t \fBGetRawStringLength\fP (const char *NullTermString, size_t MaxLength)"
+.br
+.RI "Calculates length of the C-string\&. Stops when null character is reached or MaxLength elements have been counted\&. Useful with malformatted input\&. "
+.ti -1c
+.RI "void \fBCopyRawString\fP (const char *NullTermStringFrom, char *const RawStringTo)"
+.br
+.RI "Does the copy of C-style string (ended with '\\0')\&. "
+.ti -1c
+.RI "void \fBCopyRawString\fP (const char *NullTermStringFrom, char *RawStringTo, size_t MaxLength)"
+.br
+.RI "Does the copy of C-style string\&. Stops when null character is reached or MaxLength elements have been copied\&. Useful when string should be cut\&. "
+.ti -1c
+.RI "bool \fBAreRawStringsEqual\fP (const char *NullTermString1, const char *NullTermString2)"
+.br
+.RI "Checks whether two C-style strings are equal\&. "
+.ti -1c
+.RI "bool \fBAreRawStringsEqual\fP (const char *NullTermString1, const char *NullTermString2, size_t MaxCompareLength)"
+.br
+.RI "Checks whether two C-style strings are equal\&. Use this to compare N first elements, even if strings are not null-terminated\&. "
+.ti -1c
+.RI "template<typename IteratorType , typename FunctionType > void \fBBubbleSort\fP (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+.br
+.ti -1c
+.RI "template<typename IteratorType , typename FunctionType > void \fBSelectionSort\fP (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+.br
+.ti -1c
+.RI "template<typename IteratorType , typename FunctionType > void \fBQuickSort\fP (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+.br
+.ti -1c
+.RI "template<typename T > \fBRemoveReference\fP< T >::Type && \fBMove\fP (T &&Value)"
+.br
+.ti -1c
+.RI "template<typename T > void \fBSwap\fP (T &First, T &Second)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T1 , typename T2 > \fBTPair\fP<T1, T2> Common::MakePair (const T1 & First, const T2 & Second)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "template<typename IteratorType > size_t Common::GetIteratorDistance (IteratorType Begin, IteratorType End)"
+
+.PP
+Counts elements between two iterators\&. Range: [Begin: End) 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Distance between iterators 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Begin must not be greater than end (negative results are not supported) 
+.RE
+.PP
+
+.SS "template<typename T > void Common::Allocate (size_t NewSize, T *& OutBuffer)\fC [inline]\fP"
+
+.SS "template<typename T > void Common::Deallocate (T *& OutBuffer)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "template<typename T > void Common::Construct (size_t Index, T * OutBuffer, const T & Value)\fC [inline]\fP"
+
+.SS "template<typename T > void Common::Destruct (size_t Index, T * OutBuffer)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "template<typename T > void Common::DestructRange (size_t From, size_t To, T * OutBuffer)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "template<typename T > void Common::DestructAll (size_t Size, T * OutBuffer)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.SS "template<typename T > void Common::SafeMoveBlock (size_t Size, T * FromBuffer, T * ToBuffer)"
+
+.SS "template<typename T > void Common::SafeMoveBlockReverse (size_t Size, T * FromBuffer, T * ToBuffer)"
+
+.SS "template<typename T > void Common::Reconstruct (size_t CopySize, size_t NewCapacity, T *& OutBuffer, size_t & OutCapacity, size_t & OutSize)"
+
+.SS "template<typename IteratorType , typename T > void Common::SafeBulkConstruct (size_t StartPosition, IteratorType From, IteratorType To, T * OutBuffer)"
+
+.SS "template<typename T > void Common::SafeFillConstruct (size_t StartPosition, size_t EndPosition, T * OutBuffer, const T & Value)"
+
+.SS "size_t Common::GetRawStringLength (const char * NullTermString)"
+
+.PP
+Calculates length of the C-string\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermString\fP Char array that ends with '\\0' 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number of actual letters in string ('\\0' is not counted) 
+.RE
+.PP
+
+.SS "size_t Common::GetRawStringLength (const char * NullTermString, size_t MaxLength)"
+
+.PP
+Calculates length of the C-string\&. Stops when null character is reached or MaxLength elements have been counted\&. Useful with malformatted input\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermString\fP Char array that ends with '\\0' (or not, if you rely on MaxLength and buffer size) 
+.br
+\fIMaxLength\fP Max amount of characters to count; does not include the trailing '\\0' 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number of actual letters in string ('\\0' is not counted) 
+.RE
+.PP
+
+.SS "void Common::CopyRawString (const char * NullTermStringFrom, char *const RawStringTo)"
+
+.PP
+Does the copy of C-style string (ended with '\\0')\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermStringFrom\fP Source: char array that ends with '\\0' 
+.br
+\fINullTermStringTo\fP Destination: Char array that is large enough to receive copied elements\&. May not end with '\\0' 
+.RE
+.PP
+
+.SS "void Common::CopyRawString (const char * NullTermStringFrom, char * RawStringTo, size_t MaxLength)"
+
+.PP
+Does the copy of C-style string\&. Stops when null character is reached or MaxLength elements have been copied\&. Useful when string should be cut\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermStringFrom\fP Source: char array that ends with '\\0' (or not, if you rely on MaxLength and buffer size) 
+.br
+\fINullTermStringTo\fP Destination: Char array that is large enough to receive copied elements\&. May not end with '\\0'\&. After copying it gets '\\0' anyway 
+.br
+\fIMaxLength\fP Max amount of characters to copy; does not include trailing '\\0' 
+.RE
+.PP
+
+.SS "bool Common::AreRawStringsEqual (const char * NullTermString1, const char * NullTermString2)"
+
+.PP
+Checks whether two C-style strings are equal\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermString1\fP First null-terminated string 
+.br
+\fINullTermString2\fP Second null-terminated string 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if characters before '\\0' are the same false otherwise 
+.RE
+.PP
+
+.SS "bool Common::AreRawStringsEqual (const char * NullTermString1, const char * NullTermString2, size_t MaxCompareLength)"
+
+.PP
+Checks whether two C-style strings are equal\&. Use this to compare N first elements, even if strings are not null-terminated\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINullTermString1\fP First string (whether null- terminated or limited with MaxCompareLength) 
+.br
+\fINullTermString2\fP Second string (whether null- terminated or limited with MaxCompareLength) 
+.br
+\fIMaxComparedLength\fP Max amount of characters to compare; does not include trailing '\\0' 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true if characters before '\\0' are the same false otherwise 
+.RE
+.PP
+
+.SS "template<typename IteratorType , typename FunctionType > void Common::BubbleSort (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+
+.SS "template<typename IteratorType , typename FunctionType > void Common::SelectionSort (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+
+.SS "template<typename IteratorType , typename FunctionType > void Common::QuickSort (IteratorType Begin, IteratorType End, FunctionType Comparator)"
+
+.SS "template<typename T > \fBRemoveReference\fP<T>::Type&& Common::Move (T && Value)"
+
+.SS "template<typename T > void Common::Swap (T & First, T & Second)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

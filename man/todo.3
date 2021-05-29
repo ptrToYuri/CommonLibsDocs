@@ -1,0 +1,16 @@
+.TH "todo" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+todo \- Todo List 
+
+.IP "\fBClass \fBCommon::TOptional< T >\fP \fP" 1c
+SFINAE for == operator  
+.IP "\fBClass \fBCommon::TPair< T1, T2 >\fP \fP" 1c
+Placement new 
+.IP "\fBClass \fBCommon::TVector< T >\fP \fP" 1c
+In case of construction errors, do not decrease capacity unless CapacityRule is set to NeverReserve\&. Capacity management is not consistent now, especially if move operation throws
+.PP
+Implement SFINAE to support types without nonparam ctor and types without overloaded == operator
+.PP
+

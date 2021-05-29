@@ -1,0 +1,79 @@
+.TH "Common::CException" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::CException \- Basic exception class\&. C-style message is required\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Exception\&.h'\fP
+.PP
+Inherited by \fBCommon::CBadAlloc\fP, \fBCommon::CDoesNotExist\fP, and \fBCommon::COutOfRange\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCException\fP (const char *\fBMessage\fP) noexcept"
+.br
+.RI "All exceptions must provide the message\&. "
+.ti -1c
+.RI "virtual \fB~CException\fP ()"
+.br
+.ti -1c
+.RI "virtual const char * \fBGetMessage\fP () const noexcept"
+.br
+.RI "Error message\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "char \fBMessage\fP [48]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Basic exception class\&. C-style message is required\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Common::CException::CException (const char * Message)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+All exceptions must provide the message\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Error description\&. Will be copied to an inner buffer 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If length of message > 47, first 47 symbols will be saved\&. 
+.RE
+.PP
+
+.SS "virtual Common::CException::~CException ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual const char* Common::CException::GetMessage () const\fC [inline]\fP, \fC [virtual]\fP, \fC [noexcept]\fP"
+
+.PP
+Error message\&. 
+.PP
+\fBReturns\fP
+.RS 4
+C-style string with error description 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "char Common::CException::Message[48]\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

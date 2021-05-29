@@ -1,0 +1,43 @@
+.TH "CommonTypes/Exception.h" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommonTypes/Exception.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Pair\&.h'\fP
+.br
+\fC#include '\&.\&./CommonUtils/RawString\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBCommon::CException\fP"
+.br
+.RI "Basic exception class\&. C-style message is required\&. "
+.ti -1c
+.RI "class \fBCommon::COutOfRange\fP"
+.br
+.RI "Represents 'Out of Range' error\&. Can hold message, requested and expected indices\&. "
+.ti -1c
+.RI "class \fBCommon::CBadAlloc\fP"
+.br
+.RI "Represents allocation failed error (usually rethrown from new) "
+.ti -1c
+.RI "class \fBCommon::CDoesNotExist\fP"
+.br
+.RI "Represents 'Element does not exist' error\&. Stores message\&. "
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBCommon\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

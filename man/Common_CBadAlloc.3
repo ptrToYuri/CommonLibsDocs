@@ -1,0 +1,100 @@
+.TH "Common::CBadAlloc" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::CBadAlloc \- Represents allocation failed error (usually rethrown from new)  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Exception\&.h'\fP
+.PP
+Inherits \fBCommon::CException\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCBadAlloc\fP (const char *\fBMessage\fP) noexcept"
+.br
+.RI "Pass only message, if other properties cannot be specified\&. "
+.ti -1c
+.RI "\fBCBadAlloc\fP (const char *\fBMessage\fP, size_t \fBRequestedAllocSize\fP) noexcept"
+.br
+.RI "Also specify requested alloc size\&. "
+.ti -1c
+.RI "size_t \fBGetRequestedAllocSize\fP ()"
+.br
+.RI "Size in bytes that was intended to be allocated\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "const size_t \fBRequestedAllocSize\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represents allocation failed error (usually rethrown from new) 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Common::CBadAlloc::CBadAlloc (const char * Message)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Pass only message, if other properties cannot be specified\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Description\&. Will be copied to the inner buffer 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If length of message > 47, first 47 symbols will be saved\&. 
+.RE
+.PP
+
+.SS "Common::CBadAlloc::CBadAlloc (const char * Message, size_t RequestedAllocSize)\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+Also specify requested alloc size\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIMessage\fP Description\&. Will be copied to the inner buffer 
+.br
+\fIRequestedAllocSize\fP Requested allocation size 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "size_t Common::CBadAlloc::GetRequestedAllocSize ()\fC [inline]\fP"
+
+.PP
+Size in bytes that was intended to be allocated\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Requested allocation size, that failed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Returns 0 if constructed only with message\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "const size_t Common::CBadAlloc::RequestedAllocSize = 0\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

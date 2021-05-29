@@ -1,0 +1,1548 @@
+.TH "Common::TVector< T >" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::TVector< T > \- Container representing array that can change its size\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Vector\&.h'\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum class \fBEReservedCapacityRule\fP : uint8_t { \fBExponential\fP, \fBLinear\fP, \fBNeverReserve\fP }"
+.br
+.RI "Defines how extra Capacity is reserved\&. "
+.ti -1c
+.RI "enum class \fBEShrinkBehavior\fP { \fBRequire\fP, \fBAllow\fP, \fBDeny\fP }"
+.br
+.RI "Overrides CapacityRule for specific element removal case\&. "
+.ti -1c
+.RI "typedef T \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBIterators::TBlockIterator\fP< T *, T & > \fBCIterator\fP"
+.br
+.RI "Iterator\&. Implemented op-s: ++, +=, +, --, -=, -, ==, !=, =\&. "
+.ti -1c
+.RI "typedef \fBIterators::TBlockIterator\fP< const T *, const T & > \fBCConstIterator\fP"
+.br
+.RI "Version of CIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TReverseBlockIterator\fP< T *, T & > \fBCReverseIterator\fP"
+.br
+.RI "Reverse iterator\&. Increment is actually decrement, etc\&. "
+.ti -1c
+.RI "typedef \fBIterators::TReverseBlockIterator\fP< const T *, const T & > \fBCConstReverseIterator\fP"
+.br
+.RI "Version of TReverseIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeBlockIterator\fP< T *, T &, \fBTVector\fP< T > * > \fBCSafeIterator\fP"
+.br
+.RI "Iterator that does bounds checking and throws OutOfRange()\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeBlockIterator\fP< const T *, const T &, const \fBTVector\fP< T > * > \fBCSafeConstIterator\fP"
+.br
+.RI "Version of TSafeIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeReverseBlockIterator\fP< T *, T &, \fBTVector\fP< T > * > \fBCSafeReverseIterator\fP"
+.br
+.RI "Reverse iterator that can throw OutOfRange()\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeReverseBlockIterator\fP< const T *, const T &, const \fBTVector\fP< T > * > \fBCSafeConstReverseIterator\fP"
+.br
+.RI "Version of TSafeReverseIterator for const values\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTVector\fP (\fBEReservedCapacityRule\fP CapacityRule=\fBEReservedCapacityRule::Exponential\fP) noexcept"
+.br
+.RI "Creates empty vector with Capacity preset predefined\&. "
+.ti -1c
+.RI "\fBTVector\fP (size_t Size, const T &DefaultValue={}, \fBEReservedCapacityRule\fP CapacityRule=\fBEReservedCapacityRule::Exponential\fP)"
+.br
+.RI "Vector with pre-created elements\&. "
+.ti -1c
+.RI "\fBTVector\fP (size_t Size, const T *const Array, \fBEReservedCapacityRule\fP CapacityRule=\fBEReservedCapacityRule::Exponential\fP)"
+.br
+.RI "Vector constructed from raw dynamic array (copy)\&. "
+.ti -1c
+.RI "\fBTVector\fP (const std::initializer_list< T > &ValuesList)"
+.br
+.RI "Modern C++ initialization syntax: name = {\&.\&.\&.}\&. "
+.ti -1c
+.RI "template<typename IteratorType > \fBTVector\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP, \fBEReservedCapacityRule\fP CapacityRule=\fBEReservedCapacityRule::Exponential\fP, typename std::enable_if<!std::is_integral< IteratorType >::value >::type *=0)"
+.br
+.RI "Constructor to get values from another container\&. "
+.ti -1c
+.RI "\fBTVector\fP (const \fBTVector\fP< T > &Other)"
+.br
+.RI "Initialize by copying another \fBTVector\fP\&. "
+.ti -1c
+.RI "\fBTVector\fP (\fBTVector\fP< T > &&Other) noexcept"
+.br
+.RI "Move constructor\&. "
+.ti -1c
+.RI "\fB~TVector\fP ()"
+.br
+.ti -1c
+.RI "template<typename IteratorType > void \fBAssign\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Allows to copy values from another container\&. "
+.ti -1c
+.RI "\fBTVector\fP< T > & \fBoperator=\fP (const std::initializer_list< T > &ValuesList)"
+.br
+.RI "Allows assignment with = {\&.\&.\&.} style\&. "
+.ti -1c
+.RI "\fBTVector\fP< T > & \fBoperator=\fP (const \fBTVector\fP< T > &Other)"
+.br
+.RI "Makes a copy of another vector\&. "
+.ti -1c
+.RI "\fBTVector\fP< T > & \fBoperator=\fP (\fBTVector\fP< T > &&Other) noexcept"
+.br
+.RI "Move assignment\&. "
+.ti -1c
+.RI "T & \fBoperator[]\fP (size_t Index)"
+.br
+.RI "Index operator that prodives access to the element\&. "
+.ti -1c
+.RI "const T & \fBoperator[]\fP (size_t Index) const"
+.br
+.RI "Index operator for const vectors\&. "
+.ti -1c
+.RI "T & \fBSafeAt\fP (size_t Index)"
+.br
+.RI "[] with range check\&. "
+.ti -1c
+.RI "const T & \fBSafeAt\fP (size_t Index) const"
+.br
+.RI "\fBSafeAt()\fP for const vectors\&. "
+.ti -1c
+.RI "T & \fBAutoAt\fP (size_t Index, const T &DefaultValue={})"
+.br
+.RI "Provides access to the element\&. If range check fails, will auto fill vector up to Index with DefaultValue\&. "
+.ti -1c
+.RI "T * \fBRawData\fP () noexcept"
+.br
+.RI "Provides access to the internal buffer\&. "
+.ti -1c
+.RI "const T * \fBRawData\fP () const noexcept"
+.br
+.RI "\fBRawData()\fP for const vectors\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBTVector\fP< T > &Other) const noexcept"
+.br
+.RI "Checks if two vectors contain the same values by calling equality operator recursively\&. "
+.ti -1c
+.RI "bool \fBoperator!=\fP (const \fBTVector\fP< T > &Other) const noexcept"
+.br
+.RI "Opposite to operator ==\&. "
+.ti -1c
+.RI "\fBTVector\fP< T > & \fBoperator+=\fP (const \fBTVector\fP< T > &Other)"
+.br
+.RI "Concatenates vectors (push 1 with 2) "
+.ti -1c
+.RI "\fBTVector\fP< T > \fBoperator+\fP (const \fBTVector\fP< T > &Other) const"
+.br
+.RI "Concatenates vectors (push 1 with 2) "
+.ti -1c
+.RI "void \fBPush\fP (const T &Value)"
+.br
+.RI "Adds one element to the end of vector\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBPush\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "Adds multiple elements to the end via iterators\&. "
+.ti -1c
+.RI "void \fBInsert\fP (size_t Position, const T &Value)"
+.br
+.RI "Inserts one element to the specified position\&. "
+.ti -1c
+.RI "void \fBSafeInsert\fP (size_t Position, const T &Value)"
+.br
+.RI "\fBInsert()\fP with range check\&. "
+.ti -1c
+.RI "void \fBAutoInsert\fP (size_t Position, const T &Value, const T &DefaultValue={})"
+.br
+.RI "Inserts element, extends vector if range check failed\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBInsert\fP (size_t Position, IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "Inserts range of elements, starting at Position\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBSafeInsert\fP (size_t Position, IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "\fBInsert()\fP with range check\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBAutoInsert\fP (size_t Position, IteratorType \fBBegin\fP, IteratorType \fBEnd\fP, const T &DefaultValue={})"
+.br
+.RI "Inserts range of elements, starting at Position\&. Extends vector if range check failed\&. "
+.ti -1c
+.RI "void \fBPop\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes one element from the end of vector\&. "
+.ti -1c
+.RI "void \fBSafePop\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBPop()\fP with range check\&. "
+.ti -1c
+.RI "T \fBSafePopGet\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBSafePop()\fP that returns removed value\&. "
+.ti -1c
+.RI "void \fBPopMultiple\fP (size_t ElementsCount, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes N elements from the end of vector\&. "
+.ti -1c
+.RI "void \fBShift\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes one element from the beginning of vector\&. "
+.ti -1c
+.RI "void \fBSafeShift\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBShift()\fP with range check\&. "
+.ti -1c
+.RI "T \fBSafeShiftGet\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBSafeShift()\fP that returns removed value\&. "
+.ti -1c
+.RI "void \fBShiftMultiple\fP (size_t ElementsToShift, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes N elements from the beginning of vector\&. "
+.ti -1c
+.RI "void \fBErase\fP (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes element with specified position\&. "
+.ti -1c
+.RI "void \fBSafeErase\fP (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBErase()\fP with range check\&. "
+.ti -1c
+.RI "T \fBSafeEraseGet\fP (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "\fBSafeErase()\fP that returns removed value\&. "
+.ti -1c
+.RI "void \fBEraseMultiple\fP (size_t PositionFrom, size_t PositionTo, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes range of elements from vector\&. "
+.ti -1c
+.RI "void \fBReserve\fP (size_t NewCapacity)"
+.br
+.RI "Allocates elements internally for the future use\&. "
+.ti -1c
+.RI "void \fBResize\fP (size_t NewSize, const T &DefaultValue={}, \fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Changes size of vector\&. "
+.ti -1c
+.RI "void \fBSwap\fP (\fBTVector\fP< T > &Other) noexcept"
+.br
+.RI "Swaps two vectors internally without deep copy\&. "
+.ti -1c
+.RI "void \fBShrinkToFit\fP ()"
+.br
+.RI "Clears memory that was reserved for future use\&. "
+.ti -1c
+.RI "void \fBClear\fP (\fBEShrinkBehavior\fP ShrinkBehavior=\fBEShrinkBehavior::Allow\fP)"
+.br
+.RI "Removes all elements from the vector\&. "
+.ti -1c
+.RI "size_t \fBGetSize\fP () const noexcept"
+.br
+.RI "Size is number of elements that you can use\&. "
+.ti -1c
+.RI "size_t \fBGetCapacity\fP () const noexcept"
+.br
+.RI "Capacity is Size + reserved space for the future use\&. "
+.ti -1c
+.RI "bool \fBIsEmpty\fP () const noexcept"
+.br
+.RI "Simple check if size of this vector equals 0\&. "
+.ti -1c
+.RI "void \fBSetCapacityRule\fP (\fBEReservedCapacityRule\fP CapacityRule) noexcept"
+.br
+.RI "Set enum value that will describe how re-allocation works when elements are added / removed from vertor\&. Reallocation on removal happens only if bool bAllowAutoShrink was passed with supported operation\&. "
+.ti -1c
+.RI "\fBEReservedCapacityRule\fP \fBGetCapacityRule\fP () const noexcept"
+.br
+.RI "Returns Capacity rule that is currently applied\&. It affects how elements are allocated & destructed\&. "
+.ti -1c
+.RI "T & \fBFront\fP ()"
+.br
+.RI "Provides access to the first element\&. "
+.ti -1c
+.RI "const T & \fBFront\fP () const"
+.br
+.RI "\fBFront()\fP for const vectors\&. "
+.ti -1c
+.RI "T & \fBSafeFront\fP ()"
+.br
+.RI "\fBFront()\fP with range check\&. "
+.ti -1c
+.RI "const T & \fBSafeFront\fP () const"
+.br
+.RI "\fBSafeFront()\fP for const vectors\&. "
+.ti -1c
+.RI "T & \fBBack\fP ()"
+.br
+.RI "Provides access to the last element\&. "
+.ti -1c
+.RI "const T & \fBBack\fP () const"
+.br
+.RI "\fBBack()\fP for const vectors\&. "
+.ti -1c
+.RI "T & \fBSafeBack\fP ()"
+.br
+.RI "\fBBack()\fP with range check\&. "
+.ti -1c
+.RI "const T & \fBSafeBack\fP () const"
+.br
+.RI "\fBSafeBack()\fP for const vectors\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBBegin\fP ()"
+.br
+.RI "Iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBConstBegin\fP () const"
+.br
+.RI "Iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBReverseBegin\fP ()"
+.br
+.RI "Reverse iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBConstReverseBegin\fP () const"
+.br
+.RI "Reverse iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCSafeIterator\fP \fBSafeBegin\fP ()"
+.br
+.RI "Safe iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCSafeConstIterator\fP \fBSafeConstBegin\fP () const"
+.br
+.RI "Safe iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCSafeReverseIterator\fP \fBSafeReverseBegin\fP ()"
+.br
+.RI "Safe reverse iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCSafeConstReverseIterator\fP \fBSafeConstReverseBegin\fP () const"
+.br
+.RI "Safe reverse iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBEnd\fP ()"
+.br
+.RI "Iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBConstEnd\fP () const"
+.br
+.RI "Iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBReverseEnd\fP ()"
+.br
+.RI "Reverse iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBConstReverseEnd\fP () const"
+.br
+.RI "Reverse iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCSafeIterator\fP \fBSafeEnd\fP ()"
+.br
+.RI "Safe iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCSafeConstIterator\fP \fBSafeConstEnd\fP () const"
+.br
+.RI "Safe iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCSafeReverseIterator\fP \fBSafeReverseEnd\fP ()"
+.br
+.RI "Safe reverse iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCSafeConstReverseIterator\fP \fBSafeConstReverseEnd\fP () const"
+.br
+.RI "Safe reverse it\&. pointing to elem after last (const)\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBbegin\fP ()"
+.br
+.RI "\fBBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBbegin\fP () const"
+.br
+.RI "\fBConstBegin()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBcbegin\fP () const"
+.br
+.RI "\fBConstBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBrbegin\fP ()"
+.br
+.RI "\fBReverseBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBrbegin\fP () const"
+.br
+.RI "\fBConstReverseBegin()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBcrbegin\fP () const"
+.br
+.RI "\fBConstReverseBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCIterator\fP \fBend\fP ()"
+.br
+.RI "\fBEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBend\fP () const"
+.br
+.RI "\fBConstEnd()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBcend\fP () const"
+.br
+.RI "\fBConstEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBrend\fP ()"
+.br
+.RI "\fBReverseEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBrend\fP () const"
+.br
+.RI "\fBConstReverseEnd()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBcrend\fP () const"
+.br
+.RI "\fBConstReverseEnd()\fP alias (for compatibity) "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T>
+.br
+class Common::TVector< T >"
+Container representing array that can change its size\&. 
+
+Fast in accessing elements as offsets are used, but not very effective in terms of adding and removing elements\&. To minimize those drawbacks, there are memory reserving rules that you can manage\&.
+.PP
+Unlike std::vector, this has utilities to manage capacity outside\&. EReservedCapacityRule describes how extra capacity is reserved\&. This value is class member (get/set are possible)\&. EShrinkBehavior can be passed to every function that is supposed to decrease \fBTVector\fP capacity, overriding EReservedCapacityRule in terms of removing elements in this specific case\&.
+.PP
+Exception policy: \fBTVector\fP stays in the previous state if construction fails\&. \fBTVector\fP is cleared if move construction of the underlying object failed\&. \fBTVector\fP is in the broken state if exception occured from \fBTVector\fP constructor, but destruction is handled correctly\&. Rethrows original exception\&. Capacity is not changed if CapacityRule is NOT NeverReserve\&.
+.PP
+\fBNote\fP
+.RS 4
+If the logical result of operation may not be determined, there are two methods: one that throws an exception ('Safe' prefix) and another one that does assertion in debug mode\&. Custom exception is \fBCOutOfRange\fP, derived from \fBCException\fP\&.
+.PP
+Underlying object must be copy and move constructible\&.
+.RE
+.PP
+\fBTodo\fP
+.RS 4
+In case of construction errors, do not decrease capacity unless CapacityRule is set to NeverReserve\&. Capacity management is not consistent now, especially if move operation throws
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
+Implement SFINAE to support types without nonparam ctor and types without overloaded == operator
+.RE
+.PP
+.PP
+\fBBug\fP
+.RS 4
+Move may not be performed 
+.RE
+.PP
+
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename T > typedef T \fBCommon::TVector\fP< T >::\fBvalue_type\fP"
+
+.SS "template<typename T > typedef \fBIterators::TBlockIterator\fP<T*, T&> \fBCommon::TVector\fP< T >::\fBCIterator\fP"
+
+.PP
+Iterator\&. Implemented op-s: ++, +=, +, --, -=, -, ==, !=, =\&. 
+.SS "template<typename T > typedef \fBIterators::TBlockIterator\fP<const T*, const T&> \fBCommon::TVector\fP< T >::\fBCConstIterator\fP"
+
+.PP
+Version of CIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TReverseBlockIterator\fP<T*, T&> \fBCommon::TVector\fP< T >::\fBCReverseIterator\fP"
+
+.PP
+Reverse iterator\&. Increment is actually decrement, etc\&. 
+.SS "template<typename T > typedef \fBIterators::TReverseBlockIterator\fP<const T*, const T&> \fBCommon::TVector\fP< T >::\fBCConstReverseIterator\fP"
+
+.PP
+Version of TReverseIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeBlockIterator\fP<T*, T&, \fBTVector\fP<T>*> \fBCommon::TVector\fP< T >::\fBCSafeIterator\fP"
+
+.PP
+Iterator that does bounds checking and throws OutOfRange()\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeBlockIterator\fP<const T*, const T&, const \fBTVector\fP<T>*> \fBCommon::TVector\fP< T >::\fBCSafeConstIterator\fP"
+
+.PP
+Version of TSafeIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeReverseBlockIterator\fP<T*, T&, \fBTVector\fP<T>*> \fBCommon::TVector\fP< T >::\fBCSafeReverseIterator\fP"
+
+.PP
+Reverse iterator that can throw OutOfRange()\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeReverseBlockIterator\fP<const T*, const T&, const \fBTVector\fP<T>*> \fBCommon::TVector\fP< T >::\fBCSafeConstReverseIterator\fP"
+
+.PP
+Version of TSafeReverseIterator for const values\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "template<typename T > enum \fBCommon::TVector::EReservedCapacityRule\fP : uint8_t\fC [strong]\fP"
+
+.PP
+Defines how extra Capacity is reserved\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIExponential \fP\fP
+[ADD] allocates (NewSize-1)*2 if capacity exceed and vector is not small enough 
+.br
+ [DEL] allocates 2*Size if Capacity > 4 * Size and vector is not small enough 
+.TP
+\fB\fILinear \fP\fP
+[ADD] allocates NewSize + 3 + 32 / sizeof(T) if capacity exceed 
+.br
+ [DEL] allocates Size + 4 + 32 / sizeof(T) if size exceeds capacity by more than 2*(8 + 64 / sizeof(T)) 
+.TP
+\fB\fINeverReserve \fP\fP
+[ADD, DEL] memory is never reserved automatically; Decrease of vector size causes \fBShrinkToFit()\fP immediately 
+.SS "template<typename T > enum \fBCommon::TVector::EShrinkBehavior\fP\fC [strong]\fP"
+
+.PP
+Overrides CapacityRule for specific element removal case\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIRequire \fP\fP
+Force reallocation if possible\&. Same as calling \fBShrinkToFit()\fP after each operation or setting EReservedCapacityRule to NeverReserve 
+.TP
+\fB\fIAllow \fP\fP
+Used as default value\&. Inherits behavior from EReservedCapacityRule\&. 
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.TP
+\fB\fIDeny \fP\fP
+Do not deallocate memory, even if EReservedCapacityRule prescribes that\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (\fBEReservedCapacityRule\fP CapacityRule = \fC\fBEReservedCapacityRule::Exponential\fP\fP)\fC [noexcept]\fP"
+
+.PP
+Creates empty vector with Capacity preset predefined\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICapacityRule\fP Optional\&. Describes how memory is reserved 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (size_t Size, const T & DefaultValue = \fC{}\fP, \fBEReservedCapacityRule\fP CapacityRule = \fC\fBEReservedCapacityRule::Exponential\fP\fP)"
+
+.PP
+Vector with pre-created elements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fISize\fP Number of elements to allocate 
+.br
+\fIDefaultValue\fP Value to initialize with 
+.br
+\fICapacityRule\fP Optional\&. Describes how memory is reserved 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (size_t Size, const T *const Array, \fBEReservedCapacityRule\fP CapacityRule = \fC\fBEReservedCapacityRule::Exponential\fP\fP)"
+
+.PP
+Vector constructed from raw dynamic array (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fISize\fP Number of elements in original array 
+.br
+\fIArray\fP Pointer to heap with C-style array 
+.br
+\fICapacityRule\fP Optional\&. Describes how memory is reserved 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Array[0] to Array[Size-1] must exist and have the same type as vector value_type\&. 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (const std::initializer_list< T > & ValuesList)"
+
+.PP
+Modern C++ initialization syntax: name = {\&.\&.\&.}\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValuesList\fP Initializer list 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > \fBCommon::TVector\fP< T >::\fBTVector\fP (IteratorType Begin, IteratorType End, \fBEReservedCapacityRule\fP CapacityRule = \fC\fBEReservedCapacityRule::Exponential\fP\fP, typename std::enable_if<!std::is_integral< IteratorType >::value >::type * = \fC0\fP)"
+
+.PP
+Constructor to get values from another container\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator that implements ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the beginning of container 
+.br
+\fIEnd\fP Iterator referring to the end of container 
+.br
+\fICapacityRule\fP Optional\&. Describes how memory is reserved 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (const \fBTVector\fP< T > & Other)"
+
+.PP
+Initialize by copying another \fBTVector\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP vector to copy 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::\fBTVector\fP (\fBTVector\fP< T > && Other)\fC [noexcept]\fP"
+
+.PP
+Move constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Temporary object to get data from 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TVector\fP< T >::~\fBTVector\fP ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TVector\fP< T >::Assign (IteratorType Begin, IteratorType End, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Allows to copy values from another container\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator that implements ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the beginning of container 
+.br
+\fIEnd\fP Iterator referring to the end of container 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+ShrinkBehavior for more info about patterns\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBTVector\fP<T>& \fBCommon::TVector\fP< T >::operator= (const std::initializer_list< T > & ValuesList)"
+
+.PP
+Allows assignment with = {\&.\&.\&.} style\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValuesList\fP Initializer list 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this vector 
+.RE
+.PP
+
+.SS "template<typename T > \fBTVector\fP<T>& \fBCommon::TVector\fP< T >::operator= (const \fBTVector\fP< T > & Other)"
+
+.PP
+Makes a copy of another vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP vector 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this vector 
+.RE
+.PP
+
+.SS "template<typename T > \fBTVector\fP<T>& \fBCommon::TVector\fP< T >::operator= (\fBTVector\fP< T > && Other)\fC [noexcept]\fP"
+
+.PP
+Move assignment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Temporary object to get data from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this vector 
+.RE
+.PP
+
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::operator[] (size_t Index)"
+
+.PP
+Index operator that prodives access to the element\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIIndex\fP aka offset value 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the requested element 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Element with requested index must exist in vector\&. 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::operator[] (size_t Index) const\fC [inline]\fP"
+
+.PP
+Index operator for const vectors\&. 
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::SafeAt (size_t Index)"
+
+.PP
+[] with range check\&. 
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::SafeAt (size_t Index) const\fC [inline]\fP"
+
+.PP
+\fBSafeAt()\fP for const vectors\&. 
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::AutoAt (size_t Index, const T & DefaultValue = \fC{}\fP)"
+
+.PP
+Provides access to the element\&. If range check fails, will auto fill vector up to Index with DefaultValue\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIIndex\fP Element index 
+.br
+\fIDefaultValue\fP Value to initialize added elements 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the requested element 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+Use operator [] if you are sure that element exists 
+.RE
+.PP
+
+.SS "template<typename T > T* \fBCommon::TVector\fP< T >::RawData ()\fC [noexcept]\fP"
+
+.PP
+Provides access to the internal buffer\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Pointer to c-style heap array 
+.RE
+.PP
+
+.SS "template<typename T > const T* \fBCommon::TVector\fP< T >::RawData () const\fC [inline]\fP, \fC [noexcept]\fP"
+
+.PP
+\fBRawData()\fP for const vectors\&. 
+.SS "template<typename T > bool \fBCommon::TVector\fP< T >::operator== (const \fBTVector\fP< T > & Other) const\fC [noexcept]\fP"
+
+.PP
+Checks if two vectors contain the same values by calling equality operator recursively\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Other vector to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if sizes and values are equal, false otherwise 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Containing elements must implement == operator 
+.RE
+.PP
+
+.SS "template<typename T > bool \fBCommon::TVector\fP< T >::operator!= (const \fBTVector\fP< T > & Other) const\fC [noexcept]\fP"
+
+.PP
+Opposite to operator ==\&. 
+.SS "template<typename T > \fBTVector\fP<T>& \fBCommon::TVector\fP< T >::operator+= (const \fBTVector\fP< T > & Other)"
+
+.PP
+Concatenates vectors (push 1 with 2) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Other vector to copy values from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this vector 
+.RE
+.PP
+
+.SS "template<typename T > \fBTVector\fP<T> \fBCommon::TVector\fP< T >::operator+ (const \fBTVector\fP< T > & Other) const"
+
+.PP
+Concatenates vectors (push 1 with 2) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Other vector to copy values from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+New vector, containing elements from both vectors 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Push (const T & Value)"
+
+.PP
+Adds one element to the end of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Element to add 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+Call \fBShrinkToFit()\fP to clear reserved memory, \fBReserve()\fP to increase its amount 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TVector\fP< T >::Push (IteratorType Begin, IteratorType End)"
+
+.PP
+Adds multiple elements to the end via iterators\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Insert (size_t Position, const T & Value)"
+
+.PP
+Inserts one element to the specified position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Index where to insert 
+.br
+\fIValue\fP Value to insert 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Position must not exceed Size 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::SafeInsert (size_t Position, const T & Value)"
+
+.PP
+\fBInsert()\fP with range check\&. 
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::AutoInsert (size_t Position, const T & Value, const T & DefaultValue = \fC{}\fP)"
+
+.PP
+Inserts element, extends vector if range check failed\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP 
+.br
+\fIValue\fP Value to insert 
+.br
+\fIDefaultValue\fP Value to fill with if Position > Size 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBInsert()\fP if you are sure that Position <= Size 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TVector\fP< T >::Insert (size_t Position, IteratorType Begin, IteratorType End)"
+
+.PP
+Inserts range of elements, starting at Position\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Index of the first inserted element 
+.br
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Position must not exceed Size 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TVector\fP< T >::SafeInsert (size_t Position, IteratorType Begin, IteratorType End)"
+
+.PP
+\fBInsert()\fP with range check\&. 
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TVector\fP< T >::AutoInsert (size_t Position, IteratorType Begin, IteratorType End, const T & DefaultValue = \fC{}\fP)"
+
+.PP
+Inserts range of elements, starting at Position\&. Extends vector if range check failed\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Index of the first inserted element 
+.br
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.br
+\fIDefaultValue\fP Value to fill with if Position > Size 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBInsert()\fP if you are sure that Position <= Size 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Pop (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes one element from the end of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Vector must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::SafePop (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBPop()\fP with range check\&. 
+.SS "template<typename T > T \fBCommon::TVector\fP< T >::SafePopGet (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBSafePop()\fP that returns removed value\&. 
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::PopMultiple (size_t ElementsCount, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes N elements from the end of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIElementsCount\fP Number of elements to be removed 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If ElementsCount >= Size, clears vector 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Shift (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes one element from the beginning of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Vector must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::SafeShift (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBShift()\fP with range check\&. 
+.SS "template<typename T > T \fBCommon::TVector\fP< T >::SafeShiftGet (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBSafeShift()\fP that returns removed value\&. 
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::ShiftMultiple (size_t ElementsToShift, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes N elements from the beginning of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIElementsCount\fP Number of elements to be removed 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If ElementsCount >= Size, clears vector 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Erase (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes element with specified position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Position of element to be removed 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+This method removes one element\&. To remove multiple, use \fBEraseMultiple()\fP\&. Your code with such a mistake may be compiled because of optional param\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::SafeErase (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBErase()\fP with range check\&. 
+.SS "template<typename T > T \fBCommon::TVector\fP< T >::SafeEraseGet (size_t Position, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+\fBSafeErase()\fP that returns removed value\&. 
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::EraseMultiple (size_t PositionFrom, size_t PositionTo, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes range of elements from vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPositionFrom\fP Starting index for erase 
+.br
+\fIPositionTo\fP End point for erase (after the last element) 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Ignores elements at unavailable positions\&. 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+This method removes multiple elements\&. To remove one, use \fBErase()\fP\&. Your code with such a mistake may be compiled because of optional param\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Reserve (size_t NewCapacity)"
+
+.PP
+Allocates elements internally for the future use\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINewCapacity\fP If greater than size, will update internal capacity 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+Call \fBShrinkToFit()\fP to clear reserved memory\&. 
+.RE
+.PP
+\fBAttention\fP
+.RS 4
+Upon elements removal, vector can be shrinked if CapacityRule and ShrinkBehavior allow that 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Resize (size_t NewSize, const T & DefaultValue = \fC{}\fP, \fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Changes size of vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fINewSize\fP New size of vector\&. If NewSize < Size, deletes last elements\&. Otherwise, creates new with passed value\&. 
+.br
+\fIDefaultValue\fP Value to initialize added elements 
+.br
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Swap (\fBTVector\fP< T > & Other)\fC [noexcept]\fP"
+
+.PP
+Swaps two vectors internally without deep copy\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Object to swap resources with 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::ShrinkToFit ()"
+
+.PP
+Clears memory that was reserved for future use\&. 
+.PP
+\fBSee also\fP
+.RS 4
+Methods that can reserve memory: \fBPush()\fP, \fBReserve()\fP, etc\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::Clear (\fBEShrinkBehavior\fP ShrinkBehavior = \fC\fBEShrinkBehavior::Allow\fP\fP)"
+
+.PP
+Removes all elements from the vector\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+
+.SS "template<typename T > size_t \fBCommon::TVector\fP< T >::GetSize () const\fC [noexcept]\fP"
+
+.PP
+Size is number of elements that you can use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Size of vector 
+.RE
+.PP
+
+.SS "template<typename T > size_t \fBCommon::TVector\fP< T >::GetCapacity () const\fC [noexcept]\fP"
+
+.PP
+Capacity is Size + reserved space for the future use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Capacity of vector 
+.RE
+.PP
+
+.SS "template<typename T > bool \fBCommon::TVector\fP< T >::IsEmpty () const\fC [noexcept]\fP"
+
+.PP
+Simple check if size of this vector equals 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if empty, false if not 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TVector\fP< T >::SetCapacityRule (\fBEReservedCapacityRule\fP CapacityRule)\fC [noexcept]\fP"
+
+.PP
+Set enum value that will describe how re-allocation works when elements are added / removed from vertor\&. Reallocation on removal happens only if bool bAllowAutoShrink was passed with supported operation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fICapacityRule\fP Preset value from EReservedCapacityRule 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+If bAllowAutoShrink was passed with operation, size that you have manually reserved may also be deallocated 
+.RE
+.PP
+
+.SS "template<typename T > \fBEReservedCapacityRule\fP \fBCommon::TVector\fP< T >::GetCapacityRule () const\fC [noexcept]\fP"
+
+.PP
+Returns Capacity rule that is currently applied\&. It affects how elements are allocated & destructed\&. 
+.PP
+\fBReturns\fP
+.RS 4
+EReservedCapacityRule Current capacity rule 
+.RE
+.PP
+\fBSee also\fP
+.RS 4
+\fBEReservedCapacityRule\fP for more info about presets\&. 
+.RE
+.PP
+
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::Front ()"
+
+.PP
+Provides access to the first element\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the first element 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Vector must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::Front () const\fC [inline]\fP"
+
+.PP
+\fBFront()\fP for const vectors\&. 
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::SafeFront ()"
+
+.PP
+\fBFront()\fP with range check\&. 
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::SafeFront () const\fC [inline]\fP"
+
+.PP
+\fBSafeFront()\fP for const vectors\&. 
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::Back ()"
+
+.PP
+Provides access to the last element\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the last element 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Vector must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::Back () const\fC [inline]\fP"
+
+.PP
+\fBBack()\fP for const vectors\&. 
+.SS "template<typename T > T& \fBCommon::TVector\fP< T >::SafeBack ()"
+
+.PP
+\fBBack()\fP with range check\&. 
+.SS "template<typename T > const T& \fBCommon::TVector\fP< T >::SafeBack () const\fC [inline]\fP"
+
+.PP
+\fBSafeBack()\fP for const vectors\&. 
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TVector\fP< T >::Begin ()"
+
+.PP
+Iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::ConstBegin () const"
+
+.PP
+Iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TVector\fP< T >::ReverseBegin ()"
+
+.PP
+Reverse iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::ConstReverseBegin () const"
+
+.PP
+Reverse iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeIterator\fP \fBCommon::TVector\fP< T >::SafeBegin ()"
+
+.PP
+Safe iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstIterator\fP \fBCommon::TVector\fP< T >::SafeConstBegin () const"
+
+.PP
+Safe iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeReverseIterator\fP \fBCommon::TVector\fP< T >::SafeReverseBegin ()"
+
+.PP
+Safe reverse iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstReverseIterator\fP \fBCommon::TVector\fP< T >::SafeConstReverseBegin () const"
+
+.PP
+Safe reverse iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstReverseIterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TVector\fP< T >::End ()"
+
+.PP
+Iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::ConstEnd () const"
+
+.PP
+Iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TVector\fP< T >::ReverseEnd ()"
+
+.PP
+Reverse iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::ConstReverseEnd () const"
+
+.PP
+Reverse iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeIterator\fP \fBCommon::TVector\fP< T >::SafeEnd ()"
+
+.PP
+Safe iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstIterator\fP \fBCommon::TVector\fP< T >::SafeConstEnd () const"
+
+.PP
+Safe iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeReverseIterator\fP \fBCommon::TVector\fP< T >::SafeReverseEnd ()"
+
+.PP
+Safe reverse iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstReverseIterator\fP \fBCommon::TVector\fP< T >::SafeConstReverseEnd () const"
+
+.PP
+Safe reverse it\&. pointing to elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstReverseIterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TVector\fP< T >::begin ()\fC [inline]\fP"
+
+.PP
+\fBBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::begin () const\fC [inline]\fP"
+
+.PP
+\fBConstBegin()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::cbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TVector\fP< T >::rbegin ()\fC [inline]\fP"
+
+.PP
+\fBReverseBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::rbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseBegin()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::crbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TVector\fP< T >::end ()\fC [inline]\fP"
+
+.PP
+\fBEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::end () const\fC [inline]\fP"
+
+.PP
+\fBConstEnd()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TVector\fP< T >::cend () const\fC [inline]\fP"
+
+.PP
+\fBConstEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TVector\fP< T >::rend ()\fC [inline]\fP"
+
+.PP
+\fBReverseEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::rend () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseEnd()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TVector\fP< T >::crend () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseEnd()\fP alias (for compatibity) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

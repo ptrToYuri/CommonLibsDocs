@@ -1,0 +1,277 @@
+.TH "Common::TOptional< T >" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::TOptional< T > \- Represents object that may not exist\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/Optional\&.h'\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTOptional\fP ()=default"
+.br
+.RI "No object by default\&. "
+.ti -1c
+.RI "\fBTOptional\fP (const T &Value)"
+.br
+.RI "Initialize optional with existing value (copy)\&. "
+.ti -1c
+.RI "\fBTOptional\fP (const \fBTOptional\fP< T > &Other)"
+.br
+.RI "Initialize by copying another \fBTOptional\fP\&. "
+.ti -1c
+.RI "\fBTOptional\fP (\fBTOptional\fP< T > &&Other) noexcept"
+.br
+.RI "Move constructor\&. "
+.ti -1c
+.RI "\fB~TOptional\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetValue\fP (const T &Value)"
+.br
+.RI "Set value to optional (copy)\&. "
+.ti -1c
+.RI "void \fBClear\fP () noexcept"
+.br
+.RI "Remove value from optional\&. "
+.ti -1c
+.RI "\fBTOptional\fP< T > & \fBoperator=\fP (const T &Value)"
+.br
+.RI "Assign value to the optional (copy)\&. "
+.ti -1c
+.RI "\fBTOptional\fP< T > & \fBoperator=\fP (const \fBTOptional\fP< T > &Other)"
+.br
+.RI "Assign from another optional (copy)\&. "
+.ti -1c
+.RI "\fBTOptional\fP< T > & \fBoperator=\fP (\fBTOptional\fP< T > &&Other) noexcept"
+.br
+.RI "Move assignment\&. "
+.ti -1c
+.RI "void \fBSwap\fP (\fBTOptional\fP< T > &Other)"
+.br
+.RI "Swaps two optionals without reconstructing values\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBTOptional\fP< T > &Other)"
+.br
+.RI "Checks if two optionals contain the same values\&. "
+.ti -1c
+.RI "bool \fBDoesValueExist\fP () const noexcept"
+.br
+.RI "Check if optional contains value\&. "
+.ti -1c
+.RI "const T & \fBGetValue\fP () const"
+.br
+.RI "Gets value if it exists or throws an exception\&. "
+.ti -1c
+.RI "const T & \fBGetValueOr\fP (const T &OtherVariant) const noexcept"
+.br
+.RI "Get value or passed value (if not possible)\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T>
+.br
+class Common::TOptional< T >"
+Represents object that may not exist\&. 
+
+
+.PP
+\fBTodo\fP
+.RS 4
+SFINAE for == operator 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T > \fBCommon::TOptional\fP< T >::\fBTOptional\fP ()\fC [default]\fP"
+
+.PP
+No object by default\&. 
+.SS "template<typename T > \fBCommon::TOptional\fP< T >::\fBTOptional\fP (const T & Value)"
+
+.PP
+Initialize optional with existing value (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Object to create copy from 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TOptional\fP< T >::\fBTOptional\fP (const \fBTOptional\fP< T > & Other)"
+
+.PP
+Initialize by copying another \fBTOptional\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Optional to create copy from 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TOptional\fP< T >::\fBTOptional\fP (\fBTOptional\fP< T > && Other)\fC [noexcept]\fP"
+
+.PP
+Move constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Temporary object to get data from 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TOptional\fP< T >::~\fBTOptional\fP ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T > void \fBCommon::TOptional\fP< T >::SetValue (const T & Value)"
+
+.PP
+Set value to optional (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Object to create copy from 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TOptional\fP< T >::Clear ()\fC [noexcept]\fP"
+
+.PP
+Remove value from optional\&. 
+.PP
+\fBNote\fP
+.RS 4
+This will call destructor on internal object\&. 
+.RE
+.PP
+
+.SS "template<typename T > \fBTOptional\fP<T>& \fBCommon::TOptional\fP< T >::operator= (const T & Value)"
+
+.PP
+Assign value to the optional (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Object to create copy from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this optional 
+.RE
+.PP
+
+.SS "template<typename T > \fBTOptional\fP<T>& \fBCommon::TOptional\fP< T >::operator= (const \fBTOptional\fP< T > & Other)"
+
+.PP
+Assign from another optional (copy)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Optional to create copy from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this optional 
+.RE
+.PP
+
+.SS "template<typename T > \fBTOptional\fP<T>& \fBCommon::TOptional\fP< T >::operator= (\fBTOptional\fP< T > && Other)\fC [noexcept]\fP"
+
+.PP
+Move assignment\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Temporary object to get data from 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Reference to this optional 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TOptional\fP< T >::Swap (\fBTOptional\fP< T > & Other)"
+
+.PP
+Swaps two optionals without reconstructing values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Object to swap resources with 
+.RE
+.PP
+
+.SS "template<typename T > bool \fBCommon::TOptional\fP< T >::operator== (const \fBTOptional\fP< T > & Other)"
+
+.PP
+Checks if two optionals contain the same values\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Other optional to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+True if sizes and values are equal, false otherwise 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Containing element must implement == operator\&. 
+.RE
+.PP
+
+.SS "template<typename T > bool \fBCommon::TOptional\fP< T >::DoesValueExist () const\fC [noexcept]\fP"
+
+.PP
+Check if optional contains value\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if value exists, false otherwise 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TOptional\fP< T >::GetValue () const"
+
+.PP
+Gets value if it exists or throws an exception\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Optional's value 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TOptional\fP< T >::GetValueOr (const T & OtherVariant) const\fC [noexcept]\fP"
+
+.PP
+Get value or passed value (if not possible)\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOtherVariant\fP Returned if optional is empty 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Optional internal value or provided value 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

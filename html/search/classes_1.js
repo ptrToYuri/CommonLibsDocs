@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['toptional_110',['TOptional',['../class_common_1_1_t_optional.html',1,'Common']]],
-  ['tpair_111',['TPair',['../class_common_1_1_t_pair.html',1,'Common']]],
-  ['tpair_3c_20size_5ft_2c_20size_5ft_20_3e_112',['TPair&lt; size_t, size_t &gt;',['../class_common_1_1_t_pair.html',1,'Common']]],
-  ['tvector_113',['TVector',['../class_common_1_1_t_vector.html',1,'Common']]]
+  ['removereference_161',['RemoveReference',['../struct_common_1_1_remove_reference.html',1,'Common']]],
+  ['removereference_3c_20t_20_26_20_3e_162',['RemoveReference&lt; T &amp; &gt;',['../struct_common_1_1_remove_reference_3_01_t_01_6_01_4.html',1,'Common']]],
+  ['removereference_3c_20t_20_26_26_20_3e_163',['RemoveReference&lt; T &amp;&amp; &gt;',['../struct_common_1_1_remove_reference_3_01_t_01_6_6_01_4.html',1,'Common']]]
 ];

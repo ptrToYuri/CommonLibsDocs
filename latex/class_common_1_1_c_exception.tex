@@ -1,4 +1,4 @@
-\hypertarget{class_common_1_1_c_exception}{}\doxysection{Common\+::C\+Exception Class Reference}
+\hypertarget{class_common_1_1_c_exception}{}\doxysection{Common\+::CException Class Reference}
 \label{class_common_1_1_c_exception}\index{Common::CException@{Common::CException}}
 
 
@@ -9,7 +9,7 @@ Basic exception class. C-\/style message is required.
 
 {\ttfamily \#include \char`\"{}Common\+Types/\+Exception.\+h\char`\"{}}
 
-Inheritance diagram for Common\+::C\+Exception\+:\begin{figure}[H]
+Inheritance diagram for Common\+::CException\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{class_common_1_1_c_exception}
@@ -18,16 +18,16 @@ Inheritance diagram for Common\+::C\+Exception\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_common_1_1_c_exception_a9ab280f0bac168b8c8b625245a9f4256}{C\+Exception}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}}) noexcept
+\mbox{\hyperlink{class_common_1_1_c_exception_a9ab280f0bac168b8c8b625245a9f4256}{CException}} (const char $\ast$\mbox{\hyperlink{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}{Message}}) noexcept
 \begin{DoxyCompactList}\small\item\em All exceptions must provide the message. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{class_common_1_1_c_exception_af0b7cb08e53db8499614ef84d6df1cc7}{$\sim$\+C\+Exception}} ()
+virtual \mbox{\hyperlink{class_common_1_1_c_exception_af0b7cb08e53db8499614ef84d6df1cc7}{$\sim$\+CException}} ()
 \item 
 virtual const char $\ast$ \mbox{\hyperlink{class_common_1_1_c_exception_abf76d860d800ed46957925f9c5d82b90}{Get\+Message}} () const noexcept
 \begin{DoxyCompactList}\small\item\em Error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-char \mbox{\hyperlink{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}{Message}} \mbox{[}41\mbox{]}
+char \mbox{\hyperlink{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}{Message}} \mbox{[}48\mbox{]}
 \end{DoxyCompactItemize}
 
 
@@ -39,7 +39,7 @@ Basic exception class. C-\/style message is required.
 \index{Common::CException@{Common::CException}!CException@{CException}}
 \index{CException@{CException}!Common::CException@{Common::CException}}
 \doxysubsubsection{\texorpdfstring{CException()}{CException()}}
-{\footnotesize\ttfamily Common\+::\+C\+Exception\+::\+C\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily Common\+::\+CException\+::\+CException (\begin{DoxyParamCaption}\item[{const char $\ast$}]{Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
 
 
 
@@ -51,13 +51,13 @@ All exceptions must provide the message.
 \hline
 \end{DoxyParams}
 \begin{DoxyNote}{Note}
-If length of message $>$ 40, first 40 symbols will be saved. 
+If length of message $>$ 47, first 47 symbols will be saved. 
 \end{DoxyNote}
 \mbox{\Hypertarget{class_common_1_1_c_exception_af0b7cb08e53db8499614ef84d6df1cc7}\label{class_common_1_1_c_exception_af0b7cb08e53db8499614ef84d6df1cc7}} 
 \index{Common::CException@{Common::CException}!````~CException@{$\sim$CException}}
 \index{````~CException@{$\sim$CException}!Common::CException@{Common::CException}}
 \doxysubsubsection{\texorpdfstring{$\sim$CException()}{~CException()}}
-{\footnotesize\ttfamily virtual Common\+::\+C\+Exception\+::$\sim$\+C\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual Common\+::\+CException\+::$\sim$\+CException (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
 
 
 
@@ -66,7 +66,7 @@ If length of message $>$ 40, first 40 symbols will be saved.
 \index{Common::CException@{Common::CException}!GetMessage@{GetMessage}}
 \index{GetMessage@{GetMessage}!Common::CException@{Common::CException}}
 \doxysubsubsection{\texorpdfstring{GetMessage()}{GetMessage()}}
-{\footnotesize\ttfamily virtual const char$\ast$ Common\+::\+C\+Exception\+::\+Get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+{\footnotesize\ttfamily virtual const char$\ast$ Common\+::\+CException\+::\+Get\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
 
 
 
@@ -78,9 +78,9 @@ C-\/style string with error description
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}\label{class_common_1_1_c_exception_a656dcd1fafc1516ed3647804d6438937}} 
+\mbox{\Hypertarget{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}\label{class_common_1_1_c_exception_ac696b073673af3b5eeaf6380b26472e8}} 
 \index{Common::CException@{Common::CException}!Message@{Message}}
 \index{Message@{Message}!Common::CException@{Common::CException}}
 \doxysubsubsection{\texorpdfstring{Message}{Message}}
-{\footnotesize\ttfamily char Common\+::\+C\+Exception\+::\+Message\mbox{[}41\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily char Common\+::\+CException\+::\+Message\mbox{[}48\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
 

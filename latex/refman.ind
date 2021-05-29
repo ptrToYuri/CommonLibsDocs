@@ -1,363 +1,617 @@
 \begin{theindex}
 
   \item {$\sim$CException}
-    \subitem {Common::CException}, \hyperpage{17}
+    \subitem {Common::CException}, \hyperpage{29}
+  \item {$\sim$TOptional}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{38}
   \item {$\sim$TVector}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{34}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{61}
 
   \indexspace
 
+  \item {A:/Yuri -\/ work/Desktop/CommonLibs/Pages.dox}, \hyperpage{90}
+  \item {Allocate}
+    \subitem {Common}, \hyperpage{17}
+  \item {Allow}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
   \item {AreRawStringsEqual}
-    \subitem {Common}, \hyperpage{10}
+    \subitem {Common}, \hyperpage{22}
   \item {ASSERT}
-    \subitem {Assert.h}, \hyperpage{57}
+    \subitem {Assert.h}, \hyperpage{88}
   \item {Assert.h}
-    \subitem {ASSERT}, \hyperpage{57}
+    \subitem {ASSERT}, \hyperpage{88}
   \item {Assign}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{34}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{61}
   \item {AutoAt}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{34}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{64}
+  \item {AutoInsert}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{68, 69}
 
   \indexspace
 
   \item {Back}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{35}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{77, 78}
   \item {Begin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{35}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{78}
   \item {begin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{35, 36}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{82, 83}
+  \item {BubbleSort}
+    \subitem {Common}, \hyperpage{23}
 
   \indexspace
 
+  \item {CBadAlloc}
+    \subitem {Common::CBadAlloc}, \hyperpage{26}
   \item {cbegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{36}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{83}
   \item {CConstIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{29}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{56}
   \item {CConstReverseIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{29}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{56}
   \item {CDoesNotExist}
-    \subitem {Common::CDoesNotExist}, \hyperpage{15}
+    \subitem {Common::CDoesNotExist}, \hyperpage{27}
   \item {cend}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{36}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{84}
   \item {CException}
-    \subitem {Common::CException}, \hyperpage{16}
+    \subitem {Common::CException}, \hyperpage{28}
   \item {CIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{29}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{56}
   \item {Clear}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{36}
-  \item {Common}, \hyperpage{9}
-    \subitem {AreRawStringsEqual}, \hyperpage{10}
-    \subitem {CopyRawString}, \hyperpage{10, 11}
-    \subitem {GetIteratorDistance}, \hyperpage{11}
-    \subitem {GetRawStringLength}, \hyperpage{12}
-    \subitem {MakePair}, \hyperpage{12}
-  \item {Common::CDoesNotExist}, \hyperpage{15}
-    \subitem {CDoesNotExist}, \hyperpage{15}
-  \item {Common::CException}, \hyperpage{16}
-    \subitem {$\sim$CException}, \hyperpage{17}
-    \subitem {CException}, \hyperpage{16}
-    \subitem {GetMessage}, \hyperpage{17}
-    \subitem {Message}, \hyperpage{17}
-  \item {Common::COutOfRange}, \hyperpage{17}
-    \subitem {COutOfRange}, \hyperpage{18}
-    \subitem {ExpectedIndex}, \hyperpage{20}
-    \subitem {GetExpectedRange}, \hyperpage{19}
-    \subitem {GetRequestedIndex}, \hyperpage{19}
-    \subitem {RequestedIndex}, \hyperpage{20}
-  \item {Common::TOptional$<$ T $>$}, \hyperpage{20}
-    \subitem {GetValue}, \hyperpage{21}
-    \subitem {GetValueOr}, \hyperpage{21}
-    \subitem {operator=}, \hyperpage{22}
-    \subitem {SetValue}, \hyperpage{22}
-    \subitem {TOptional}, \hyperpage{21}
-    \subitem {ValueExists}, \hyperpage{22}
-  \item {Common::TPair$<$ T1, T2 $>$}, \hyperpage{23}
-    \subitem {First}, \hyperpage{24}
-    \subitem {MakePair}, \hyperpage{24}
-    \subitem {Second}, \hyperpage{24}
-    \subitem {TPair}, \hyperpage{23}
-  \item {Common::TVector$<$ T $>$}, \hyperpage{25}
-    \subitem {$\sim$TVector}, \hyperpage{34}
-    \subitem {Assign}, \hyperpage{34}
-    \subitem {AutoAt}, \hyperpage{34}
-    \subitem {Back}, \hyperpage{35}
-    \subitem {Begin}, \hyperpage{35}
-    \subitem {begin}, \hyperpage{35, 36}
-    \subitem {cbegin}, \hyperpage{36}
-    \subitem {CConstIterator}, \hyperpage{29}
-    \subitem {CConstReverseIterator}, \hyperpage{29}
-    \subitem {cend}, \hyperpage{36}
-    \subitem {CIterator}, \hyperpage{29}
-    \subitem {Clear}, \hyperpage{36}
-    \subitem {ConstBegin}, \hyperpage{37}
-    \subitem {ConstEnd}, \hyperpage{37}
-    \subitem {ConstReverseBegin}, \hyperpage{37}
-    \subitem {ConstReverseEnd}, \hyperpage{37}
-    \subitem {crbegin}, \hyperpage{38}
-    \subitem {crend}, \hyperpage{38}
-    \subitem {CReverseIterator}, \hyperpage{29}
-    \subitem {CSafeConstIterator}, \hyperpage{30}
-    \subitem {CSafeConstReverseIterator}, \hyperpage{30}
-    \subitem {CSafeIterator}, \hyperpage{30}
-    \subitem {CSafeReverseIterator}, \hyperpage{30}
-    \subitem {End}, \hyperpage{38}
-    \subitem {end}, \hyperpage{38}
-    \subitem {Erase}, \hyperpage{39}
-    \subitem {EraseMultiple}, \hyperpage{39}
-    \subitem {EReservedCapacityRule}, \hyperpage{30}
-    \subitem {Exponential}, \hyperpage{31}
-    \subitem {Front}, \hyperpage{40}
-    \subitem {GetCapacity}, \hyperpage{40}
-    \subitem {GetCapacityRule}, \hyperpage{40}
-    \subitem {GetSize}, \hyperpage{41}
-    \subitem {Insert}, \hyperpage{41, 42}
-    \subitem {IsEmpty}, \hyperpage{42}
-    \subitem {Linear}, \hyperpage{31}
-    \subitem {NeverReserve}, \hyperpage{31}
-    \subitem {operator!=}, \hyperpage{42}
-    \subitem {operator=}, \hyperpage{43}
-    \subitem {operator==}, \hyperpage{44}
-    \subitem {operator[]}, \hyperpage{44, 45}
-    \subitem {Pop}, \hyperpage{45}
-    \subitem {PopMultiple}, \hyperpage{45}
-    \subitem {Push}, \hyperpage{46}
-    \subitem {RawData}, \hyperpage{47}
-    \subitem {rbegin}, \hyperpage{47}
-    \subitem {rend}, \hyperpage{47}
-    \subitem {Reserve}, \hyperpage{48}
-    \subitem {Resize}, \hyperpage{48}
-    \subitem {ReverseBegin}, \hyperpage{49}
-    \subitem {ReverseEnd}, \hyperpage{49}
-    \subitem {SafeAt}, \hyperpage{49}
-    \subitem {SafeBack}, \hyperpage{49, 50}
-    \subitem {SafeBegin}, \hyperpage{50}
-    \subitem {SafeConstBegin}, \hyperpage{50}
-    \subitem {SafeConstEnd}, \hyperpage{50}
-    \subitem {SafeConstReverseBegin}, \hyperpage{51}
-    \subitem {SafeConstReverseEnd}, \hyperpage{51}
-    \subitem {SafeEnd}, \hyperpage{51}
-    \subitem {SafeFront}, \hyperpage{51, 52}
-    \subitem {SafePop}, \hyperpage{52}
-    \subitem {SafeReverseBegin}, \hyperpage{52}
-    \subitem {SafeReverseEnd}, \hyperpage{52}
-    \subitem {SafeShift}, \hyperpage{52}
-    \subitem {SetCapacityRule}, \hyperpage{53}
-    \subitem {Shift}, \hyperpage{53}
-    \subitem {ShiftMultiple}, \hyperpage{53}
-    \subitem {ShrinkToFit}, \hyperpage{54}
-    \subitem {Swap}, \hyperpage{54}
-    \subitem {TVector}, \hyperpage{31--33}
-  \item {CommonTypes/Exception.h}, \hyperpage{55}
-  \item {CommonTypes/Optional.h}, \hyperpage{55}
-  \item {CommonTypes/Pair.h}, \hyperpage{56}
-  \item {CommonTypes/Private/BlockIterator.tpp}, \hyperpage{56}
-  \item {CommonTypes/Private/Vector.tpp}, \hyperpage{56}
-  \item {CommonTypes/Vector.h}, \hyperpage{56}
-  \item {CommonUtils/AdvancedIteration.h}, \hyperpage{57}
-  \item {CommonUtils/Assert.h}, \hyperpage{57}
-  \item {CommonUtils/Private/AdvancedIteration.tpp}, \hyperpage{57}
-  \item {CommonUtils/Private/RawString.cpp}, \hyperpage{57}
-  \item {CommonUtils/RawString.h}, \hyperpage{58}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{38}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{75}
+  \item {Common}, \hyperpage{15}
+    \subitem {Allocate}, \hyperpage{17}
+    \subitem {AreRawStringsEqual}, \hyperpage{22}
+    \subitem {BubbleSort}, \hyperpage{23}
+    \subitem {Construct}, \hyperpage{18}
+    \subitem {CopyRawString}, \hyperpage{21}
+    \subitem {Deallocate}, \hyperpage{17}
+    \subitem {Destruct}, \hyperpage{18}
+    \subitem {DestructAll}, \hyperpage{18}
+    \subitem {DestructRange}, \hyperpage{18}
+    \subitem {GetIteratorDistance}, \hyperpage{17}
+    \subitem {GetRawStringLength}, \hyperpage{19}, \hyperpage{21}
+    \subitem {MakePair}, \hyperpage{17}
+    \subitem {Move}, \hyperpage{23}
+    \subitem {QuickSort}, \hyperpage{23}
+    \subitem {Reconstruct}, \hyperpage{19}
+    \subitem {SafeBulkConstruct}, \hyperpage{19}
+    \subitem {SafeFillConstruct}, \hyperpage{19}
+    \subitem {SafeMoveBlock}, \hyperpage{18}
+    \subitem {SafeMoveBlockReverse}, \hyperpage{19}
+    \subitem {SelectionSort}, \hyperpage{23}
+    \subitem {Swap}, \hyperpage{23}
+  \item {Common::CBadAlloc}, \hyperpage{25}
+    \subitem {CBadAlloc}, \hyperpage{26}
+    \subitem {GetRequestedAllocSize}, \hyperpage{26}
+    \subitem {RequestedAllocSize}, \hyperpage{27}
+  \item {Common::CDoesNotExist}, \hyperpage{27}
+    \subitem {CDoesNotExist}, \hyperpage{27}
+  \item {Common::CException}, \hyperpage{28}
+    \subitem {$\sim$CException}, \hyperpage{29}
+    \subitem {CException}, \hyperpage{28}
+    \subitem {GetMessage}, \hyperpage{29}
+    \subitem {Message}, \hyperpage{29}
+  \item {Common::COutOfRange}, \hyperpage{29}
+    \subitem {COutOfRange}, \hyperpage{30}
+    \subitem {ExpectedIndex}, \hyperpage{32}
+    \subitem {GetExpectedRange}, \hyperpage{31}
+    \subitem {GetRequestedIndex}, \hyperpage{31}
+    \subitem {RequestedIndex}, \hyperpage{32}
+  \item {Common::Iterators}, \hyperpage{24}
+  \item {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{33}
+    \subitem {operator!=}, \hyperpage{35}
+    \subitem {operator$\ast$}, \hyperpage{35}
+    \subitem {operator+}, \hyperpage{34}
+    \subitem {operator++}, \hyperpage{34}
+    \subitem {operator+=}, \hyperpage{34}
+    \subitem {operator-\/}, \hyperpage{35}
+    \subitem {operator-\/-\/}, \hyperpage{34}
+    \subitem {operator-\/=}, \hyperpage{35}
+    \subitem {operator==}, \hyperpage{35}
+    \subitem {TBlockIterator}, \hyperpage{34}
+  \item {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{44}
+    \subitem {operator!=}, \hyperpage{46}
+    \subitem {operator$\ast$}, \hyperpage{46}
+    \subitem {operator+}, \hyperpage{45}
+    \subitem {operator++}, \hyperpage{45}
+    \subitem {operator+=}, \hyperpage{45}
+    \subitem {operator-\/}, \hyperpage{46}
+    \subitem {operator-\/-\/}, \hyperpage{45}
+    \subitem {operator-\/=}, \hyperpage{46}
+    \subitem {operator==}, \hyperpage{46}
+    \subitem {TReverseBlockIterator}, \hyperpage{45}
+  \item {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{47}
+    \subitem {operator!=}, \hyperpage{48}
+    \subitem {operator$\ast$}, \hyperpage{48}
+    \subitem {operator+}, \hyperpage{47}
+    \subitem {operator++}, \hyperpage{47}
+    \subitem {operator+=}, \hyperpage{47}
+    \subitem {operator-\/}, \hyperpage{48}
+    \subitem {operator-\/-\/}, \hyperpage{48}
+    \subitem {operator-\/=}, \hyperpage{48}
+    \subitem {operator==}, \hyperpage{48}
+    \subitem {TSafeBlockIterator}, \hyperpage{47}
+  \item {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{49}
+    \subitem {operator!=}, \hyperpage{50}
+    \subitem {operator$\ast$}, \hyperpage{51}
+    \subitem {operator+}, \hyperpage{49}
+    \subitem {operator++}, \hyperpage{49}
+    \subitem {operator+=}, \hyperpage{50}
+    \subitem {operator-\/}, \hyperpage{50}
+    \subitem {operator-\/-\/}, \hyperpage{50}
+    \subitem {operator-\/=}, \hyperpage{50}
+    \subitem {operator==}, \hyperpage{50}
+    \subitem {TSafeReverseBlockIterator}, \hyperpage{49}
+  \item {Common::RemoveReference$<$ T $>$}, \hyperpage{32}
+    \subitem {Type}, \hyperpage{32}
+  \item {Common::RemoveReference$<$ T \& $>$}, \hyperpage{32}
+    \subitem {Type}, \hyperpage{33}
+  \item {Common::RemoveReference$<$ T \&\& $>$}, \hyperpage{33}
+    \subitem {Type}, \hyperpage{33}
+  \item {Common::TOptional$<$ T $>$}, \hyperpage{35}
+    \subitem {$\sim$TOptional}, \hyperpage{38}
+    \subitem {Clear}, \hyperpage{38}
+    \subitem {DoesValueExist}, \hyperpage{40}
+    \subitem {GetValue}, \hyperpage{40}
+    \subitem {GetValueOr}, \hyperpage{41}
+    \subitem {operator=}, \hyperpage{38, 39}
+    \subitem {operator==}, \hyperpage{40}
+    \subitem {SetValue}, \hyperpage{38}
+    \subitem {Swap}, \hyperpage{39}
+    \subitem {TOptional}, \hyperpage{36, 37}
+  \item {Common::TPair$<$ T1, T2 $>$}, \hyperpage{41}
+    \subitem {First}, \hyperpage{44}
+    \subitem {MakePair}, \hyperpage{42}
+    \subitem {Second}, \hyperpage{44}
+    \subitem {TPair}, \hyperpage{42}
+  \item {Common::TVector$<$ T $>$}, \hyperpage{51}
+    \subitem {$\sim$TVector}, \hyperpage{61}
+    \subitem {Allow}, \hyperpage{58}
+    \subitem {Assign}, \hyperpage{61}
+    \subitem {AutoAt}, \hyperpage{64}
+    \subitem {AutoInsert}, \hyperpage{68, 69}
+    \subitem {Back}, \hyperpage{77, 78}
+    \subitem {Begin}, \hyperpage{78}
+    \subitem {begin}, \hyperpage{82, 83}
+    \subitem {cbegin}, \hyperpage{83}
+    \subitem {CConstIterator}, \hyperpage{56}
+    \subitem {CConstReverseIterator}, \hyperpage{56}
+    \subitem {cend}, \hyperpage{84}
+    \subitem {CIterator}, \hyperpage{56}
+    \subitem {Clear}, \hyperpage{75}
+    \subitem {ConstBegin}, \hyperpage{79}
+    \subitem {ConstEnd}, \hyperpage{81}
+    \subitem {ConstReverseBegin}, \hyperpage{79}
+    \subitem {ConstReverseEnd}, \hyperpage{81}
+    \subitem {crbegin}, \hyperpage{83}
+    \subitem {crend}, \hyperpage{84}
+    \subitem {CReverseIterator}, \hyperpage{56}
+    \subitem {CSafeConstIterator}, \hyperpage{57}
+    \subitem {CSafeConstReverseIterator}, \hyperpage{57}
+    \subitem {CSafeIterator}, \hyperpage{57}
+    \subitem {CSafeReverseIterator}, \hyperpage{57}
+    \subitem {Deny}, \hyperpage{58}
+    \subitem {End}, \hyperpage{80}
+    \subitem {end}, \hyperpage{83, 84}
+    \subitem {Erase}, \hyperpage{72}
+    \subitem {EraseMultiple}, \hyperpage{73}
+    \subitem {EReservedCapacityRule}, \hyperpage{57}
+    \subitem {EShrinkBehavior}, \hyperpage{58}
+    \subitem {Exponential}, \hyperpage{58}
+    \subitem {Front}, \hyperpage{77}
+    \subitem {GetCapacity}, \hyperpage{75}
+    \subitem {GetCapacityRule}, \hyperpage{76}
+    \subitem {GetSize}, \hyperpage{75}
+    \subitem {Insert}, \hyperpage{67, 68}
+    \subitem {IsEmpty}, \hyperpage{76}
+    \subitem {Linear}, \hyperpage{58}
+    \subitem {NeverReserve}, \hyperpage{58}
+    \subitem {operator!=}, \hyperpage{65}
+    \subitem {operator+}, \hyperpage{66}
+    \subitem {operator+=}, \hyperpage{66}
+    \subitem {operator=}, \hyperpage{62, 63}
+    \subitem {operator==}, \hyperpage{65}
+    \subitem {operator[]}, \hyperpage{63}
+    \subitem {Pop}, \hyperpage{70}
+    \subitem {PopMultiple}, \hyperpage{70}
+    \subitem {Push}, \hyperpage{66, 67}
+    \subitem {RawData}, \hyperpage{65}
+    \subitem {rbegin}, \hyperpage{83}
+    \subitem {rend}, \hyperpage{84}
+    \subitem {Require}, \hyperpage{58}
+    \subitem {Reserve}, \hyperpage{73}
+    \subitem {Resize}, \hyperpage{74}
+    \subitem {ReverseBegin}, \hyperpage{79}
+    \subitem {ReverseEnd}, \hyperpage{81}
+    \subitem {SafeAt}, \hyperpage{64}
+    \subitem {SafeBack}, \hyperpage{78}
+    \subitem {SafeBegin}, \hyperpage{79}
+    \subitem {SafeConstBegin}, \hyperpage{80}
+    \subitem {SafeConstEnd}, \hyperpage{82}
+    \subitem {SafeConstReverseBegin}, \hyperpage{80}
+    \subitem {SafeConstReverseEnd}, \hyperpage{82}
+    \subitem {SafeEnd}, \hyperpage{81}
+    \subitem {SafeErase}, \hyperpage{72}
+    \subitem {SafeEraseGet}, \hyperpage{73}
+    \subitem {SafeFront}, \hyperpage{77}
+    \subitem {SafeInsert}, \hyperpage{68, 69}
+    \subitem {SafePop}, \hyperpage{70}
+    \subitem {SafePopGet}, \hyperpage{70}
+    \subitem {SafeReverseBegin}, \hyperpage{80}
+    \subitem {SafeReverseEnd}, \hyperpage{82}
+    \subitem {SafeShift}, \hyperpage{71}
+    \subitem {SafeShiftGet}, \hyperpage{71}
+    \subitem {SetCapacityRule}, \hyperpage{76}
+    \subitem {Shift}, \hyperpage{71}
+    \subitem {ShiftMultiple}, \hyperpage{72}
+    \subitem {ShrinkToFit}, \hyperpage{75}
+    \subitem {Swap}, \hyperpage{74}
+    \subitem {TVector}, \hyperpage{58--61}
+    \subitem {value\_type}, \hyperpage{56}
+  \item {CommonTypes/Exception.h}, \hyperpage{85}
+  \item {CommonTypes/Iterators/Block.h}, \hyperpage{85}
+  \item {CommonTypes/Optional.h}, \hyperpage{86}
+  \item {CommonTypes/Pair.h}, \hyperpage{86}
+  \item {CommonTypes/Vector.h}, \hyperpage{87}
+  \item {CommonUtils/AdvancedIteration.h}, \hyperpage{87}
+  \item {CommonUtils/Assert.h}, \hyperpage{87}
+  \item {CommonUtils/BlockAllocation.h}, \hyperpage{88}
+  \item {CommonUtils/RawString.h}, \hyperpage{89}
+  \item {CommonUtils/Sort.h}, \hyperpage{89}
+  \item {CommonUtils/TypeOperations.h}, \hyperpage{90}
   \item {ConstBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{37}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{79}
   \item {ConstEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{37}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{81}
   \item {ConstReverseBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{37}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{79}
   \item {ConstReverseEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{37}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{81}
+  \item {Construct}
+    \subitem {Common}, \hyperpage{18}
   \item {CopyRawString}
-    \subitem {Common}, \hyperpage{10, 11}
+    \subitem {Common}, \hyperpage{21}
   \item {COutOfRange}
-    \subitem {Common::COutOfRange}, \hyperpage{18}
+    \subitem {Common::COutOfRange}, \hyperpage{30}
   \item {crbegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{38}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{83}
   \item {crend}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{38}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{84}
   \item {CReverseIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{29}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{56}
   \item {CSafeConstIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{30}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{57}
   \item {CSafeConstReverseIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{30}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{57}
   \item {CSafeIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{30}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{57}
   \item {CSafeReverseIterator}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{30}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{57}
+
+  \indexspace
+
+  \item {Deallocate}
+    \subitem {Common}, \hyperpage{17}
+  \item {Deny}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
+  \item {Destruct}
+    \subitem {Common}, \hyperpage{18}
+  \item {DestructAll}
+    \subitem {Common}, \hyperpage{18}
+  \item {DestructRange}
+    \subitem {Common}, \hyperpage{18}
+  \item {DoesValueExist}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{40}
 
   \indexspace
 
   \item {End}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{38}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{80}
   \item {end}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{38}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{83, 84}
   \item {Erase}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{39}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{72}
   \item {EraseMultiple}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{39}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{73}
   \item {EReservedCapacityRule}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{30}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{57}
+  \item {EShrinkBehavior}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
   \item {ExpectedIndex}
-    \subitem {Common::COutOfRange}, \hyperpage{20}
+    \subitem {Common::COutOfRange}, \hyperpage{32}
   \item {Exponential}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{31}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
 
   \indexspace
 
   \item {First}
-    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{24}
+    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{44}
   \item {Front}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{40}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{77}
 
   \indexspace
 
   \item {GetCapacity}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{40}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{75}
   \item {GetCapacityRule}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{40}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{76}
   \item {GetExpectedRange}
-    \subitem {Common::COutOfRange}, \hyperpage{19}
+    \subitem {Common::COutOfRange}, \hyperpage{31}
   \item {GetIteratorDistance}
-    \subitem {Common}, \hyperpage{11}
+    \subitem {Common}, \hyperpage{17}
   \item {GetMessage}
-    \subitem {Common::CException}, \hyperpage{17}
+    \subitem {Common::CException}, \hyperpage{29}
   \item {GetRawStringLength}
-    \subitem {Common}, \hyperpage{12}
+    \subitem {Common}, \hyperpage{19}, \hyperpage{21}
+  \item {GetRequestedAllocSize}
+    \subitem {Common::CBadAlloc}, \hyperpage{26}
   \item {GetRequestedIndex}
-    \subitem {Common::COutOfRange}, \hyperpage{19}
+    \subitem {Common::COutOfRange}, \hyperpage{31}
   \item {GetSize}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{41}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{75}
   \item {GetValue}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{21}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{40}
   \item {GetValueOr}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{21}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{41}
 
   \indexspace
 
   \item {Insert}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{41, 42}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{67, 68}
   \item {IsEmpty}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{42}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{76}
 
   \indexspace
 
   \item {Linear}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{31}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
 
   \indexspace
 
   \item {MakePair}
-    \subitem {Common}, \hyperpage{12}
-    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{24}
+    \subitem {Common}, \hyperpage{17}
+    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{42}
   \item {Message}
-    \subitem {Common::CException}, \hyperpage{17}
+    \subitem {Common::CException}, \hyperpage{29}
+  \item {Move}
+    \subitem {Common}, \hyperpage{23}
 
   \indexspace
 
   \item {NeverReserve}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{31}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
 
   \indexspace
 
   \item {operator!=}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{42}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{35}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{46}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{65}
+  \item {operator$\ast$}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{35}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{46}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{51}
+  \item {operator+}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{34}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{45}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{47}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{49}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{66}
+  \item {operator++}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{34}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{45}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{47}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{49}
+  \item {operator+=}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{34}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{45}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{47}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{66}
+  \item {operator-\/}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{35}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{46}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
+  \item {operator-\/-\/}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{34}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{45}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
+  \item {operator-\/=}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{35}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{46}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
   \item {operator=}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{22}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{43}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{38, 39}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{62, 63}
   \item {operator==}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{44}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{35}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{46}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{48}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{50}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{40}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{65}
   \item {operator[]}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{44, 45}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{63}
 
   \indexspace
 
   \item {Pop}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{45}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{70}
   \item {PopMultiple}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{45}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{70}
   \item {Push}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{46}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{66, 67}
+
+  \indexspace
+
+  \item {QuickSort}
+    \subitem {Common}, \hyperpage{23}
 
   \indexspace
 
   \item {RawData}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{47}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{65}
   \item {rbegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{47}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{83}
+  \item {Reconstruct}
+    \subitem {Common}, \hyperpage{19}
   \item {rend}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{47}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{84}
+  \item {RequestedAllocSize}
+    \subitem {Common::CBadAlloc}, \hyperpage{27}
   \item {RequestedIndex}
-    \subitem {Common::COutOfRange}, \hyperpage{20}
+    \subitem {Common::COutOfRange}, \hyperpage{32}
+  \item {Require}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58}
   \item {Reserve}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{48}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{73}
   \item {Resize}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{48}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{74}
   \item {ReverseBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{49}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{79}
   \item {ReverseEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{49}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{81}
 
   \indexspace
 
   \item {SafeAt}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{49}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{64}
   \item {SafeBack}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{49, 50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{78}
   \item {SafeBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{79}
+  \item {SafeBulkConstruct}
+    \subitem {Common}, \hyperpage{19}
   \item {SafeConstBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{80}
   \item {SafeConstEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{50}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{82}
   \item {SafeConstReverseBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{51}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{80}
   \item {SafeConstReverseEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{51}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{82}
   \item {SafeEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{51}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{81}
+  \item {SafeErase}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{72}
+  \item {SafeEraseGet}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{73}
+  \item {SafeFillConstruct}
+    \subitem {Common}, \hyperpage{19}
   \item {SafeFront}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{51, 52}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{77}
+  \item {SafeInsert}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{68, 69}
+  \item {SafeMoveBlock}
+    \subitem {Common}, \hyperpage{18}
+  \item {SafeMoveBlockReverse}
+    \subitem {Common}, \hyperpage{19}
   \item {SafePop}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{52}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{70}
+  \item {SafePopGet}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{70}
   \item {SafeReverseBegin}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{52}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{80}
   \item {SafeReverseEnd}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{52}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{82}
   \item {SafeShift}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{52}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{71}
+  \item {SafeShiftGet}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{71}
   \item {Second}
-    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{24}
+    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{44}
+  \item {SelectionSort}
+    \subitem {Common}, \hyperpage{23}
   \item {SetCapacityRule}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{53}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{76}
   \item {SetValue}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{22}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{38}
   \item {Shift}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{53}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{71}
   \item {ShiftMultiple}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{53}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{72}
   \item {ShrinkToFit}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{54}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{75}
   \item {Swap}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{54}
+    \subitem {Common}, \hyperpage{23}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{39}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{74}
 
   \indexspace
 
+  \item {TBlockIterator}
+    \subitem {Common::Iterators::TBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{34}
   \item {TOptional}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{21}
+    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{36, 37}
   \item {TPair}
-    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{23}
+    \subitem {Common::TPair$<$ T1, T2 $>$}, \hyperpage{42}
+  \item {TReverseBlockIterator}
+    \subitem {Common::Iterators::TReverseBlockIterator$<$ PtrType, RefType $>$}, 
+		\hyperpage{45}
+  \item {TSafeBlockIterator}
+    \subitem {Common::Iterators::TSafeBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{47}
+  \item {TSafeReverseBlockIterator}
+    \subitem {Common::Iterators::TSafeReverseBlockIterator$<$ PtrType, RefType, ContType $>$}, 
+		\hyperpage{49}
   \item {TVector}
-    \subitem {Common::TVector$<$ T $>$}, \hyperpage{31--33}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{58--61}
+  \item {Type}
+    \subitem {Common::RemoveReference$<$ T $>$}, \hyperpage{32}
+    \subitem {Common::RemoveReference$<$ T \& $>$}, \hyperpage{33}
+    \subitem {Common::RemoveReference$<$ T \&\& $>$}, \hyperpage{33}
 
   \indexspace
 
-  \item {ValueExists}
-    \subitem {Common::TOptional$<$ T $>$}, \hyperpage{22}
-
-  \indexspace
-
-  \item {x64/Debug/CodeAnalysisResultManifest.txt}, \hyperpage{58}
-  \item {x64/Debug/CommonLibs.vcxproj.FileListAbsolute.txt}, 
-		\hyperpage{58}
+  \item {value\_type}
+    \subitem {Common::TVector$<$ T $>$}, \hyperpage{56}
 
 \end{theindex}
