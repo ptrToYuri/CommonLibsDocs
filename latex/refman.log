@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.17)  29 MAY 2021 10:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.17)  1 JUN 2021 08:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,7 +971,9 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 170.
-[1] [2] [3] [4] [5] [6] [7] [8]
+[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 172.
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -996,7 +998,6 @@ Underfull \hbox (badness 3942) in paragraph at lines 14--14
  []
 
 ) [1
-
 
 ] [2
 
@@ -1050,51 +1051,51 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 14.
 [15]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 65.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 67.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 65.
+(Font)              scaled to size 8.09995pt on input line 67.
 [16]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 90.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 92.
 
-Underfull \hbox (badness 10000) detected at line 115
+Underfull \hbox (badness 10000) detected at line 117
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 118
+Underfull \hbox (badness 10000) detected at line 120
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 126.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 128.
 [17] [18]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 201.
+(Font)              scaled to size 7.19995pt on input line 203.
 [19] [20]
-Underfull \hbox (badness 10000) detected at line 213
+Underfull \hbox (badness 10000) detected at line 215
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 233
+Underfull \hbox (badness 10000) detected at line 235
 [][][]
  []
 
 [21]
-Underfull \hbox (badness 10000) detected at line 289
+Underfull \hbox (badness 10000) detected at line 291
 [][][]
  []
 
 [22]
-Underfull \hbox (badness 10000) detected at line 311
+Underfull \hbox (badness 10000) detected at line 313
 [][][]
  []
 
 ) (./namespace_common_1_1_iterators.tex [23]) [24]
 Chapter 9.
 (./class_common_1_1_c_bad_alloc.tex <./class_common_1_1_c_bad_alloc.pdf>
-<class_common_1_1_c_bad_alloc.pdf, id=1829, 501.875pt x 290.94696pt>
+<class_common_1_1_c_bad_alloc.pdf, id=2605, 501.875pt x 290.94696pt>
 File: class_common_1_1_c_bad_alloc.pdf Graphic file (type pdf)
 <use class_common_1_1_c_bad_alloc.pdf>
 Package pdftex.def Info: class_common_1_1_c_bad_alloc.pdf  used on input line 1
@@ -1124,7 +1125,7 @@ Underfull \hbox (badness 10000) detected at line 92
 
 ) (./class_common_1_1_c_does_not_exist.tex <./class_common_1_1_c_does_not_exist
 .pdf>
-<class_common_1_1_c_does_not_exist.pdf, id=1860, 501.875pt x 255.73543pt>
+<class_common_1_1_c_does_not_exist.pdf, id=2635, 501.875pt x 255.73543pt>
 File: class_common_1_1_c_does_not_exist.pdf Graphic file (type pdf)
 <use class_common_1_1_c_does_not_exist.pdf>
 Package pdftex.def Info: class_common_1_1_c_does_not_exist.pdf  used on input l
@@ -1136,7 +1137,7 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
 ) (./class_common_1_1_c_exception.tex <./class_common_1_1_c_exception.pdf>
-<class_common_1_1_c_exception.pdf, id=1876, 501.875pt x 85.24849pt>
+<class_common_1_1_c_exception.pdf, id=2651, 501.875pt x 85.24849pt>
 File: class_common_1_1_c_exception.pdf Graphic file (type pdf)
 <use class_common_1_1_c_exception.pdf>
 Package pdftex.def Info: class_common_1_1_c_exception.pdf  used on input line 1
@@ -1154,7 +1155,7 @@ Underfull \hbox (badness 10000) detected at line 75
 
 ) (./class_common_1_1_c_out_of_range.tex <./class_common_1_1_c_out_of_range.pdf
 >
-<class_common_1_1_c_out_of_range.pdf, id=1897, 501.875pt x 262.4204pt>
+<class_common_1_1_c_out_of_range.pdf, id=2672, 501.875pt x 262.4204pt>
 File: class_common_1_1_c_out_of_range.pdf Graphic file (type pdf)
 <use class_common_1_1_c_out_of_range.pdf>
 Package pdftex.def Info: class_common_1_1_c_out_of_range.pdf  used on input lin
@@ -1197,7 +1198,24 @@ Underfull \hbox (badness 10000) detected at line 116
 [][][]
  []
 
-) (./struct_common_1_1_remove_reference.tex [31]
+) (./class_common_1_1_t_list_1_1_node.tex [31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[32]) (./struct_common_1_1_remove_reference.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1248,7 +1266,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[32]) (./class_common_1_1_iterators_1_1_t_block_iterator.tex
+[33]) (./class_common_1_1_iterators_1_1_t_block_iterator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1265,7 +1283,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[33] [34]) (./class_common_1_1_t_optional.tex
+[34] [35]) (./class_common_1_1_iterators_1_1_t_doubly_linked_iterator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1282,15 +1300,267 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[35]
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[
+]Ref[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/
+m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[
+]Ref[]Type
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[
+]Ref[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/
+m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[
+]Ref[]Type
+ []
+
+[38]) (./class_common_1_1_t_list.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[39] [40] [41]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 49.
-[36] [37]
+(Font)              scaled to size 6.29996pt on input line 155.
+
+Underfull \hbox (badness 10000) detected at line 159
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 168
+[][][]
+ []
+
+[42]
+Overfull \hbox (21.85106pt too wide) in paragraph at lines 214--216
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const []$\OMS/cmsy/m/n
+/8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/
+cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const []$\OMS/cmsy/m/n
+/8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/
+cmm/m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--260
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const []$\OMS/cmsy/m/n
+/8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/
+cmm/m/it/8 >$[]
+ []
+
+[43]
+Overfull \hbox (45.85107pt too wide) in paragraph at lines 269--271
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$[]$\OMS/cmsy/m/n/8 ^^C$\T1/pcr/m/n/8
+ , T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n
+/8 ::[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+\T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const []$\OMS/cmsy/m/n
+/8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
+|  \T1/pcr/m/n/8 typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 
+!std[]::is[]_[]integral$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Iterator[]Type $\OML/c
+mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
+\OMS/cmsy/m/n/8 ^^C$  \T1/pcr/m/sl/8 = 0
+ []
+
+[45] [46] [47] [48]
+Underfull \hbox (badness 10000) detected at line 545
+[][][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 576
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 590
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 604
+[][][]
+ []
+
+[50]
+Underfull \hbox (badness 10000) detected at line 658
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 672
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 686
+[][][]
+ []
+
+[51]
+Underfull \hbox (badness 10000) detected at line 689
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 703
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 706
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 731
+[][][]
+ []
+
+[52]
+Underfull \hbox (badness 10000) detected at line 745
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 759
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 773
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 787
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 801
+[][][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 815
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 829
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 843
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 857
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 871
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 885
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 899
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 913
+[][][]
+ []
+
+[55]
+Underfull \hbox (badness 10000) detected at line 927
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 941
+[][][]
+ []
+
+[56] [57]) (./class_common_1_1_t_optional.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[58] [59] [60]
 Underfull \hbox (badness 10000) detected at line 154
 [][][]
  []
 
-[38]
+[61]
 Underfull \hbox (badness 10000) detected at line 173
 [][][]
  []
@@ -1305,7 +1575,7 @@ Underfull \hbox (badness 10000) detected at line 211
 [][][]
  []
 
-[39]
+[62]
 Underfull \hbox (badness 10000) detected at line 246
 [][][]
  []
@@ -1320,7 +1590,7 @@ Underfull \hbox (badness 10000) detected at line 263
 [][][]
  []
 
-[40]
+[63]
 Underfull \hbox (badness 10000) detected at line 277
 [][][]
  []
@@ -1347,7 +1617,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[41] [42] [43]) (./class_common_1_1_iterators_1_1_t_reverse_block_iterator.tex
+[64] [65] [66]) (./class_common_1_1_iterators_1_1_t_reverse_block_iterator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1364,7 +1634,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[44]
+[67]
 Underfull \hbox (badness 10000) in paragraph at lines 56--58
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
 e $\OML/cmm/m/it/8 >$[]
@@ -1394,10 +1664,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--86
 []\T1/pcr/m/n/8 ::operator-
  []
 
-[45]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 91--93
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
 e $\OML/cmm/m/it/8 >$[]
+ []
+
+) (./class_common_1_1_iterators_1_1_t_reverse_doubly_linked_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[69]
+Overfull \hbox (37.9786pt too wide) in paragraph at lines 44--46
+[]$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/m/i
+t/8 >$[]\T1/pcr/m/n/8 ::[]
+ []
+
+
+Overfull \hbox (37.9786pt too wide) in paragraph at lines 51--53
+[]$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/m/i
+t/8 >$[]\T1/pcr/m/n/8 ::[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]
+ []
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+\T1/pcr/m/n/8 Val[]Ref[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ Val[]Ref[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator$\OMS/cmsy/m/n/8 ^
+^C$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+\T1/pcr/m/n/8 Nd[]Ptr[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, 
+Val[]Ref[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::Node[]
  []
 
 ) (./class_common_1_1_iterators_1_1_t_safe_block_iterator.tex
@@ -1417,7 +1767,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[46]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 47--49
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
 e, Cont[]Type
@@ -1429,7 +1779,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
 e, Cont[]Type
  []
 
-[47]
+
 Underfull \hbox (badness 10000) in paragraph at lines 68--70
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
 e, Cont[]Type
@@ -1441,7 +1791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 e, Cont[]Type
  []
 
-) (./class_common_1_1_iterators_1_1_t_safe_reverse_block_iterator.tex
+[73]) (./class_common_1_1_iterators_1_1_t_safe_doubly_linked_iterator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1458,13 +1808,75 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[48]
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ []
+
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+\T1/pcr/m/n/8 Val[]Ref[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ Val[]Ref[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator$\OMS/cmsy/m/n/8 ^
+^C$ \T1/pcr/m/n/8 (
+ []
+
+[76]) (./class_common_1_1_iterators_1_1_t_safe_reverse_block_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
 Overfull \hbox (33.1786pt too wide) in paragraph at lines 37--39
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Type, Cont[]Type $\OML/cmm/
 m/it/8 >$[]\T1/pcr/m/n/8 ::[]
  []
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[77]
 Underfull \hbox (badness 10000) in paragraph at lines 47--49
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
  []
@@ -1480,14 +1892,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--63
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.16548pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.16548pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
-
-[49]
 Underfull \hbox (badness 10000) in paragraph at lines 68--70
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
  []
@@ -1502,14 +1906,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 \T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]
  []
 
-
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 103--105
 \T1/pcr/m/n/8 Ref[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Ptr[]Type, Ref[]Typ
 e, Cont[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator$\OMS/cmsy/m/n/8 ^^C
 $
  []
 
-[50]) (./class_common_1_1_t_vector.tex
+) (./class_common_1_1_iterators_1_1_t_safe_reverse_doubly_linked_iterator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[79]
+Overfull \hbox (76.37863pt too wide) in paragraph at lines 44--46
+[]$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/m/i
+t/8 >$[]\T1/pcr/m/n/8 ::[]
+ []
+
+
+Overfull \hbox (76.37863pt too wide) in paragraph at lines 51--53
+[]$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[]Type $\OML/cmm/m/i
+t/8 >$[]\T1/pcr/m/n/8 ::[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$
+ []
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[] []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
+\T1/pcr/m/n/8 const []& []$\OML/cmm/m/it/8 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+\T1/pcr/m/n/8 bool []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[
+]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator==
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+\T1/pcr/m/n/8 bool []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, Val[]Ref[
+]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::operator!=
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.16548pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.16548pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.16548pt}.
+
+[81]
+Underfull \hbox (badness 10000) in paragraph at lines 117--119
+\T1/pcr/m/n/8 Val[]Ref[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type,
+ Val[]Ref[]Type $\OML/cmm/m/it/8 >$[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
+\T1/pcr/m/n/8 Nd[]Ptr[]Type []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Nd[]Ptr[]Type, 
+Val[]Ref[]Type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::Node[]
+ []
+
+) (./class_common_1_1_t_vector.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1533,7 +2036,7 @@ sy/m/n/10 ^^C$\T1/phv/m/n/10 , const T &, const []$\OML/cmm/m/it/10 <$ \T1/phv/
 m/n/10 T $\OML/cmm/m/it/10 >$ $\OMS/cmsy/m/n/10 ^^C$ $\OML/cmm/m/it/10 >$
  []
 
-
+[82]
 Overfull \hbox (67.58537pt too wide) in paragraph at lines 48--49
 [][] \T1/phv/m/n/10 (size[]_[]t Size, const T &Default[]Value={}, [] Capacity[]
 Rule=[]) 
@@ -1550,7 +2053,7 @@ Overfull \hbox (63.3914pt too wide) in paragraph at lines 54--55
 [] \T1/phv/m/n/10 (Iterator[]Type [], Iterator[]Type [], [] Capacity[]Rule=[],
  []
 
-[51] [52]
+[83]
 Overfull \hbox (31.12723pt too wide) in paragraph at lines 130--131
 []\T1/phv/m/n/10 void [] (size[]_[]t Position[]From, size[]_[]t Position[]To, [
 ] Shrink[]Behavior=[]) 
@@ -1562,27 +2065,27 @@ Overfull \hbox (19.78723pt too wide) in paragraph at lines 134--135
 Shrink[]Behavior=[]) 
  []
 
-[53] [54] [55]
+[84] [85] [86]
 Underfull \hbox (badness 10000) detected at line 238
 [][][]
  []
 
 
-Overfull \hbox (50.65108pt too wide) in paragraph at lines 300--302
+Overfull \hbox (50.65108pt too wide) in paragraph at lines 308--310
 \T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
 8 ^^C$\T1/pcr/m/n/8 , const T&$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/c
 mm/m/it/8 >$[]\T1/pcr/m/n/8 ::[] 
  []
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 322--324
+[87]
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
 \T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
 8 ^^C$\T1/pcr/m/n/8 , const T&, const []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML
 /cmm/m/it/8 >$$\OMS/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
 \T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OMS/cmsy/m/n/8 ^^C$
 \T1/pcr/m/n/8 , T&, []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML/cmm/m/it/8 >$$\OM
 S/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$[
@@ -1590,321 +2093,323 @@ S/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$[
  []
 
 
-Overfull \hbox (32.71233pt too wide) in paragraph at lines 344--346
+Overfull \hbox (32.71233pt too wide) in paragraph at lines 352--354
 \T1/pcr/m/n/8 typedef []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 const T$\OMS/cmsy/m/n/
 8 ^^C$\T1/pcr/m/n/8 , const T&, const []$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 T$\OML
 /cmm/m/it/8 >$$\OMS/cmsy/m/n/8 ^^C$$\OML/cmm/m/it/8 >$ []$<$
  []
 
-[57]
+[88]
 Underfull \hbox (badness 10000) detected at line 6
 [][][]
  []
 
-[58]
-Underfull \hbox (badness 10000) detected at line 428
+[89]
+Underfull \hbox (badness 10000) detected at line 436
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 451
+Underfull \hbox (badness 10000) detected at line 459
+[][][]
+ []
+
+[90]
+Underfull \hbox (badness 10000) detected at line 482
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 474
-[][][]
- []
-
-[59]
-Underfull \hbox (badness 10000) detected at line 477
+Underfull \hbox (badness 10000) detected at line 485
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--503
+Underfull \hbox (badness 10000) in paragraph at lines 508--511
 |  \T1/pcr/m/n/8 typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 
 !std[]::is[]_[]integral$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 Iterator[]Type $\OML/c
 mm/m/it/8 >$[]\T1/pcr/m/n/8 ::value $\OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::type $
 \OMS/cmsy/m/n/8 ^^C$  \T1/pcr/m/sl/8 = 0
  []
 
-
-Underfull \hbox (badness 10000) detected at line 522
+[91]
+Underfull \hbox (badness 10000) detected at line 530
 [][][]
  []
 
-[60] [61]
-Underfull \hbox (badness 10000) detected at line 593
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 612
-[][][]
- []
-
-[62]
-Underfull \hbox (badness 10000) detected at line 631
+[92]
+Underfull \hbox (badness 10000) detected at line 601
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 650
+Underfull \hbox (badness 10000) detected at line 620
+[][][]
+ []
+
+[93]
+Underfull \hbox (badness 10000) detected at line 639
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 669
+Underfull \hbox (badness 10000) detected at line 658
+[][][]
+ []
+
+[94]
+Underfull \hbox (badness 10000) detected at line 677
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 672
+Underfull \hbox (badness 10000) detected at line 680
 [][][]
  []
 
-[63]
-Underfull \hbox (badness 10000) detected at line 726
-[][][]
- []
-
-[64]
-Underfull \hbox (badness 10000) detected at line 729
+[95]
+Underfull \hbox (badness 10000) detected at line 734
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 743
+Underfull \hbox (badness 10000) detected at line 737
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 773
+Underfull \hbox (badness 10000) detected at line 751
+[][][]
+ []
+
+[96]
+Underfull \hbox (badness 10000) detected at line 781
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 776
-[][][]
- []
-
-[65]
-Underfull \hbox (badness 10000) detected at line 806
+Underfull \hbox (badness 10000) detected at line 784
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 825
+Underfull \hbox (badness 10000) detected at line 814
 [][][]
  []
 
-[66]
-Underfull \hbox (badness 10000) detected at line 844
-[][][]
- []
-
-[67]
-Underfull \hbox (badness 10000) detected at line 889
+[97]
+Underfull \hbox (badness 10000) detected at line 833
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 923
+Underfull \hbox (badness 10000) detected at line 852
 [][][]
  []
 
-[68]
-Underfull \hbox (badness 10000) detected at line 952
-[][][]
- []
-
-[69]
-Underfull \hbox (badness 10000) detected at line 995
+[98]
+Underfull \hbox (badness 10000) detected at line 897
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1014
+Underfull \hbox (badness 10000) detected at line 931
 [][][]
  []
 
-[70]
-Underfull \hbox (badness 10000) detected at line 1057
+[99]
+Underfull \hbox (badness 10000) detected at line 960
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 1076
-[][][]
- []
-
-[71]
-Underfull \hbox (badness 10000) detected at line 1119
+[100]
+Underfull \hbox (badness 10000) detected at line 1003
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1140
+Underfull \hbox (badness 10000) detected at line 1022
 [][][]
  []
 
-[72]
-Underfull \hbox (badness 10000) detected at line 1185
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1188
-[][][]
- []
-
-[73]
-Underfull \hbox (badness 10000) detected at line 1207
+[101]
+Underfull \hbox (badness 10000) detected at line 1065
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1210
+Underfull \hbox (badness 10000) detected at line 1084
 [][][]
  []
 
-[74]
-Underfull \hbox (badness 10000) detected at line 1260
+[102]
+Underfull \hbox (badness 10000) detected at line 1127
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 1290
+[103]
+Underfull \hbox (badness 10000) detected at line 1148
 [][][]
  []
 
-[75]
-Underfull \hbox (badness 10000) detected at line 1304
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1318
+[104]
+Underfull \hbox (badness 10000) detected at line 1193
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1337
-[][][]
- []
-
-[76]
-Underfull \hbox (badness 10000) detected at line 1351
+Underfull \hbox (badness 10000) detected at line 1196
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1354
+Underfull \hbox (badness 10000) detected at line 1215
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1368
+Underfull \hbox (badness 10000) detected at line 1218
+[][][]
+ []
+
+[105]
+Underfull \hbox (badness 10000) detected at line 1268
+[][][]
+ []
+
+[106]
+Underfull \hbox (badness 10000) detected at line 1298
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1371
+Underfull \hbox (badness 10000) detected at line 1312
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1418
-[][][]
- []
-
-[77]
-Underfull \hbox (badness 10000) detected at line 1421
+Underfull \hbox (badness 10000) detected at line 1326
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1468
+Underfull \hbox (badness 10000) detected at line 1345
 [][][]
  []
 
-[78]
-Underfull \hbox (badness 10000) detected at line 1482
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1496
+[107]
+Underfull \hbox (badness 10000) detected at line 1359
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1510
+Underfull \hbox (badness 10000) detected at line 1362
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1524
-[][][]
- []
-
-[79]
-Underfull \hbox (badness 10000) detected at line 1538
+Underfull \hbox (badness 10000) detected at line 1376
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1552
+Underfull \hbox (badness 10000) detected at line 1379
+[][][]
+ []
+
+[108]
+Underfull \hbox (badness 10000) detected at line 1426
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1566
+Underfull \hbox (badness 10000) detected at line 1429
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1580
+Underfull \hbox (badness 10000) detected at line 1476
 [][][]
  []
 
-[80]
-Underfull \hbox (badness 10000) detected at line 1594
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 1608
+[109]
+Underfull \hbox (badness 10000) detected at line 1490
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1622
+Underfull \hbox (badness 10000) detected at line 1504
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1636
-[][][]
- []
-
-[81]
-Underfull \hbox (badness 10000) detected at line 1650
+Underfull \hbox (badness 10000) detected at line 1518
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1664
+Underfull \hbox (badness 10000) detected at line 1532
+[][][]
+ []
+
+[110]
+Underfull \hbox (badness 10000) detected at line 1546
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1678
+Underfull \hbox (badness 10000) detected at line 1560
 [][][]
  []
 
-[82] [83]) [84]
+
+Underfull \hbox (badness 10000) detected at line 1574
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1588
+[][][]
+ []
+
+[111]
+Underfull \hbox (badness 10000) detected at line 1602
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1616
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1630
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1644
+[][][]
+ []
+
+[112]
+Underfull \hbox (badness 10000) detected at line 1658
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1672
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 1686
+[][][]
+ []
+
+[113] [114]) [115] [116
+
+]
 Chapter 10.
 (./_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
@@ -1912,7 +2417,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--5
  []
 
 ) (./_block_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) (./_doubly_linked_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+[117]) (./_list_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
@@ -1921,29 +2436,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-[85
-
-]) (./_pair_8h.tex) (./_vector_8h.tex
+[118]) (./_pair_8h.tex) (./_vector_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--13
 
  []
 
-[86]) (./_advanced_iteration_8h.tex
+) (./_advanced_iteration_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./_assert_8h.tex
+[119]) (./_assert_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[87]) (./_block_allocation_8h.tex
+) (./_block_allocation_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-) (./_raw_string_8h.tex [88]) (./_sort_8h.tex
+[120]) (./_raw_string_8h.tex [121]) (./_sort_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -1953,288 +2466,493 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[89]) (./_pages_8dox.tex) [90] (./refman.ind
-Underfull \hbox (badness 1874) in paragraph at lines 102--104
+[122]) (./_pages_8dox.tex) [123] [124
+
+] (./refman.ind [125
+
+
+]
+Underfull \hbox (badness 1874) in paragraph at lines 117--119
 []\T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/phv/
 m/n/10 Ptr-Type, RefType
  []
 
-[91
 
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 []\T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$ \
 T1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+[]\T1/phv/m/n/10 Common::Iterators::TReverseDoublyLinkedIterator$\OML/cmm/m/it/
+10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 []\T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T1/
 phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 []\T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/10 
 <$ \T1/phv/m/n/10 Ptr-
  []
 
-[92] [93]
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+[126] [127] [128]
+Underfull \hbox (badness 2426) in paragraph at lines 535--537
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 541--543
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--396
+Underfull \hbox (badness 2426) in paragraph at lines 549--551
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 396--398
+Underfull \hbox (badness 6893) in paragraph at lines 555--557
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 561--563
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--406
+Underfull \hbox (badness 2426) in paragraph at lines 567--569
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 406--408
+Underfull \hbox (badness 6893) in paragraph at lines 573--575
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 408--410
+Underfull \hbox (badness 10000) in paragraph at lines 575--577
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--579
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 579--581
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+Underfull \hbox (badness 2426) in paragraph at lines 584--586
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--588
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 415--417
+Underfull \hbox (badness 6893) in paragraph at lines 590--592
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--419
-[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--423
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+[129]
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 596--598
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--425
+Underfull \hbox (badness 2426) in paragraph at lines 602--604
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--606
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 425--427
+Underfull \hbox (badness 6893) in paragraph at lines 608--610
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+Underfull \hbox (badness 10000) in paragraph at lines 610--612
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 614--616
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--619
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 432--434
+Underfull \hbox (badness 2426) in paragraph at lines 619--621
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--623
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 434--436
+Underfull \hbox (badness 6893) in paragraph at lines 625--627
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--442
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 631--633
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--637
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+Underfull \hbox (badness 2426) in paragraph at lines 637--639
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--641
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 444--446
+Underfull \hbox (badness 6893) in paragraph at lines 643--645
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--451
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 649--651
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--453
+Underfull \hbox (badness 2426) in paragraph at lines 654--656
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--658
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 453--455
+Underfull \hbox (badness 6893) in paragraph at lines 660--662
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+Underfull \hbox (badness 10000) in paragraph at lines 662--664
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 666--668
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
+Underfull \hbox (badness 2426) in paragraph at lines 671--673
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 462--464
+Underfull \hbox (badness 6893) in paragraph at lines 677--679
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--466
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--683
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--472
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 683--685
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 690--692
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--474
+Underfull \hbox (badness 2426) in paragraph at lines 692--694
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 474--476
+Underfull \hbox (badness 6893) in paragraph at lines 698--700
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--478
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
-[94]
-Underfull \hbox (badness 10000) in paragraph at lines 590--592
+
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 704--706
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+[130]
+Underfull \hbox (badness 10000) in paragraph at lines 836--838
 []| \T1/phv/m/n/10 Common::Iterators::TBlockIterator$\OML/cmm/m/it/10 <$ \T1/ph
 v/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--599
+Underfull \hbox (badness 2426) in paragraph at lines 839--841
+[]| \T1/phv/m/n/10 Common::Iterators::TDoublyLinkedIterator$\OML/cmm/m/it/10 <$
+ \T1/phv/m/n/10 NdP-
+ []
+
+[131]
+Underfull \hbox (badness 10000) in paragraph at lines 848--850
 []| \T1/phv/m/n/10 Common::Iterators::TReverseBlockIterator$\OML/cmm/m/it/10 <$
  \T1/phv/m/n/10 Ptr-
  []
 
 
-Underfull \hbox (badness 6893) in paragraph at lines 600--602
+Underfull \hbox (badness 6893) in paragraph at lines 854--856
 []| \T1/phv/m/n/10 Common::Iterators::TSafeBlockIterator$\OML/cmm/m/it/10 <$ \T
 1/phv/m/n/10 Ptr-Type,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--605
+Underfull \hbox (badness 10000) in paragraph at lines 857--859
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeDoublyLinkedIterator$\OML/cmm/m/it/1
+0 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--862
 []| \T1/phv/m/n/10 Common::Iterators::TSafeReverseBlockIterator$\OML/cmm/m/it/1
 0 <$
  []
 
-[95] [96
+
+Overfull \hbox (23.92361pt too wide) in paragraph at lines 863--865
+[]| \T1/phv/m/n/10 Common::Iterators::TSafeReverseDoublyLinkedIterator$\OML/cmm
+/m/it/10 <$
+ []
+
+[132
 
 ]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: F2006AF1B9F542E2B8EDD455E9A83298;62273.
+(rerunfilecheck)             Checksum: BEA80F266ED69C7B48F949A0C83737B7;93691.
  ) 
 Here is how much of TeX's memory you used:
- 17911 strings out of 478846
- 301455 string characters out of 5842655
- 674497 words of memory out of 5000000
- 34377 multiletter control sequences out of 15000+600000
+ 18589 strings out of 478846
+ 328673 string characters out of 5842655
+ 721020 words of memory out of 5000000
+ 34693 multiletter control sequences out of 15000+600000
  468199 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,798b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,16n,117p,849b,663s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/fonts/enc/dvips
 /base/8r.enc}<c:/Users/Yuri - work/AppData/Roaming/texlive/2021/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb><c:/Users/Yuri - work/AppData/Roaming/tex
@@ -2255,10 +2973,10 @@ ist/fonts/type1/urw/helvetic/uhvb8ac.pfb><c:/Users/Yuri - work/AppData/Roaming/
 texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/Users/Yuri - wo
 rk/AppData/Roaming/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb
 >
-Output written on refman.pdf (106 pages, 375400 bytes).
+Output written on refman.pdf (146 pages, 472751 bytes).
 PDF statistics:
- 3910 PDF objects out of 4296 (max. 8388607)
- 3732 compressed objects within 38 object streams
- 768 named destinations out of 1000 (max. 500000)
- 2357 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5767 PDF objects out of 6186 (max. 8388607)
+ 5529 compressed objects within 56 object streams
+ 1114 named destinations out of 1200 (max. 500000)
+ 3493 words of extra memory for PDF output out of 10000 (max. 10000000)
 

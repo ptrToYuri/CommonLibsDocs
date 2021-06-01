@@ -7,6 +7,10 @@ var dir_c2d05fee98459b5e6b5c475753344854 =
       [ "CBadAlloc", "class_common_1_1_c_bad_alloc.html", "class_common_1_1_c_bad_alloc" ],
       [ "CDoesNotExist", "class_common_1_1_c_does_not_exist.html", "class_common_1_1_c_does_not_exist" ]
     ] ],
+    [ "List.h", "_list_8h.html", [
+      [ "TList", "class_common_1_1_t_list.html", "class_common_1_1_t_list" ],
+      [ "Node", "class_common_1_1_t_list_1_1_node.html", "class_common_1_1_t_list_1_1_node" ]
+    ] ],
     [ "Optional.h", "_optional_8h.html", [
       [ "TOptional", "class_common_1_1_t_optional.html", "class_common_1_1_t_optional" ]
     ] ],

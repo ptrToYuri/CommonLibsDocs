@@ -1,9 +1,17 @@
-.TH "todo" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.TH "todo" 3 "Tue Jun 1 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
 todo \- Todo List 
 
+.IP "\fBClass \fBCommon::TList< T >\fP \fP" 1c
+Unify methods with vector, add safe and auto methods
+.PP
+Better iterator support
+.PP
+Support numeric positions and indexing
+.PP
+Implement SFINAE to support types without nonparam ctor and types without overloaded == operator 
 .IP "\fBClass \fBCommon::TOptional< T >\fP \fP" 1c
 SFINAE for == operator  
 .IP "\fBClass \fBCommon::TPair< T1, T2 >\fP \fP" 1c
@@ -11,6 +19,10 @@ Placement new
 .IP "\fBClass \fBCommon::TVector< T >\fP \fP" 1c
 In case of construction errors, do not decrease capacity unless CapacityRule is set to NeverReserve\&. Capacity management is not consistent now, especially if move operation throws
 .PP
+Unshift method
+.PP
 Implement SFINAE to support types without nonparam ctor and types without overloaded == operator
+.PP
+Better iterator support
 .PP
 

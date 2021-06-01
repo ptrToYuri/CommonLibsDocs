@@ -5,6 +5,7 @@ var namespace_common =
     [ "COutOfRange", "class_common_1_1_c_out_of_range.html", "class_common_1_1_c_out_of_range" ],
     [ "CBadAlloc", "class_common_1_1_c_bad_alloc.html", "class_common_1_1_c_bad_alloc" ],
     [ "CDoesNotExist", "class_common_1_1_c_does_not_exist.html", "class_common_1_1_c_does_not_exist" ],
+    [ "TList", "class_common_1_1_t_list.html", "class_common_1_1_t_list" ],
     [ "TOptional", "class_common_1_1_t_optional.html", "class_common_1_1_t_optional" ],
     [ "TPair", "class_common_1_1_t_pair.html", "class_common_1_1_t_pair" ],
     [ "TVector", "class_common_1_1_t_vector.html", "class_common_1_1_t_vector" ],

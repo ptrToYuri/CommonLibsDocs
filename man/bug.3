@@ -1,10 +1,12 @@
-.TH "bug" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.TH "bug" 3 "Tue Jun 1 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
 bug \- Bug List 
 
+.IP "\fBClass \fBCommon::TList< T >\fP \fP" 1c
+Safe iterators do not track element removal  
 .IP "\fBClass \fBCommon::TVector< T >\fP \fP" 1c
-Move may not be performed 
+Object might be copied when it could be moved 
 .PP
 

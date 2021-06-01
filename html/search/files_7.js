@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['typeoperations_2eh_184',['TypeOperations.h',['../_type_operations_8h.html',1,'']]]
+  ['rawstring_2eh_204',['RawString.h',['../_raw_string_8h.html',1,'']]]
 ];

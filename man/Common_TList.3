@@ -1,0 +1,901 @@
+.TH "Common::TList< T >" 3 "Tue Jun 1 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Common::TList< T > \- Container representing Doubly linked list\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include 'CommonTypes/List\&.h'\fP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBNode\fP"
+.br
+.in -1c
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "typedef T \fBvalue_type\fP"
+.br
+.ti -1c
+.RI "typedef \fBIterators::TDoublyLinkedIterator\fP< \fBNode\fP *, T & > \fBCIterator\fP"
+.br
+.RI "Iterator\&. Implemented op-s: ++, +=, +, --, -=, -, ==, !=, =\&. "
+.ti -1c
+.RI "typedef \fBIterators::TDoublyLinkedIterator\fP< const \fBNode\fP *, const T & > \fBCConstIterator\fP"
+.br
+.RI "Version of CIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TReverseDoublyLinkedIterator\fP< \fBNode\fP *, T & > \fBCReverseIterator\fP"
+.br
+.RI "Reverse iterator\&. Increment is actually decrement, etc\&. "
+.ti -1c
+.RI "typedef \fBIterators::TReverseDoublyLinkedIterator\fP< const \fBNode\fP *, const T & > \fBCConstReverseIterator\fP"
+.br
+.RI "Version of TReverseIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeDoublyLinkedIterator\fP< \fBNode\fP *, T & > \fBCSafeIterator\fP"
+.br
+.RI "Iterator that does bounds checking and throws OutOfRange()\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeDoublyLinkedIterator\fP< const \fBNode\fP *, const T & > \fBCSafeConstIterator\fP"
+.br
+.RI "Version of TSafeIterator for const values\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeReverseDoublyLinkedIterator\fP< \fBNode\fP *, T & > \fBCSafeReverseIterator\fP"
+.br
+.RI "Reverse iterator that can throw OutOfRange()\&. "
+.ti -1c
+.RI "typedef \fBIterators::TSafeReverseDoublyLinkedIterator\fP< const \fBNode\fP *, const T & > \fBCSafeConstReverseIterator\fP"
+.br
+.RI "Version of TSafeReverseIterator for const values\&. "
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTList\fP ()=default"
+.br
+.RI "Creates empty list\&. "
+.ti -1c
+.RI "\fBTList\fP (size_t Size, const T &DefaultValue={})"
+.br
+.RI "List with pre-created elements\&. "
+.ti -1c
+.RI "\fBTList\fP (const std::initializer_list< T > &ValuesList)"
+.br
+.RI "Modern C++ initialization syntax: name = {\&.\&.\&.}\&. "
+.ti -1c
+.RI "template<typename IteratorType > \fBTList\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP, typename std::enable_if<!std::is_integral< IteratorType >::value >::type *=0)"
+.br
+.RI "Constructor to get values from another container\&. "
+.ti -1c
+.RI "\fBTList\fP (const \fBTList\fP< T > &Other)"
+.br
+.RI "Initialize by copying another \fBTList\fP\&. "
+.ti -1c
+.RI "\fBTList\fP (\fBTList\fP< T > &&Other) noexcept"
+.br
+.RI "Move constructor\&. "
+.ti -1c
+.RI "\fB~TList\fP ()"
+.br
+.ti -1c
+.RI "template<typename IteratorType > void \fBAssign\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "Allows to copy values from another container\&. "
+.ti -1c
+.RI "\fBTList\fP< T > & \fBoperator=\fP (const std::initializer_list< T > &ValuesList)"
+.br
+.ti -1c
+.RI "\fBTList\fP< T > & \fBoperator=\fP (const \fBTList\fP< T > &Other)"
+.br
+.ti -1c
+.RI "\fBTList\fP< T > & \fBoperator=\fP (\fBTList\fP< T > &&Other) noexcept"
+.br
+.ti -1c
+.RI "void \fBPush\fP (const T &Value)"
+.br
+.RI "Adds one element to the end of list\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBPush\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "Adds multiple elements to the end via iterators\&. "
+.ti -1c
+.RI "void \fBUnshift\fP (const T &Value)"
+.br
+.RI "Adds one element to the beginning of the list\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBUnshift\fP (IteratorType \fBBegin\fP, IteratorType \fBEnd\fP)"
+.br
+.RI "Adds multiple elements to the beginning via iterators\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBInsert\fP (IteratorType Position, const T &Value)"
+.br
+.RI "Inserts one element to the specified position\&. "
+.ti -1c
+.RI "template<typename IteratorType1 , typename IteratorType2 > void \fBInsert\fP (IteratorType1 Position, IteratorType2 \fBBegin\fP, IteratorType2 \fBEnd\fP)"
+.br
+.RI "Adds multiple elements to the end via iterators\&. "
+.ti -1c
+.RI "void \fBPop\fP () noexcept"
+.br
+.RI "Removes one element from the end of list\&. "
+.ti -1c
+.RI "void \fBShift\fP () noexcept"
+.br
+.RI "Removes one element from the beginning of list\&. "
+.ti -1c
+.RI "template<typename IteratorType > void \fBErase\fP (IteratorType Position) noexcept"
+.br
+.ti -1c
+.RI "void \fBSwap\fP (\fBTList\fP< T > &Other) noexcept"
+.br
+.RI "Swaps two lists internally without deep copy\&. "
+.ti -1c
+.RI "void \fBClear\fP () noexcept"
+.br
+.RI "Removes all elements from the list\&. "
+.ti -1c
+.RI "size_t \fBGetSize\fP () const noexcept"
+.br
+.RI "Size is number of elements that you can use\&. "
+.ti -1c
+.RI "bool \fBIsEmpty\fP () const noexcept"
+.br
+.RI "Simple check if size of this list equals 0\&. "
+.ti -1c
+.RI "T & \fBFront\fP ()"
+.br
+.RI "Provides access to the first element\&. "
+.ti -1c
+.RI "T & \fBBack\fP ()"
+.br
+.RI "Provides access to the last element\&. "
+.ti -1c
+.RI "const T & \fBBack\fP () const"
+.br
+.RI "\fBBack()\fP for const lists\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBBegin\fP ()"
+.br
+.RI "Iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBConstBegin\fP () const"
+.br
+.RI "Iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBReverseBegin\fP ()"
+.br
+.RI "Reverse iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBConstReverseBegin\fP () const"
+.br
+.RI "Reverse iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCSafeIterator\fP \fBSafeBegin\fP ()"
+.br
+.RI "Safe iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCSafeConstIterator\fP \fBSafeConstBegin\fP () const"
+.br
+.RI "Safe iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCSafeReverseIterator\fP \fBSafeReverseBegin\fP ()"
+.br
+.RI "Safe reverse iterator pointing to the first elem\&. "
+.ti -1c
+.RI "\fBCSafeConstReverseIterator\fP \fBSafeConstReverseBegin\fP () const"
+.br
+.RI "Safe reverse iterator pointing to the first elem (const)\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBEnd\fP ()"
+.br
+.RI "Iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBConstEnd\fP () const"
+.br
+.RI "Iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBReverseEnd\fP ()"
+.br
+.RI "Reverse iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBConstReverseEnd\fP () const"
+.br
+.RI "Reverse iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCSafeIterator\fP \fBSafeEnd\fP ()"
+.br
+.RI "Safe iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCSafeConstIterator\fP \fBSafeConstEnd\fP () const"
+.br
+.RI "Safe iterator pointing to the elem after last (const)\&. "
+.ti -1c
+.RI "\fBCSafeReverseIterator\fP \fBSafeReverseEnd\fP ()"
+.br
+.RI "Safe reverse iterator pointing to the elem after last\&. "
+.ti -1c
+.RI "\fBCSafeConstReverseIterator\fP \fBSafeConstReverseEnd\fP () const"
+.br
+.RI "Safe reverse it\&. pointing to elem after last (const)\&. "
+.ti -1c
+.RI "\fBCIterator\fP \fBbegin\fP ()"
+.br
+.RI "\fBBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBbegin\fP () const"
+.br
+.RI "\fBConstBegin()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBcbegin\fP () const"
+.br
+.RI "\fBConstBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBrbegin\fP ()"
+.br
+.RI "\fBReverseBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBrbegin\fP () const"
+.br
+.RI "\fBConstReverseBegin()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBcrbegin\fP () const"
+.br
+.RI "\fBConstReverseBegin()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCIterator\fP \fBend\fP ()"
+.br
+.RI "\fBEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBend\fP () const"
+.br
+.RI "\fBConstEnd()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstIterator\fP \fBcend\fP () const"
+.br
+.RI "\fBConstEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCReverseIterator\fP \fBrend\fP ()"
+.br
+.RI "\fBReverseEnd()\fP alias (for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBrend\fP () const"
+.br
+.RI "\fBConstReverseEnd()\fP alias (overloaded, for compatibity) "
+.ti -1c
+.RI "\fBCConstReverseIterator\fP \fBcrend\fP () const"
+.br
+.RI "\fBConstReverseEnd()\fP alias (for compatibity) "
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename T>
+.br
+class Common::TList< T >"
+Container representing Doubly linked list\&. 
+
+
+.PP
+\fBWarning\fP
+.RS 4
+Work in progress\&. Sentinel node is not implemented yet, so iterators do not work properly\&. There may be other bugs
+.RE
+.PP
+Iterating over elements is slow, so you should use iterators that store position\&. Supports fixed-time add/removal of elements (and it is very fast)\&.
+.PP
+\fBTList\fP WILL have methods like indexing for compatibility, but they are supposed to be very slow because iteration is needed\&.
+.PP
+Exception policy: none (for now)\&.
+.PP
+\fBNote\fP
+.RS 4
+If the logical result of operation may not be determined, there are two methods: one that throws an exception ('Safe' prefix) and another one that does assertion in debug mode\&. Custom exception is \fBCOutOfRange\fP, derived from \fBCException\fP\&.
+.RE
+.PP
+\fBTodo\fP
+.RS 4
+Unify methods with vector, add safe and auto methods
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
+Better iterator support
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
+Support numeric positions and indexing
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
+Implement SFINAE to support types without nonparam ctor and types without overloaded == operator
+.RE
+.PP
+.PP
+\fBBug\fP
+.RS 4
+Safe iterators do not track element removal 
+.RE
+.PP
+
+.SH "Member Typedef Documentation"
+.PP 
+.SS "template<typename T > typedef T \fBCommon::TList\fP< T >::\fBvalue_type\fP"
+
+.SS "template<typename T > typedef \fBIterators::TDoublyLinkedIterator\fP<\fBNode\fP*, T&> \fBCommon::TList\fP< T >::\fBCIterator\fP"
+
+.PP
+Iterator\&. Implemented op-s: ++, +=, +, --, -=, -, ==, !=, =\&. 
+.SS "template<typename T > typedef \fBIterators::TDoublyLinkedIterator\fP<const \fBNode\fP*, const T&> \fBCommon::TList\fP< T >::\fBCConstIterator\fP"
+
+.PP
+Version of CIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TReverseDoublyLinkedIterator\fP<\fBNode\fP*, T&> \fBCommon::TList\fP< T >::\fBCReverseIterator\fP"
+
+.PP
+Reverse iterator\&. Increment is actually decrement, etc\&. 
+.SS "template<typename T > typedef \fBIterators::TReverseDoublyLinkedIterator\fP<const \fBNode\fP*, const T&> \fBCommon::TList\fP< T >::\fBCConstReverseIterator\fP"
+
+.PP
+Version of TReverseIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeDoublyLinkedIterator\fP<\fBNode\fP*, T&> \fBCommon::TList\fP< T >::\fBCSafeIterator\fP"
+
+.PP
+Iterator that does bounds checking and throws OutOfRange()\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeDoublyLinkedIterator\fP<const \fBNode\fP*, const T&> \fBCommon::TList\fP< T >::\fBCSafeConstIterator\fP"
+
+.PP
+Version of TSafeIterator for const values\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeReverseDoublyLinkedIterator\fP<\fBNode\fP*, T&> \fBCommon::TList\fP< T >::\fBCSafeReverseIterator\fP"
+
+.PP
+Reverse iterator that can throw OutOfRange()\&. 
+.SS "template<typename T > typedef \fBIterators::TSafeReverseDoublyLinkedIterator\fP<const \fBNode\fP*, const T&> \fBCommon::TList\fP< T >::\fBCSafeConstReverseIterator\fP"
+
+.PP
+Version of TSafeReverseIterator for const values\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<typename T > \fBCommon::TList\fP< T >::\fBTList\fP ()\fC [default]\fP"
+
+.PP
+Creates empty list\&. 
+.SS "template<typename T > \fBCommon::TList\fP< T >::\fBTList\fP (size_t Size, const T & DefaultValue = \fC{}\fP)\fC [explicit]\fP"
+
+.PP
+List with pre-created elements\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fISize\fP Number of nodes to create 
+.br
+\fIDefaultValue\fP Value to initialize with 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TList\fP< T >::\fBTList\fP (const std::initializer_list< T > & ValuesList)"
+
+.PP
+Modern C++ initialization syntax: name = {\&.\&.\&.}\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValuesList\fP Initializer list 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > \fBCommon::TList\fP< T >::\fBTList\fP (IteratorType Begin, IteratorType End, typename std::enable_if<!std::is_integral< IteratorType >::value >::type * = \fC0\fP)"
+
+.PP
+Constructor to get values from another container\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator that implements ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the beginning of container 
+.br
+\fIEnd\fP Iterator referring to the end of container 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TList\fP< T >::\fBTList\fP (const \fBTList\fP< T > & Other)"
+
+.PP
+Initialize by copying another \fBTList\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP list to copy 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TList\fP< T >::\fBTList\fP (\fBTList\fP< T > && Other)\fC [noexcept]\fP"
+
+.PP
+Move constructor\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Temporary object to get data from 
+.RE
+.PP
+
+.SS "template<typename T > \fBCommon::TList\fP< T >::~\fBTList\fP ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TList\fP< T >::Assign (IteratorType Begin, IteratorType End)"
+
+.PP
+Allows to copy values from another container\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator that implements ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the beginning of container 
+.br
+\fIEnd\fP Iterator referring to the end of container 
+.RE
+.PP
+
+.SS "template<typename T > \fBTList\fP<T>& \fBCommon::TList\fP< T >::operator= (const std::initializer_list< T > & ValuesList)"
+
+.SS "template<typename T > \fBTList\fP<T>& \fBCommon::TList\fP< T >::operator= (const \fBTList\fP< T > & Other)"
+
+.SS "template<typename T > \fBTList\fP<T>& \fBCommon::TList\fP< T >::operator= (\fBTList\fP< T > && Other)\fC [noexcept]\fP"
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Push (const T & Value)"
+
+.PP
+Adds one element to the end of list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Element to add 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TList\fP< T >::Push (IteratorType Begin, IteratorType End)"
+
+.PP
+Adds multiple elements to the end via iterators\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Unshift (const T & Value)"
+
+.PP
+Adds one element to the beginning of the list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIValue\fP Element to add 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TList\fP< T >::Unshift (IteratorType Begin, IteratorType End)"
+
+.PP
+Adds multiple elements to the beginning via iterators\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TList\fP< T >::Insert (IteratorType Position, const T & Value)"
+
+.PP
+Inserts one element to the specified position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Iterator pointing to insertion place 
+.br
+\fIValue\fP Value to insert 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Position must be iterator to a valid node 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType1 , typename IteratorType2 > void \fBCommon::TList\fP< T >::Insert (IteratorType1 Position, IteratorType2 Begin, IteratorType2 End)"
+
+.PP
+Adds multiple elements to the end via iterators\&. 
+.PP
+\fBTemplate Parameters\fP
+.RS 4
+\fIIteratorType1\fP Must be an iterator pointing to a valid node 
+.br
+\fIIteratorType2\fP Iterator with implemented ++, != and * 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIPosition\fP Place where to start insertion from 
+.br
+\fIBegin\fP Iterator referring to the first element 
+.br
+\fIEnd\fP Iterator referring to the element after last one 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+Position must be iterator to a valid node 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Pop ()\fC [noexcept]\fP"
+
+.PP
+Removes one element from the end of list\&. 
+.PP
+\fBNote\fP
+.RS 4
+List must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Shift ()\fC [noexcept]\fP"
+
+.PP
+Removes one element from the beginning of list\&. 
+.PP
+\fBNote\fP
+.RS 4
+List must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > template<typename IteratorType > void \fBCommon::TList\fP< T >::Erase (IteratorType Position)\fC [noexcept]\fP"
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Swap (\fBTList\fP< T > & Other)\fC [noexcept]\fP"
+
+.PP
+Swaps two lists internally without deep copy\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIOther\fP Object to swap resources with 
+.RE
+.PP
+
+.SS "template<typename T > void \fBCommon::TList\fP< T >::Clear ()\fC [noexcept]\fP"
+
+.PP
+Removes all elements from the list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIShrinkBehavior\fP Optional\&. Describes how memory is freed 
+.RE
+.PP
+
+.SS "template<typename T > size_t \fBCommon::TList\fP< T >::GetSize () const\fC [noexcept]\fP"
+
+.PP
+Size is number of elements that you can use\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Size of list 
+.RE
+.PP
+
+.SS "template<typename T > bool \fBCommon::TList\fP< T >::IsEmpty () const\fC [noexcept]\fP"
+
+.PP
+Simple check if size of this list equals 0\&. 
+.PP
+\fBReturns\fP
+.RS 4
+True if empty, false if not 
+.RE
+.PP
+
+.SS "template<typename T > T& \fBCommon::TList\fP< T >::Front ()"
+
+.PP
+Provides access to the first element\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the first element 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+List must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > T& \fBCommon::TList\fP< T >::Back ()"
+
+.PP
+Provides access to the last element\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Reference to the last element 
+.RE
+.PP
+\fBNote\fP
+.RS 4
+List must not be empty\&. 
+.RE
+.PP
+
+.SS "template<typename T > const T& \fBCommon::TList\fP< T >::Back () const\fC [inline]\fP"
+
+.PP
+\fBBack()\fP for const lists\&. 
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TList\fP< T >::Begin ()"
+
+.PP
+Iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::ConstBegin () const"
+
+.PP
+Iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TList\fP< T >::ReverseBegin ()"
+
+.PP
+Reverse iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::ConstReverseBegin () const"
+
+.PP
+Reverse iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeIterator\fP \fBCommon::TList\fP< T >::SafeBegin ()"
+
+.PP
+Safe iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstIterator\fP \fBCommon::TList\fP< T >::SafeConstBegin () const"
+
+.PP
+Safe iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeReverseIterator\fP \fBCommon::TList\fP< T >::SafeReverseBegin ()"
+
+.PP
+Safe reverse iterator pointing to the first elem\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstReverseIterator\fP \fBCommon::TList\fP< T >::SafeConstReverseBegin () const"
+
+.PP
+Safe reverse iterator pointing to the first elem (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstReverseIterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TList\fP< T >::End ()"
+
+.PP
+Iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::ConstEnd () const"
+
+.PP
+Iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TList\fP< T >::ReverseEnd ()"
+
+.PP
+Reverse iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::ConstReverseEnd () const"
+
+.PP
+Reverse iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CConstReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeIterator\fP \fBCommon::TList\fP< T >::SafeEnd ()"
+
+.PP
+Safe iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstIterator\fP \fBCommon::TList\fP< T >::SafeConstEnd () const"
+
+.PP
+Safe iterator pointing to the elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeReverseIterator\fP \fBCommon::TList\fP< T >::SafeReverseEnd ()"
+
+.PP
+Safe reverse iterator pointing to the elem after last\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeReverseIterator iterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCSafeConstReverseIterator\fP \fBCommon::TList\fP< T >::SafeConstReverseEnd () const"
+
+.PP
+Safe reverse it\&. pointing to elem after last (const)\&. 
+.PP
+\fBReturns\fP
+.RS 4
+CSafeConstReverseIterator 
+.RE
+.PP
+
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TList\fP< T >::begin ()\fC [inline]\fP"
+
+.PP
+\fBBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::begin () const\fC [inline]\fP"
+
+.PP
+\fBConstBegin()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::cbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TList\fP< T >::rbegin ()\fC [inline]\fP"
+
+.PP
+\fBReverseBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::rbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseBegin()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::crbegin () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseBegin()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCIterator\fP \fBCommon::TList\fP< T >::end ()\fC [inline]\fP"
+
+.PP
+\fBEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::end () const\fC [inline]\fP"
+
+.PP
+\fBConstEnd()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstIterator\fP \fBCommon::TList\fP< T >::cend () const\fC [inline]\fP"
+
+.PP
+\fBConstEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCReverseIterator\fP \fBCommon::TList\fP< T >::rend ()\fC [inline]\fP"
+
+.PP
+\fBReverseEnd()\fP alias (for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::rend () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseEnd()\fP alias (overloaded, for compatibity) 
+.SS "template<typename T > \fBCConstReverseIterator\fP \fBCommon::TList\fP< T >::crend () const\fC [inline]\fP"
+
+.PP
+\fBConstReverseEnd()\fP alias (for compatibity) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CommonLibs from the source code\&.

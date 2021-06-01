@@ -1,0 +1,1075 @@
+\hypertarget{class_common_1_1_t_list}{}\doxysection{Common\+::TList$<$ T $>$ Class Template Reference}
+\label{class_common_1_1_t_list}\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+
+
+Container representing Doubly linked list.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Common\+Types/\+List.\+h\char`\"{}}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \mbox{\hyperlink{class_common_1_1_t_list_ab73867f520decba1c099640871bd9380}{value\+\_\+type}}
+\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_doubly_linked_iterator}{Iterators\+::\+TDoubly\+Linked\+Iterator}}$<$ \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}}
+\begin{DoxyCompactList}\small\item\em Iterator. Implemented op-\/s\+: ++, +=, +, --, -\/=, -\/, ==, !=, =. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_doubly_linked_iterator}{Iterators\+::\+TDoubly\+Linked\+Iterator}}$<$ const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of CIterator for const values. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_reverse_doubly_linked_iterator}{Iterators\+::\+TReverse\+Doubly\+Linked\+Iterator}}$<$ \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Reverse iterator. Increment is actually decrement, etc. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_reverse_doubly_linked_iterator}{Iterators\+::\+TReverse\+Doubly\+Linked\+Iterator}}$<$ const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of TReverse\+Iterator for const values. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_doubly_linked_iterator}{Iterators\+::\+TSafe\+Doubly\+Linked\+Iterator}}$<$ \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Iterator that does bounds checking and throws Out\+Of\+Range(). \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_doubly_linked_iterator}{Iterators\+::\+TSafe\+Doubly\+Linked\+Iterator}}$<$ const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of TSafe\+Iterator for const values. \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_reverse_doubly_linked_iterator}{Iterators\+::\+TSafe\+Reverse\+Doubly\+Linked\+Iterator}}$<$ \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Reverse iterator that can throw Out\+Of\+Range(). \end{DoxyCompactList}\item 
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_reverse_doubly_linked_iterator}{Iterators\+::\+TSafe\+Reverse\+Doubly\+Linked\+Iterator}}$<$ const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}} $\ast$, const T \& $>$ \mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Version of TSafe\+Reverse\+Iterator for const values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_1_1_t_list_abb58de2e0adba30bac77768c38576477}{TList}} ()=default
+\begin{DoxyCompactList}\small\item\em Creates empty list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ada2d6176865313fa7f72868f01b8b1e1}{TList}} (size\+\_\+t Size, const T \&Default\+Value=\{\})
+\begin{DoxyCompactList}\small\item\em List with pre-\/created elements. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ad56a5394d81d8da13fa5a01e2034c3ba}{TList}} (const std\+::initializer\+\_\+list$<$ T $>$ \&Values\+List)
+\begin{DoxyCompactList}\small\item\em Modern C++ initialization syntax\+: name = \{...\}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\\mbox{\hyperlink{class_common_1_1_t_list_adb60a2a709092f90d1379f7f262123f2}{TList}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}}, typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$=0)
+\begin{DoxyCompactList}\small\item\em Constructor to get values from another container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a9f6786ba56df6629b34c1a9f72acf76e}{TList}} (const \mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&Other)
+\begin{DoxyCompactList}\small\item\em Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_list}{TList}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ad771396df2695339a5d715c3708e5e4a}{TList}} (\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&\&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_aa3a930ad2dee1848d6deb4252dae799c}{$\sim$\+TList}} ()
+\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_afbf78d01175879517b7dd8e5af5e6ad9}{Assign}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}})
+\begin{DoxyCompactList}\small\item\em Allows to copy values from another container. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_list_a231e3cedfca07fcb9e48e9f8fb034d1f}{operator=}} (const std\+::initializer\+\_\+list$<$ T $>$ \&Values\+List)
+\item 
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_list_a1870ee9577a132ec93df06db894a13f8}{operator=}} (const \mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&Other)
+\item 
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \& \mbox{\hyperlink{class_common_1_1_t_list_ac5d225bdb18fbab28030e1c79999f591}{operator=}} (\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&\&Other) noexcept
+\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_ae7272df8fbedc820854d86540bf4d91d}{Push}} (const T \&Value)
+\begin{DoxyCompactList}\small\item\em Adds one element to the end of list. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_a2bb28c945846ec0e6152c79044c359bc}{Push}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}})
+\begin{DoxyCompactList}\small\item\em Adds multiple elements to the end via iterators. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_a3207194568740e9b66c15378dbd679a9}{Unshift}} (const T \&Value)
+\begin{DoxyCompactList}\small\item\em Adds one element to the beginning of the list. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_ab9252d474ad24ff3af2f3eb862796686}{Unshift}} (Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}}, Iterator\+Type \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}})
+\begin{DoxyCompactList}\small\item\em Adds multiple elements to the beginning via iterators. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_a06cb4176bd4ba5199973a9e3dc776634}{Insert}} (Iterator\+Type Position, const T \&Value)
+\begin{DoxyCompactList}\small\item\em Inserts one element to the specified position. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type1 , typename Iterator\+Type2 $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_ac704a2bd7a30dfafb4bdb3816ed74daf}{Insert}} (Iterator\+Type1 Position, Iterator\+Type2 \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}}, Iterator\+Type2 \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}})
+\begin{DoxyCompactList}\small\item\em Adds multiple elements to the end via iterators. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_a2897aeadd97b8989984e2f8eb1d23075}{Pop}} () noexcept
+\begin{DoxyCompactList}\small\item\em Removes one element from the end of list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_a180b30a75554b9caf8ff3c0a1d134a48}{Shift}} () noexcept
+\begin{DoxyCompactList}\small\item\em Removes one element from the beginning of list. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator\+Type $>$ }\\void \mbox{\hyperlink{class_common_1_1_t_list_af948bd0c4e9134577fb1baeba583e54f}{Erase}} (Iterator\+Type Position) noexcept
+\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_a24f38d7e4222cf52ee37a740ce17d822}{Swap}} (\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&Other) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps two lists internally without deep copy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_common_1_1_t_list_a422797e4958f70ebbe4e7ac386500906}{Clear}} () noexcept
+\begin{DoxyCompactList}\small\item\em Removes all elements from the list. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_list_afe7dd23a60899cd02efc89cb1c4c0e4a}{Get\+Size}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Size is number of elements that you can use. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_common_1_1_t_list_a6a67ba32abd9d0d36d1bd97cc4879c5b}{Is\+Empty}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Simple check if size of this list equals 0. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_list_a0f6d36d7dcbfa082b1e222e4b8c5ee7e}{Front}} ()
+\begin{DoxyCompactList}\small\item\em Provides access to the first element. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_common_1_1_t_list_aaf485cbcd7692ce343ec0da1e1f87e23}{Back}} ()
+\begin{DoxyCompactList}\small\item\em Provides access to the last element. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{class_common_1_1_t_list_a8da7295ab8a710a2f8ad65a1c525dc3c}{Back}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_aaf485cbcd7692ce343ec0da1e1f87e23}{Back()}} for const lists. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin}} ()
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}{Const\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_ae1f6b37cf1a8b908291d18912e2acaa7}{Reverse\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}{Const\+Reverse\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_ac789f4cf2755c6c6fbd357e3bb7434a9}{Safe\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_aade93122f5713866e5dc8fb249e0668f}{Safe\+Const\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a41b37a4588dd0ce06e661fa41983b5b8}{Safe\+Reverse\+Begin}} ()
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the first elem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_aecdfb44c9ac798a6a49e01031ecf3eb2}{Safe\+Const\+Reverse\+Begin}} () const
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the first elem (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End}} ()
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}{Const\+End}} () const
+\begin{DoxyCompactList}\small\item\em Iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a2a989a94203679e8d0b6d8fc6eec6431}{Reverse\+End}} ()
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}{Const\+Reverse\+End}} () const
+\begin{DoxyCompactList}\small\item\em Reverse iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a3288612221083b7637b68572c15bcac8}{Safe\+End}} ()
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a0cc32a4e9f6b75e5618bd95f165782d9}{Safe\+Const\+End}} () const
+\begin{DoxyCompactList}\small\item\em Safe iterator pointing to the elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a81d884dea2e43b316d7f67cc35e740f8}{Safe\+Reverse\+End}} ()
+\begin{DoxyCompactList}\small\item\em Safe reverse iterator pointing to the elem after last. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a812e76ceaca602bd1cc11dc1c1d0d69f}{Safe\+Const\+Reverse\+End}} () const
+\begin{DoxyCompactList}\small\item\em Safe reverse it. pointing to elem after last (const). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list_a47211dd09fc9ef920aef89e8cffa2da9}{begin}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a3ef850d02eee5b678b8340cb21e8467a}{begin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}{Const\+Begin()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_afeabed80e26b8e98d8b6760b354b18bd}{cbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}{Const\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a535f007fb40dec630a9b5739c7d9120f}{rbegin}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_ae1f6b37cf1a8b908291d18912e2acaa7}{Reverse\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a210fdc6204e862b5c95064ee466615a6}{rbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}{Const\+Reverse\+Begin()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a0db0dc0153c64f0f2c900ca4ae3bad79}{crbegin}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}{Const\+Reverse\+Begin()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list_a7e0fa3b21e40a71905118a8b79b916e6}{end}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a69682d061b7ce2cfe76200ce04ad1399}{end}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}{Const\+End()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a2bad0586c518570671824aba324921b5}{cend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}{Const\+End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a9b05714243c7894ea537536b7ccc624d}{rend}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_a2a989a94203679e8d0b6d8fc6eec6431}{Reverse\+End()}} alias (for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a5e72fca7a399fe383f6c9e2013939317}{rend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}{Const\+Reverse\+End()}} alias (overloaded, for compatibity) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list_a2f3b601bb08e8b2b5f8365d571da394f}{crend}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}{Const\+Reverse\+End()}} alias (for compatibity) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Common\+::\+TList$<$ T $>$}
+
+Container representing Doubly linked list. 
+
+\begin{DoxyWarning}{Warning}
+Work in progress. Sentinel node is not implemented yet, so iterators do not work properly. There may be other bugs
+\end{DoxyWarning}
+Iterating over elements is slow, so you should use iterators that store position. Supports fixed-\/time add/removal of elements (and it is very fast).
+
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}} WILL have methods like indexing for compatibility, but they are supposed to be very slow because iteration is needed.
+
+Exception policy\+: none (for now).
+
+\begin{DoxyNote}{Note}
+If the logical result of operation may not be determined, there are two methods\+: one that throws an exception (\char`\"{}\+Safe\char`\"{} prefix) and another one that does assertion in debug mode. Custom exception is \mbox{\hyperlink{class_common_1_1_c_out_of_range}{COut\+Of\+Range}}, derived from \mbox{\hyperlink{class_common_1_1_c_exception}{CException}}.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Unify methods with vector, add safe and auto methods\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Better iterator support\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Support numeric positions and indexing\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Implement SFINAE to support types without nonparam ctor and types without overloaded == operator\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Safe iterators do not track element removal \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_list_ab73867f520decba1c099640871bd9380}\label{class_common_1_1_t_list_ab73867f520decba1c099640871bd9380}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef T \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_ab73867f520decba1c099640871bd9380}{value\+\_\+type}}}
+
+\mbox{\Hypertarget{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}\label{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CIterator@{CIterator}}
+\index{CIterator@{CIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CIterator}{CIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_doubly_linked_iterator}{Iterators\+::\+TDoubly\+Linked\+Iterator}}$<$\mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}}}
+
+
+
+Iterator. Implemented op-\/s\+: ++, +=, +, --, -\/=, -\/, ==, !=, =. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}\label{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CConstIterator@{CConstIterator}}
+\index{CConstIterator@{CConstIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CConstIterator}{CConstIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_doubly_linked_iterator}{Iterators\+::\+TDoubly\+Linked\+Iterator}}$<$const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}}}
+
+
+
+Version of CIterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}\label{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CReverseIterator@{CReverseIterator}}
+\index{CReverseIterator@{CReverseIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CReverseIterator}{CReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_reverse_doubly_linked_iterator}{Iterators\+::\+TReverse\+Doubly\+Linked\+Iterator}}$<$\mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}}}
+
+
+
+Reverse iterator. Increment is actually decrement, etc. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}\label{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CConstReverseIterator@{CConstReverseIterator}}
+\index{CConstReverseIterator@{CConstReverseIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CConstReverseIterator}{CConstReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_reverse_doubly_linked_iterator}{Iterators\+::\+TReverse\+Doubly\+Linked\+Iterator}}$<$const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}}}
+
+
+
+Version of TReverse\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}\label{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CSafeIterator@{CSafeIterator}}
+\index{CSafeIterator@{CSafeIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeIterator}{CSafeIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_doubly_linked_iterator}{Iterators\+::\+TSafe\+Doubly\+Linked\+Iterator}}$<$\mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}}}
+
+
+
+Iterator that does bounds checking and throws Out\+Of\+Range(). 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}\label{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CSafeConstIterator@{CSafeConstIterator}}
+\index{CSafeConstIterator@{CSafeConstIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeConstIterator}{CSafeConstIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_doubly_linked_iterator}{Iterators\+::\+TSafe\+Doubly\+Linked\+Iterator}}$<$const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}}}
+
+
+
+Version of TSafe\+Iterator for const values. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}\label{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CSafeReverseIterator@{CSafeReverseIterator}}
+\index{CSafeReverseIterator@{CSafeReverseIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeReverseIterator}{CSafeReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_reverse_doubly_linked_iterator}{Iterators\+::\+TSafe\+Reverse\+Doubly\+Linked\+Iterator}}$<$\mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}}}
+
+
+
+Reverse iterator that can throw Out\+Of\+Range(). 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}\label{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!CSafeConstReverseIterator@{CSafeConstReverseIterator}}
+\index{CSafeConstReverseIterator@{CSafeConstReverseIterator}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CSafeConstReverseIterator}{CSafeConstReverseIterator}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+typedef \mbox{\hyperlink{class_common_1_1_iterators_1_1_t_safe_reverse_doubly_linked_iterator}{Iterators\+::\+TSafe\+Reverse\+Doubly\+Linked\+Iterator}}$<$const \mbox{\hyperlink{class_common_1_1_t_list_1_1_node}{Node}}$\ast$, const T\&$>$ \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}}}
+
+
+
+Version of TSafe\+Reverse\+Iterator for const values. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_list_abb58de2e0adba30bac77768c38576477}\label{class_common_1_1_t_list_abb58de2e0adba30bac77768c38576477}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Creates empty list. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_ada2d6176865313fa7f72868f01b8b1e1}\label{class_common_1_1_t_list_ada2d6176865313fa7f72868f01b8b1e1}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{Size,  }\item[{const T \&}]{Default\+Value = {\ttfamily \{\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+List with pre-\/created elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Size} & Number of nodes to create \\
+\hline
+{\em Default\+Value} & Value to initialize with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_ad56a5394d81d8da13fa5a01e2034c3ba}\label{class_common_1_1_t_list_ad56a5394d81d8da13fa5a01e2034c3ba}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{Values\+List }\end{DoxyParamCaption})}
+
+
+
+Modern C++ initialization syntax\+: name = \{...\}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Values\+List} & Initializer list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_adb60a2a709092f90d1379f7f262123f2}\label{class_common_1_1_t_list_adb60a2a709092f90d1379f7f262123f2}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End,  }\item[{typename std\+::enable\+\_\+if$<$!std\+::is\+\_\+integral$<$ Iterator\+Type $>$\+::value $>$\+::type $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor to get values from another container. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator that implements ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the beginning of container \\
+\hline
+{\em End} & Iterator referring to the end of container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a9f6786ba56df6629b34c1a9f72acf76e}\label{class_common_1_1_t_list_a9f6786ba56df6629b34c1a9f72acf76e}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+
+
+Initialize by copying another \mbox{\hyperlink{class_common_1_1_t_list}{TList}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & list to copy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_ad771396df2695339a5d715c3708e5e4a}\label{class_common_1_1_t_list_ad771396df2695339a5d715c3708e5e4a}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!TList@{TList}}
+\index{TList@{TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TList()}{TList()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Temporary object to get data from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_aa3a930ad2dee1848d6deb4252dae799c}\label{class_common_1_1_t_list_aa3a930ad2dee1848d6deb4252dae799c}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!````~TList@{$\sim$TList}}
+\index{````~TList@{$\sim$TList}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$TList()}{~TList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_common_1_1_t_list}{TList}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_1_1_t_list_afbf78d01175879517b7dd8e5af5e6ad9}\label{class_common_1_1_t_list_afbf78d01175879517b7dd8e5af5e6ad9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Assign@{Assign}}
+\index{Assign@{Assign}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Assign()}{Assign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Assign (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Allows to copy values from another container. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator that implements ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the beginning of container \\
+\hline
+{\em End} & Iterator referring to the end of container \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a231e3cedfca07fcb9e48e9f8fb034d1f}\label{class_common_1_1_t_list_a231e3cedfca07fcb9e48e9f8fb034d1f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{Values\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a1870ee9577a132ec93df06db894a13f8}\label{class_common_1_1_t_list_a1870ee9577a132ec93df06db894a13f8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_common_1_1_t_list_ac5d225bdb18fbab28030e1c79999f591}\label{class_common_1_1_t_list_ac5d225bdb18fbab28030e1c79999f591}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$T$>$\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&\&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{class_common_1_1_t_list_ae7272df8fbedc820854d86540bf4d91d}\label{class_common_1_1_t_list_ae7272df8fbedc820854d86540bf4d91d}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Push (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Adds one element to the end of list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Element to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a2bb28c945846ec0e6152c79044c359bc}\label{class_common_1_1_t_list_a2bb28c945846ec0e6152c79044c359bc}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Push@{Push}}
+\index{Push@{Push}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Push()}{Push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Push (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Adds multiple elements to the end via iterators. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a3207194568740e9b66c15378dbd679a9}\label{class_common_1_1_t_list_a3207194568740e9b66c15378dbd679a9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Unshift@{Unshift}}
+\index{Unshift@{Unshift}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Unshift()}{Unshift()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Unshift (\begin{DoxyParamCaption}\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Adds one element to the beginning of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Value} & Element to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_ab9252d474ad24ff3af2f3eb862796686}\label{class_common_1_1_t_list_ab9252d474ad24ff3af2f3eb862796686}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Unshift@{Unshift}}
+\index{Unshift@{Unshift}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Unshift()}{Unshift()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Unshift (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Begin,  }\item[{Iterator\+Type}]{End }\end{DoxyParamCaption})}
+
+
+
+Adds multiple elements to the beginning via iterators. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a06cb4176bd4ba5199973a9e3dc776634}\label{class_common_1_1_t_list_a06cb4176bd4ba5199973a9e3dc776634}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Position,  }\item[{const T \&}]{Value }\end{DoxyParamCaption})}
+
+
+
+Inserts one element to the specified position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & Iterator pointing to insertion place \\
+\hline
+{\em Value} & Value to insert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Position must be iterator to a valid node 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_ac704a2bd7a30dfafb4bdb3816ed74daf}\label{class_common_1_1_t_list_ac704a2bd7a30dfafb4bdb3816ed74daf}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type1 , typename Iterator\+Type2 $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Insert (\begin{DoxyParamCaption}\item[{Iterator\+Type1}]{Position,  }\item[{Iterator\+Type2}]{Begin,  }\item[{Iterator\+Type2}]{End }\end{DoxyParamCaption})}
+
+
+
+Adds multiple elements to the end via iterators. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator\+Type1} & Must be an iterator pointing to a valid node \\
+\hline
+{\em Iterator\+Type2} & Iterator with implemented ++, != and $\ast$ \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em Position} & Place where to start insertion from \\
+\hline
+{\em Begin} & Iterator referring to the first element \\
+\hline
+{\em End} & Iterator referring to the element after last one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Position must be iterator to a valid node 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_a2897aeadd97b8989984e2f8eb1d23075}\label{class_common_1_1_t_list_a2897aeadd97b8989984e2f8eb1d23075}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Removes one element from the end of list. 
+
+\begin{DoxyNote}{Note}
+List must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_a180b30a75554b9caf8ff3c0a1d134a48}\label{class_common_1_1_t_list_a180b30a75554b9caf8ff3c0a1d134a48}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Shift@{Shift}}
+\index{Shift@{Shift}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Shift()}{Shift()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Shift (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Removes one element from the beginning of list. 
+
+\begin{DoxyNote}{Note}
+List must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_af948bd0c4e9134577fb1baeba583e54f}\label{class_common_1_1_t_list_af948bd0c4e9134577fb1baeba583e54f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Erase@{Erase}}
+\index{Erase@{Erase}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Erase()}{Erase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename Iterator\+Type $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Erase (\begin{DoxyParamCaption}\item[{Iterator\+Type}]{Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a24f38d7e4222cf52ee37a740ce17d822}\label{class_common_1_1_t_list_a24f38d7e4222cf52ee37a740ce17d822}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Swap@{Swap}}
+\index{Swap@{Swap}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Swap()}{Swap()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_common_1_1_t_list}{TList}}$<$ T $>$ \&}]{Other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Swaps two lists internally without deep copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Other} & Object to swap resources with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_a422797e4958f70ebbe4e7ac386500906}\label{class_common_1_1_t_list_a422797e4958f70ebbe4e7ac386500906}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Removes all elements from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shrink\+Behavior} & Optional. Describes how memory is freed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_1_1_t_list_afe7dd23a60899cd02efc89cb1c4c0e4a}\label{class_common_1_1_t_list_afe7dd23a60899cd02efc89cb1c4c0e4a}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Size is number of elements that you can use. 
+
+\begin{DoxyReturn}{Returns}
+Size of list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a6a67ba32abd9d0d36d1bd97cc4879c5b}\label{class_common_1_1_t_list_a6a67ba32abd9d0d36d1bd97cc4879c5b}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!IsEmpty@{IsEmpty}}
+\index{IsEmpty@{IsEmpty}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsEmpty()}{IsEmpty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Simple check if size of this list equals 0. 
+
+\begin{DoxyReturn}{Returns}
+True if empty, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a0f6d36d7dcbfa082b1e222e4b8c5ee7e}\label{class_common_1_1_t_list_a0f6d36d7dcbfa082b1e222e4b8c5ee7e}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Front@{Front}}
+\index{Front@{Front}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Front()}{Front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides access to the first element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the first element 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+List must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_aaf485cbcd7692ce343ec0da1e1f87e23}\label{class_common_1_1_t_list_aaf485cbcd7692ce343ec0da1e1f87e23}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Back@{Back}}
+\index{Back@{Back}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Back()}{Back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Provides access to the last element. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the last element 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+List must not be empty. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_common_1_1_t_list_a8da7295ab8a710a2f8ad65a1c525dc3c}\label{class_common_1_1_t_list_a8da7295ab8a710a2f8ad65a1c525dc3c}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Back@{Back}}
+\index{Back@{Back}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Back()}{Back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T\& \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_aaf485cbcd7692ce343ec0da1e1f87e23}{Back()}} for const lists. 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}\label{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!Begin@{Begin}}
+\index{Begin@{Begin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+CIterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}\label{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ConstBegin@{ConstBegin}}
+\index{ConstBegin@{ConstBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstBegin()}{ConstBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Const\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+CConst\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_ae1f6b37cf1a8b908291d18912e2acaa7}\label{class_common_1_1_t_list_ae1f6b37cf1a8b908291d18912e2acaa7}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ReverseBegin@{ReverseBegin}}
+\index{ReverseBegin@{ReverseBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ReverseBegin()}{ReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+CReverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}\label{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ConstReverseBegin@{ConstReverseBegin}}
+\index{ConstReverseBegin@{ConstReverseBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstReverseBegin()}{ConstReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Const\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Reverse iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+CConst\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_ac789f4cf2755c6c6fbd357e3bb7434a9}\label{class_common_1_1_t_list_ac789f4cf2755c6c6fbd357e3bb7434a9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeBegin@{SafeBegin}}
+\index{SafeBegin@{SafeBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeBegin()}{SafeBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_aade93122f5713866e5dc8fb249e0668f}\label{class_common_1_1_t_list_aade93122f5713866e5dc8fb249e0668f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeConstBegin@{SafeConstBegin}}
+\index{SafeConstBegin@{SafeConstBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstBegin()}{SafeConstBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Const\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a41b37a4588dd0ce06e661fa41983b5b8}\label{class_common_1_1_t_list_a41b37a4588dd0ce06e661fa41983b5b8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeReverseBegin@{SafeReverseBegin}}
+\index{SafeReverseBegin@{SafeReverseBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeReverseBegin()}{SafeReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe reverse iterator pointing to the first elem. 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_aecdfb44c9ac798a6a49e01031ecf3eb2}\label{class_common_1_1_t_list_aecdfb44c9ac798a6a49e01031ecf3eb2}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeConstReverseBegin@{SafeConstReverseBegin}}
+\index{SafeConstReverseBegin@{SafeConstReverseBegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstReverseBegin()}{SafeConstReverseBegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Const\+Reverse\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe reverse iterator pointing to the first elem (const). 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Const\+Reverse\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}\label{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!End@{End}}
+\index{End@{End}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+CIterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}\label{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ConstEnd@{ConstEnd}}
+\index{ConstEnd@{ConstEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstEnd()}{ConstEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Const\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+CConst\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a2a989a94203679e8d0b6d8fc6eec6431}\label{class_common_1_1_t_list_a2a989a94203679e8d0b6d8fc6eec6431}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ReverseEnd@{ReverseEnd}}
+\index{ReverseEnd@{ReverseEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ReverseEnd()}{ReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reverse iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+CReverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}\label{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!ConstReverseEnd@{ConstReverseEnd}}
+\index{ConstReverseEnd@{ConstReverseEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstReverseEnd()}{ConstReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Const\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Reverse iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+CConst\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a3288612221083b7637b68572c15bcac8}\label{class_common_1_1_t_list_a3288612221083b7637b68572c15bcac8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeEnd@{SafeEnd}}
+\index{SafeEnd@{SafeEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeEnd()}{SafeEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a8a843affd7273c84e5835f3aef6eeaf1}{CSafe\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a0cc32a4e9f6b75e5618bd95f165782d9}\label{class_common_1_1_t_list_a0cc32a4e9f6b75e5618bd95f165782d9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeConstEnd@{SafeConstEnd}}
+\index{SafeConstEnd@{SafeConstEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstEnd()}{SafeConstEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a394eb86351664471a42b435d5fdfd8a3}{CSafe\+Const\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Const\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe iterator pointing to the elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Const\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a81d884dea2e43b316d7f67cc35e740f8}\label{class_common_1_1_t_list_a81d884dea2e43b316d7f67cc35e740f8}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeReverseEnd@{SafeReverseEnd}}
+\index{SafeReverseEnd@{SafeReverseEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeReverseEnd()}{SafeReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_aa1edb22446a2bd7c5d77b58d1937b0cc}{CSafe\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Safe reverse iterator pointing to the elem after last. 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Reverse\+Iterator iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a812e76ceaca602bd1cc11dc1c1d0d69f}\label{class_common_1_1_t_list_a812e76ceaca602bd1cc11dc1c1d0d69f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!SafeConstReverseEnd@{SafeConstReverseEnd}}
+\index{SafeConstReverseEnd@{SafeConstReverseEnd}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{SafeConstReverseEnd()}{SafeConstReverseEnd()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a0de5d0f95acb309b5af414f00c28b7ea}{CSafe\+Const\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::Safe\+Const\+Reverse\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Safe reverse it. pointing to elem after last (const). 
+
+\begin{DoxyReturn}{Returns}
+CSafe\+Const\+Reverse\+Iterator 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_common_1_1_t_list_a47211dd09fc9ef920aef89e8cffa2da9}\label{class_common_1_1_t_list_a47211dd09fc9ef920aef89e8cffa2da9}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_a886eae8ad25731443b862fe8a57c0006}{Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a3ef850d02eee5b678b8340cb21e8467a}\label{class_common_1_1_t_list_a3ef850d02eee5b678b8340cb21e8467a}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}{Const\+Begin()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_afeabed80e26b8e98d8b6760b354b18bd}\label{class_common_1_1_t_list_afeabed80e26b8e98d8b6760b354b18bd}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!cbegin@{cbegin}}
+\index{cbegin@{cbegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cbegin()}{cbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::cbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_afeca9125a44d83fa2fe09dd0e06b60b2}{Const\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a535f007fb40dec630a9b5739c7d9120f}\label{class_common_1_1_t_list_a535f007fb40dec630a9b5739c7d9120f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_ae1f6b37cf1a8b908291d18912e2acaa7}{Reverse\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a210fdc6204e862b5c95064ee466615a6}\label{class_common_1_1_t_list_a210fdc6204e862b5c95064ee466615a6}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rbegin()}{rbegin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}{Const\+Reverse\+Begin()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a0db0dc0153c64f0f2c900ca4ae3bad79}\label{class_common_1_1_t_list_a0db0dc0153c64f0f2c900ca4ae3bad79}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!crbegin@{crbegin}}
+\index{crbegin@{crbegin}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crbegin()}{crbegin()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::crbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_ab01d225cee1878ac7896e7416e15a648}{Const\+Reverse\+Begin()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a7e0fa3b21e40a71905118a8b79b916e6}\label{class_common_1_1_t_list_a7e0fa3b21e40a71905118a8b79b916e6}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!end@{end}}
+\index{end@{end}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_af39fe31a5e11352f2a422fbaffe233e8}{CIterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_a76a6841567f8febdba51cc6228e4219d}{End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a69682d061b7ce2cfe76200ce04ad1399}\label{class_common_1_1_t_list_a69682d061b7ce2cfe76200ce04ad1399}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!end@{end}}
+\index{end@{end}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}{Const\+End()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a2bad0586c518570671824aba324921b5}\label{class_common_1_1_t_list_a2bad0586c518570671824aba324921b5}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!cend@{cend}}
+\index{cend@{cend}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cend()}{cend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_ae82912301e44644900cc1ebd2d02eee9}{CConst\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::cend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_a0aba202f28609dd9b710bf8640dbf6b4}{Const\+End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a9b05714243c7894ea537536b7ccc624d}\label{class_common_1_1_t_list_a9b05714243c7894ea537536b7ccc624d}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_a3e03039fb544fe1f13c117b737e817de}{CReverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_a2a989a94203679e8d0b6d8fc6eec6431}{Reverse\+End()}} alias (for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a5e72fca7a399fe383f6c9e2013939317}\label{class_common_1_1_t_list_a5e72fca7a399fe383f6c9e2013939317}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!rend@{rend}}
+\index{rend@{rend}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rend()}{rend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}{Const\+Reverse\+End()}} alias (overloaded, for compatibity) 
+
+\mbox{\Hypertarget{class_common_1_1_t_list_a2f3b601bb08e8b2b5f8365d571da394f}\label{class_common_1_1_t_list_a2f3b601bb08e8b2b5f8365d571da394f}} 
+\index{Common::TList$<$ T $>$@{Common::TList$<$ T $>$}!crend@{crend}}
+\index{crend@{crend}!Common::TList$<$ T $>$@{Common::TList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{crend()}{crend()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_common_1_1_t_list_acb34179c1e9e8902b3edf94f8cfb77f7}{CConst\+Reverse\+Iterator}} \mbox{\hyperlink{class_common_1_1_t_list}{Common\+::\+TList}}$<$ T $>$\+::crend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{class_common_1_1_t_list_af76cca8413c04f375177b73472c8c1a8}{Const\+Reverse\+End()}} alias (for compatibity) 
+

@@ -233,7 +233,7 @@ Fast in accessing elements as offsets are used, but not very effective in terms 
 
 Unlike std\+::vector, this has utilities to manage capacity outside. EReserved\+Capacity\+Rule describes how extra capacity is reserved. This value is class member (get/set are possible). EShrink\+Behavior can be passed to every function that is supposed to decrease \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} capacity, overriding EReserved\+Capacity\+Rule in terms of removing elements in this specific case.
 
-Exception policy\+: \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} stays in the previous state if construction fails. \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} is cleared if move construction of the underlying object failed. \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} is in the broken state if exception occured from \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} constructor, but destruction is handled correctly. Rethrows original exception. Capacity is not changed if Capacity\+Rule is NOT Never\+Reserve.
+Exception policy\+: Generally, \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} stays in the previous state if operation fails. \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} is cleared if move construction of the underlying object failed. \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} is in the broken state if exception occured from \mbox{\hyperlink{class_common_1_1_t_vector}{TVector}} constructor, but destruction is handled correctly. Rethrows original exception. Capacity is not changed if Capacity\+Rule is NOT Never\+Reserve.
 
 \begin{DoxyNote}{Note}
 If the logical result of operation may not be determined, there are two methods\+: one that throws an exception (\char`\"{}\+Safe\char`\"{} prefix) and another one that does assertion in debug mode. Custom exception is \mbox{\hyperlink{class_common_1_1_c_out_of_range}{COut\+Of\+Range}}, derived from \mbox{\hyperlink{class_common_1_1_c_exception}{CException}}.
@@ -241,15 +241,23 @@ If the logical result of operation may not be determined, there are two methods\
 Underlying object must be copy and move constructible.
 \end{DoxyNote}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]In case of construction errors, do not decrease capacity unless Capacity\+Rule is set to Never\+Reserve. Capacity management is not consistent now, especially if move operation throws\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]In case of construction errors, do not decrease capacity unless Capacity\+Rule is set to Never\+Reserve. Capacity management is not consistent now, especially if move operation throws\end{DoxyRefDesc}
 
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Implement SFINAE to support types without nonparam ctor and types without overloaded == operator\end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]Unshift method\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Implement SFINAE to support types without nonparam ctor and types without overloaded == operator\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000010}{Todo}}]Better iterator support\end{DoxyRefDesc}
 
 
 \begin{DoxyRefDesc}{Bug}
-\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]Move may not be performed \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]Object might be copied when it could be moved \end{DoxyRefDesc}
 
 
 \doxysubsection{Member Typedef Documentation}

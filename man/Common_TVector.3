@@ -1,4 +1,4 @@
-.TH "Common::TVector< T >" 3 "Sat May 29 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
+.TH "Common::TVector< T >" 3 "Tue Jun 1 2021" "Version 1.1" "CommonLibs" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -427,7 +427,7 @@ Fast in accessing elements as offsets are used, but not very effective in terms 
 .PP
 Unlike std::vector, this has utilities to manage capacity outside\&. EReservedCapacityRule describes how extra capacity is reserved\&. This value is class member (get/set are possible)\&. EShrinkBehavior can be passed to every function that is supposed to decrease \fBTVector\fP capacity, overriding EReservedCapacityRule in terms of removing elements in this specific case\&.
 .PP
-Exception policy: \fBTVector\fP stays in the previous state if construction fails\&. \fBTVector\fP is cleared if move construction of the underlying object failed\&. \fBTVector\fP is in the broken state if exception occured from \fBTVector\fP constructor, but destruction is handled correctly\&. Rethrows original exception\&. Capacity is not changed if CapacityRule is NOT NeverReserve\&.
+Exception policy: Generally, \fBTVector\fP stays in the previous state if operation fails\&. \fBTVector\fP is cleared if move construction of the underlying object failed\&. \fBTVector\fP is in the broken state if exception occured from \fBTVector\fP constructor, but destruction is handled correctly\&. Rethrows original exception\&. Capacity is not changed if CapacityRule is NOT NeverReserve\&.
 .PP
 \fBNote\fP
 .RS 4
@@ -444,13 +444,25 @@ In case of construction errors, do not decrease capacity unless CapacityRule is 
 .PP
 \fBTodo\fP
 .RS 4
+Unshift method
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
 Implement SFINAE to support types without nonparam ctor and types without overloaded == operator
+.RE
+.PP
+.PP
+\fBTodo\fP
+.RS 4
+Better iterator support
 .RE
 .PP
 .PP
 \fBBug\fP
 .RS 4
-Move may not be performed 
+Object might be copied when it could be moved 
 .RE
 .PP
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_2eh_178',['Exception.h',['../_exception_8h.html',1,'']]]
+  ['doublylinked_2eh_198',['DoublyLinked.h',['../_doubly_linked_8h.html',1,'']]]
 ];
